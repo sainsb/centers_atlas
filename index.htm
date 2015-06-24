@@ -1,0 +1,716 @@
+<!doctype html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+     <title>State of the Centers 2015</title>
+    <link rel="stylesheet" type="text/css" href="css/app.style.min.css" media="screen" />
+    <link href='//fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+    <style>
+    .navbar-brand b,  h2{
+        font-family: 'Oxygen', sans-serif !important;
+    }
+
+    .banner-content h2, .banner-content p {
+color:#333;
+    }
+
+    .banner-container {
+  background-color: #fff;
+}
+
+
+
+#portfolio{
+background-color:rgb(243, 243, 243);
+opacity:.8;
+    }
+
+    .masonry{
+        font-size:34px;color:#fff;position: absolute;top: 122px;left: 10px;line-height:24px;
+    }
+
+.portfolio-item:hover{
+    opacity:.7;
+    cursor:pointer;
+}
+ 
+div.catalog {
+  margin: 2px;
+}
+ 
+ul.catalog {
+  list-style-type: none;
+}
+ 
+ul.catalog > li img {
+  float: left;
+  margin: 0 15px 0 0;
+  width:90px;
+}
+ 
+ul.catalog li {
+  padding: 10px;
+  overflow: auto;
+}
+ 
+ul.catalog > li:hover {
+  background: #eee;
+  cursor: pointer;
+}
+
+.nav>li>a{
+  padding:0;
+}
+
+a.anchor h4{
+  padding-top: 40px !important; margin-top: -40px !important;
+}
+
+@media only screen{
+* {font-family: 'Oxygen', sans-serif !important;}
+
+.fa{  font: normal normal normal 14px/1 FontAwesome !important;}
+}
+
+body{background-color:#fff;}
+
+.navbar-inverse .navbar-nav>li>a{
+  color:#E3F4F3;
+}
+
+.navbar-inverse .navbar-toggle {
+  border-color: #ddd; 
+ background-color: #334D59;
+}
+
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+  background: #334D59;
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+    max-height:300px;
+    overflow-y:auto;
+    text-align:right;
+}
+
+.dropdown-submenu.regional-centers>.dropdown-menu {
+	left:-160px;
+}
+
+.dropdown-submenu.town-centers>.dropdown-menu {
+	left:-225px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu>a:before {
+    display: block;
+    content: " ";
+    float: left;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 6px;
+    border-right-color: #CCC;
+    margin-top: 3px;
+    margin-right: 5px;
+}
+
+.dropdown-header, .dropdown-menu>li>a
+{
+	padding-left:4px;
+
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+
+a{
+  color:#3F7473;
+}
+
+a:hover{
+   color:#3F7473;
+  text-decoration:underline;
+}
+#ghostNarrative{display:none;}
+
+@media screen and (max-width: 991px) {
+  
+#narrative{display:none;}
+#ghostNarrative{display:block;}
+
+}
+
+#inc_slider{
+	width:300px;
+}
+
+.logo {
+  font-size: 1.1em;
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  width: 100%;
+  margin: 6.4px 0;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 4.2px;
+  cursor: pointer;
+  box-shadow: 1.4px 1.4px 4px #8f9090, 0px 0px 1.4px #9c9d9d;
+  background: #b5b6b7;
+  border-radius: 1.3px;
+  border: 0.2px solid rgba(94, 93, 91, 0);
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 1.1px 1.1px 3.9px #9d9b99, 0px 0px 1.1px #a9a8a6;
+  border: 0px solid rgba(33, 34, 35, 0);
+  height: 17px;
+  width: 16px;
+  border-radius: 5px;
+  background: #ffffff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -6.6px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #cfd0d0;
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 4.2px;
+  cursor: pointer;
+  box-shadow: 1.4px 1.4px 4px #8f9090, 0px 0px 1.4px #9c9d9d;
+  background: #b5b6b7;
+  border-radius: 1.3px;
+  border: 0.2px solid rgba(94, 93, 91, 0);
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: 1.1px 1.1px 3.9px #9d9b99, 0px 0px 1.1px #a9a8a6;
+  border: 0px solid rgba(33, 34, 35, 0);
+  height: 17px;
+  width: 16px;
+  border-radius: 5px;
+  background: #ffffff;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 4.2px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #9b9d9e;
+  border: 0.2px solid rgba(94, 93, 91, 0);
+  border-radius: 2.6px;
+  box-shadow: 1.4px 1.4px 4px #8f9090, 0px 0px 1.4px #9c9d9d;
+}
+input[type=range]::-ms-fill-upper {
+  background: #b5b6b7;
+  border: 0.2px solid rgba(94, 93, 91, 0);
+  border-radius: 2.6px;
+  box-shadow: 1.4px 1.4px 4px #8f9090, 0px 0px 1.4px #9c9d9d;
+}
+input[type=range]::-ms-thumb {
+  box-shadow: 1.1px 1.1px 3.9px #9d9b99, 0px 0px 1.1px #a9a8a6;
+  border: 0px solid rgba(33, 34, 35, 0);
+  height: 17px;
+  width: 16px;
+  border-radius: 5px;
+  background: #ffffff;
+  cursor: pointer;
+  height: 4.2px;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #b5b6b7;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #cfd0d0;
+}
+
+
+</style>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar navbar-inverse" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="index.htm" class="navbar-brand logo"><b>State of the Centers Atlas</b></a>
+                </div>
+                <!--/.navbar-header-->
+                <div id="main-nav" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav" id="mainNav">
+                        <li ><a href="index.htm" class="scroll-link">Home</a></li>
+                        <li><a href="#aboutUs" class="scroll-link">About</a></li>
+                        <li><a href='#' data-toggle="dropdown">Centers<span class="caret"></span>
+            </a>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+              <li><a href="#">Overview</a></li>
+              <li class="dropdown-submenu regional-centers">
+                <a href="#">Regional Centers</a>
+                <ul class="dropdown-menu">
+                  <li><a href="./#Beaverton">Beaverton</a></li>
+                  <li><a href="./#Clackamas">Clackamas</a></li>
+                  <li><a href="./#Gateway">Gateway</a></li>
+                  <li><a href="./#Gresham">Gresham</a></li>
+                  <li><a href="./#Hillsboro">Hillsboro</a></li>
+                  <li><a href="./#Oregon-City">Oregon City</a></li>
+                  <li><a href="./#Tanasbourne">Tanasbourne</a></li>
+                  <li><a href="./#Washington-Square">Washington Square</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-submenu town-centers">
+                <a  href="#">Town Centers</a>
+                <ul class="dropdown-menu">
+                  <li><a href='./#Aloha'>Aloha</a></li>
+                  <li><a href='./#Bethany'>Bethany</a></li>
+                  <li><a href='./#Cedar-Mill'>Cedar Mill</a></li>
+                  <li><a href='./#Cornelius'>Cornelius</a></li>
+                  <li><a href='./#Damascus'>Damascus</a></li>
+                  <li><a href='./#Fairview'>Fairview</a></li>
+                  <li><a href='./#Forest-Grove'>Forest Grove</a></li>
+                  <li><a href='./#Gladstone'>Gladstone</a></li>
+                  <li><a href='./#Happy-Valley'>Happy Valley</a></li>
+                  <li><a href='./#Hillsdale'>Hillsdale</a></li>
+                  <li><a href='./#Hollywood'>Hollywood</a></li>
+                  <li><a href='./#King-City'>King City</a></li>
+                  <li><a href='./#Lake-Grove'>Lake Grove</a></li>
+                  <li><a href='./#Lake-Oswego'>Lake Oswego</a></li>
+                  <li><a href='./#Lents'>Lents</a></li>
+                  <li><a href='./#Milwaukie'>Milwaukie</a></li>
+                  <li><a href='./#Murray-Scholls'>Murray/Scholls</a></li>
+                  <li><a href='./#Orenco'>Orenco</a></li>
+                  <li><a href='./#Pleasant-Valley'>Pleasant Valley</a></li>
+                  <li><a href='./#Raleigh-Hills'>Raleigh Hills</a></li>
+                  <li><a href='./#Rockwood'>Rockwood</a></li>
+                  <li><a href='./#Sherwood'>Sherwood</a></li>
+                  <li><a href='./#St-Johns'>St. Johns</a></li>
+                  <li><a href='./#Sunset-Transit-Center'>Sunset Transit Center</a></li>
+                  <li><a href='./#Tigard'>Tigard</a></li>
+                  <li><a href='./#Troutdale'>Troutdale</a></li>
+                  <li><a href='./#Tualatin'>Tualatin</a></li>
+                  <li><a href='./#West-Linn-Historic-Willamette'>West Linn – Historic Willamette</a></li>
+                  <li><a href='./#West-Linn-Bolton'>West Linn – Bolton</a></li>
+                  <li><a href='./#West-Portland'>West Portland</a></li>
+                  <li><a href='./#Wilsonville'>Wilsonville</a></li>
+                </ul>
+              </li>
+            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!--/.navbar-collapse-->
+            </nav>
+            <!--/.navbar-->
+        </div>
+        <!--/.container-->
+    </header>
+
+<section style='background-color:#fff;' id='main'>
+   <div class="container-fluid" style='padding-top:100px;'>
+<div class='row'>
+<div class='col-md-8 col-md-offset-2'>
+     <ol class="breadcrumb">
+      <li><a href="#">State of the Centers</a></li>
+      <li class="active" id='brc'></li>
+    </ol>
+</div>
+</div>
+<div class='row'>
+<div class='col-md-12' id='ghostNarrative'>
+</div>
+</div>
+
+  <div class='row' >
+   <div class='col-md-2 col-md-offset-2'  id='amenities'>
+   </div>
+   <div class='col-md-6'>
+      <div id='narrative'></div>
+      <div id='numbers'></div>
+   </div>
+  </div>
+  <div class='row'>
+  <div class='col-md-8 col-md-offset-2'>
+  	<table style='width:100%;height:400px'>
+         <tr>
+            <td style='vertical-align:top;'>
+               <h3>2015 Household income</h3>
+               <div>
+                  <table>
+                     <tr>
+                        <td>
+                           <div style='height:12px;width:20px;margin-right:6px;background-color:rgba(40,113,127,0.5)'></div>
+                        </td>
+                        <td id='hh_title'></td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <div style='height:12px;width:20px;background-color:rgba(131,177,151,0.5)'></div>
+                        </td>
+                        <td >One Mile Buffer</td>
+                     </tr>
+                  </table>
+               </div>
+               <br/>
+               <canvas id="barchart" style='width:100%;height:60%;'></canvas>
+               <table id='tblSliderYears'>
+               </table>
+            </td>
+            <td style='vertical-align:top;'>
+               <h3>Employment Breakdown</h3>
+               <div>
+                  <table class='pull-right'>
+                     <tr>
+                        <td>
+                           <div style='height:12px;width:20px;margin-right:6px;background-color:#87451E'></div>
+                        </td>
+                        <td id='tdOther'></td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <div style='height:12px;width:20px;background-color:#C3A28E'></div>
+                        </td>
+                        <td id='tdRetail'></td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <div style='height:12px;width:20px;background-color:#A57356'></div>
+                        </td>
+                        <td id='tdService'></td>
+                     </tr>
+                  </table>
+               </div>
+               <br/>
+               <canvas id="piechart" style='width:100%'></canvas>
+            </td>
+            <td>
+            	<canvas id="radarchart" style='width:100%'></canvas>
+            </td>
+         </tr>
+      </table>
+  </div>
+  </div>
+
+      <div class='row'>
+      <div class='col-md-8 col-md-offset-2' style='margin-top:10px;border-radius:5px;border:1px solid #ddd;padding:10px;'>
+          <div id='map' style='height:400px;width:100%;'></div>
+          </div>
+      </div>
+    </div>
+      </section>
+    <footer>
+        <div class="container">
+            <div class="social text-center">
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-flickr"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+            </div>
+
+            <div class="clear"></div>
+            <!--CLEAR FLOATS-->
+        </div>
+    </footer>
+    <!--/.page-section-->
+    <section class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    Copyright Oregon Metro 2015 | All Rights Reserved
+                </div>
+            </div>
+            <!-- / .row -->
+        </div>
+    </section>
+    <script src="js/app.script.min.js" type="text/javascript"></script>
+    <script src="templates/templates.js" type="text/javascript"></script>
+    <script type='text/javascript'>
+
+	  Chart.defaults.global.animation=false;
+
+      $(document).ready(function() {
+      	var center = location.hash.replace(/\-/g, ' ').replace('#', '');
+
+      	document.title = center + ' - ' + document.title;
+
+      	$.getJSON('./data/data.js').then(function(data) {
+      		//alert('hello');
+      		$('#brc').html(center);
+
+      		$('#hh_title').html(center + ' ' + data[center].type);
+
+      		$('#ghostNarrative, #narrative').html(templates['main'](data[center]));
+      		//console.log(data.town_centers["Aloha"]);
+      		$('#amenities').html(templates['amenities']({
+      			amenities: data.amenities,
+      			data: data[center]
+      		}));
+
+      		var numbers_obj = {
+      			title: center + ' ' + data[center].type,
+      			type: data[center].type,
+      			stats: data[center].stats,
+      			averages: data[data[center].type.toLowerCase().replace(' ', '_') + '_averages'],
+      			stats_1mi_buff: data[center].stats_1mi_buff
+      		}
+
+      		$('#numbers').html(templates['numbers'](numbers_obj));
+
+      		map = L.mapbox.map('map').setView(data[center].centroid, 14);
+
+      		L.tileLayer('//server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
+      			maxZoom: 21,
+      			attribution: 'ESRI'
+      		}).addTo(map);
+
+      		L.tileLayer('//gis.oregonmetro.gov/services/transit/LRT/{z}/{x}/{y}.png', {
+      			maxZoom: 21,
+      			attribution: 'Tri-Met'
+      		}).addTo(map);
+
+      		L.tileLayer('//gis.oregonmetro.gov/services/land/buildings/{z}/{x}/{y}.png', {
+      			maxZoom: 21,
+      			attribution: 'RLIS'
+      		}).addTo(map);
+
+      		L.tileLayer('//gis.oregonmetro.gov/ArcGIS/rest/services/metromap/baseAnno/MapServer/tile/{z}/{y}/{x}?token=xPLxWVBTxtoj_Mtop4cOywUPHY6c2St2pTeS-Hg8t04.', {
+      			maxZoom: 21,
+      			attribution: 'RLIS'
+      		}).addTo(map);
+
+      		$.getJSON('./data/analysis_buffers.json').then(function(data) {
+      			L.geoJson(data, {
+      				style: {
+      					color: '#334D59',
+      					weight: 1,
+      					fillOpacity: .1,
+      					opacity:.1
+      				}
+      			}).addTo(map);
+
+      			$.getJSON('./data/analysis_centers.json').then(function(data) {
+      				
+      				var onEachFeature = function(feature, layer){
+      					var htm = '<b>'+feature.properties.NAME+'</b><br/>'+feature.properties.TYPE+'<br/><a href="./#'+feature.properties.NAME+'">View in Atlas</a>';
+						layer.bindPopup(htm);
+      				}
+
+      				L.geoJson(data, {
+      					style: function(feature){
+      						var style={fillOpacity: .3,
+      					opacity:.8, weight:1};
+      						switch(feature.properties.TYPE){
+      							case "Central City":
+	      							style.color='#AA5656';
+	  								break;
+      							case "Regional Center":
+      								style.color='#859F50';
+      								break;
+      							case "Town Center":
+      								style.color= '#346666';
+      								break;
+      							}
+      							return style;
+      					}, onEachFeature: onEachFeature
+      				}).addTo(map);
+      			});
+      		});
+
+      		$.getJSON('./data/tri_met_busstops.json').then(function(data) {
+
+      			// var busstops = L.geoJson(data, {
+      			//     pointToLayer: function(feature, latlng) {
+      			//         return L.circleMarker(latlng, {
+      			//             radius: 3,
+      			//             fillColor: '#E69800',
+      			//             color: '#fff',
+      			//             weight: 1,
+      			//             opacity: 1,
+      			//             fillOpacity: 0.9
+      			//         });
+      			//     },
+      			// });
+      		}); //end get busstops
+
+      		function createPieChart() {
+      			var pieChartData = [{
+      				color: "#87451E",
+      				highlight: "#87451E",
+      				label: "Other"
+      			}, {
+      				color: "#C3A28E",
+      				highlight: "#C3A28E",
+      				label: "Retail"
+      			}, {
+      				color: "#A57356",
+      				highlight: "#A57356",
+      				label: "Service"
+      			}];
+
+      			var setPieChartData = function() {
+      				//get index of year in years
+      				var year = $('#inc_slider').val();
+      				var idx = data.data_years.indexOf(parseInt(year));
+      				pieChartData[0].value = data[center].emp_breakdown[idx][0];
+      				$('#tdOther').html(data[center].emp_breakdown[idx][0] + '% Other');
+      				pieChartData[1].value = data[center].emp_breakdown[idx][1];
+      				$('#tdRetail').html(data[center].emp_breakdown[idx][1] + '% Retail');
+      				pieChartData[2].value = data[center].emp_breakdown[idx][2];
+      				$('#tdService').html(data[center].emp_breakdown[idx][2] + '% Service');
+      			}
+
+      			setPieChartData();
+
+      			try {
+				     window.myPie.destroy();
+				   } catch (ex) {//it just didn't exist, not a big deal
+				}
+
+      			ctx = document.getElementById("piechart").getContext("2d");
+      			window.myPie = new Chart(ctx).Pie(pieChartData, {animateRotate:false});
+      		}
+
+      		function createBarChart() {
+      			var barChartData = {
+      				labels: data.income_breaks,
+      				datasets: [{
+      					fillColor: "rgba(40,113,127,0.5)",
+      					strokeColor: "rgba(220,220,220,0.8)",
+      					highlightFill: "rgba(220,220,220,0.75)",
+      					highlightStroke: "rgba(220,220,220,1)",
+      					data: []
+      				}, {
+      					fillColor: "rgba(131,177,151,0.5)",
+      					strokeColor: "rgba(220,220,220,0.8)",
+      					highlightFill: "rgba(220,220,220,0.75)",
+      					highlightStroke: "rgba(220,220,220,1)",
+      					data: []
+      				}]
+      			};
+
+      			var setBarChartData = function(){
+      				var year = $('#inc_slider').val();
+      				var idx = data.data_years.indexOf(parseInt(year));
+      				barChartData.datasets[0].data = data[center].incomes[idx];
+      				barChartData.datasets[1].data = data[center].incomes_1mi_buff[idx];
+      			}
+
+      			setBarChartData();
+
+      			var ctx = document.getElementById("barchart").getContext("2d");
+
+      			try {
+				     window.myBar.destroy();
+				   } catch (ex) {//it just didn't exist, not a big deal
+				}
+
+      			window.myBar = new Chart(ctx).Bar(barChartData, {
+      				barStrokeWidth: 1,
+      				responsive: true,
+      				animationSteps:25
+      			});
+      		}
+
+      		function createRadarChart(){
+      			var radardata = {
+				    labels: data.context_tool_labels,
+				    datasets: [
+				        {
+				            label: "My Second dataset",
+				            fillColor: "rgba(70,148,167,0.8)",
+				            strokeColor: "rgba(90,168,187,1)",
+				            pointColor: "rgba(151,187,205,0)",
+				            pointStrokeColor: "rgba(151,187,205,0)",
+				            pointHighlightFill: "#fff",
+				            pointHighlightStroke: "rgba(151,187,205,1)"
+				        }
+				    ]
+				};
+
+				var year = $('#inc_slider').val();
+      			var idx = data.data_years.indexOf(parseInt(year));
+
+				radardata.datasets[0].data = data[center].context_tool_scores[idx];
+
+	  			var ctx = document.getElementById("radarchart").getContext("2d");
+
+      			try {
+				     window.myRadarChart.destroy();
+				   } catch (ex) {//it just didn't exist, not a big deal
+				}
+
+				window.myRadarChart = new Chart(ctx).Radar(radardata, {});
+      		}
+
+      		var html = "<tr><td colspan='" + data.data_years.length + "'><label for='inc_slider'>Year</label><input type='range' id='inc_slider' min='" + data.data_years[0] + "' max='" + data.data_years[data.data_years.length - 1] + "' step='2'></td></tr>";
+
+      		//generate inc_slider <tr>
+      		for (var key in data.data_years) {
+      			html += "<td style='text-align:center;'>" + data.data_years[key] + "</td>";
+      		}
+
+      		html += '</tr>';
+
+      		$('#tblSliderYears').append(html);
+
+      		createPieChart();
+      		createBarChart();
+      		createRadarChart();
+
+      		$('#inc_slider').on('input', function(){
+      			createBarChart();
+      			createPieChart();
+      			createRadarChart();
+      		});
+
+      	}); //end get data
+      }); //end document ready
+
+
+    </script>
+</body>
+</html>

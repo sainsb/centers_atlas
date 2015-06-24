@@ -1,0 +1,21 @@
+State of the Centers Atlas
+
+Current Build: 0.0.0.5
+Release Date: 2015-06-24
+
+App Notes:
+Aweb-based version of the state of the centers atlas.
+
+Initial Development: 
+	Developed by BNS
+	qa url: https://gis.oregonmetro.gov/dev/soc/#Aloha
+	issue tracking: 
+
+------------Jun 24, 2015 v0.0.0.5-------------------------
+
+- Added radar graph for context tool scores
+- Added time slider for graphs
+- colored center polygons in map according to type
+- Added map popup with center name, type and link to view in Atlas
+- Right-justified private amenity numbers in amenity grid
+- Fixed Nav bar menu to dropdown to the left instead of off screen to the right.
