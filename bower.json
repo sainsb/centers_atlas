@@ -56,7 +56,9 @@
     "mapbox.js": "~2.1.9",
     "chartjs": "~1.0.2",
     "chartnewjs": "*",
-    "leaflet-pip": "~0.1.0"
+    "leaflet-pip": "~0.1.0",
+    "pathjs": "*",
+    "leaflet.editinosm": "~0.2.1"
   },
   "resolutions": {
     "jquery": "2.1.3"

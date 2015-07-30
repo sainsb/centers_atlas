@@ -1,7 +1,7 @@
 State of the Centers Atlas
 
-Current Build: 0.0.0.5
-Release Date: 2015-06-24
+Current Build: 0.0.0.7
+Release Date: 2015-07-20
 
 App Notes:
 Aweb-based version of the state of the centers atlas.
@@ -10,6 +10,17 @@ Initial Development:
 	Developed by BNS
 	qa url: https://gis.oregonmetro.gov/dev/soc/#Aloha
 	issue tracking: 
+
+
+------------Jul 20, 2015 v0.0.0.7-------------------------
+
+- Added home, about pages
+- Added map to home page
+- Set up single page app aka routing using Path.js
+- Added data last updated notice in footer
+- Added heatmaps to map in center page
+- Moved map above graphs
+
 
 ------------Jun 24, 2015 v0.0.0.5-------------------------
 
