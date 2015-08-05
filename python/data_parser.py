@@ -1,12 +1,50 @@
 import csv
 import json
 
-
+INCLUDE_GLOBAL_DATA = True
 csvfile = open(r'2011_all_data.csv', 'r')
 reader = csv.DictReader(csvfile)
 YEAR = "2011"
 next(reader, None) #skip the header
 data = {}
+
+if INCLUDE_GLOBAL_DATA:
+  data['amenities'] = {}
+  data['amenities']['private'] = ["Bakery",
+			  "Bar",
+			  "Bike Shop",
+			  "Bookstore",
+			  "Brewpub",
+			  "Child Care",
+			  "Cinema",
+			  "Clothing Store",
+			  "Coffee Shop",
+			  "Department Store",
+			  "Dry Cleaners",
+			  "Fitness Gym",
+			  "Grocery Store",
+			  "Music Store",
+			  "Restaurant",
+			  "Specialty Snacks & Beverages"
+		  ]
+
+  data['amenities']['public'] = [
+			  "Community Center",
+			  "Fire Station",
+			  "Govt. Building",
+			  "Library",
+			  "School"
+		  ]
+  data ['income_breaks'] = [
+		  "<$15,000",
+		  "$15,000-$34,999",
+		  "$35,000-$49,999",
+		  "$50,000-$74,999",
+		  "$75,000-$99,999",
+		  "$100,000 +"
+	  ]
+  data['context_tool_labels'] = ["Parks Access", "Transit Access", "Bike route density", "People per acre", "Sidewalk density", "Private amenities", "Block size"]
+
 for row in reader:
   data[row['NAME']] = {}
   data[row['NAME']][YEAR] = {}
@@ -14,6 +52,8 @@ for row in reader:
   data[row['NAME']][YEAR]['buffered_employment_data'] = []
   data[row['NAME']][YEAR]['private_amenities'] = []
   data[row['NAME']][YEAR]['public_amenities'] = []
+  data[row['NAME']][YEAR]['context_tool_scores'] = []
+  data[row['NAME']][YEAR]['employment_breakdown'] = []
   #EMPLOYMENT DATA
   for field in [ "<$15000", "$15000-$34999","$35000-$49999", "$50000-$74999", "$75000-$99999", "$100000+"]:
     try:
@@ -60,7 +100,14 @@ for row in reader:
         data[row['NAME']][YEAR][field] = float(row[field])
       except:
         data[row['NAME']][YEAR][field] = row[field]
+  for field in ['Parks Access', 'Transit Access', 'Bike route density', 'People per acre', 'Sidewalk density', 'Private amenities', 'Block Size', 'Composite Score']:
+     data[row['NAME']][YEAR]['context_tool_scores'].append(float(row[field]))
+  for field in ['retail', 'service', 'other']:
+     try:
+      data[row['NAME']][YEAR]['employment_breakdown'].append(float(row[field]))
+     except:
+      data[row['NAME']][YEAR]['employment_breakdown'].append(0)
 
-print json.dumps(data, indent=4, sort_keys=True)
+#print json.dumps(data, indent=4, sort_keys=True)
 
 csvfile.close()
