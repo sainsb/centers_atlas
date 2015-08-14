@@ -31,10 +31,33 @@ var layers = [{
   'step': 0.000885099,
   'width': 2116,
   'height': 1372
-},
-{'id' : 'people', 'name':'Total Population Density (Residents + Employees Per Acre)', 'source': 'Equity Atlas', 'file':'//gis.oregonmetro.gov/equityAtlas/data/newraster/demo2.png','type': 'heatmap', 'nodata':1, 'ul':[-123.51819289449999, 46.0676384925], 'step': 0.000885099, 'width':2116, 'height': 1372, 'theme':'Demographics', 'thumb':'img/heatmap.jpg'},
-{'id' : 'parks', 'name':'Proximity to Publicly Accessible Parks', 'source': 'Equity Atlas', 'file':'//gis.oregonmetro.gov/equityAtlas/data/newraster/parks1.png','type': 'heatmap', 'nodata':1, 'ul':[-123.51819289449999, 46.0676384925], 'step': 0.000885099, 'width':2116, 'height': 1372, 'theme':'Parks and Natural Areas', 'thumb':'img/heatmap.jpg'}
-];
+}, {
+  'id': 'people',
+  'name': 'Total Population Density (Residents + Employees Per Acre)',
+  'source': 'Equity Atlas',
+  'file': '//gis.oregonmetro.gov/equityAtlas/data/newraster/demo2.png',
+  'type': 'heatmap',
+  'nodata': 1,
+  'ul': [-123.51819289449999, 46.0676384925],
+  'step': 0.000885099,
+  'width': 2116,
+  'height': 1372,
+  'theme': 'Demographics',
+  'thumb': 'img/heatmap.jpg'
+}, {
+  'id': 'parks',
+  'name': 'Proximity to Publicly Accessible Parks',
+  'source': 'Equity Atlas',
+  'file': '//gis.oregonmetro.gov/equityAtlas/data/newraster/parks1.png',
+  'type': 'heatmap',
+  'nodata': 1,
+  'ul': [-123.51819289449999, 46.0676384925],
+  'step': 0.000885099,
+  'width': 2116,
+  'height': 1372,
+  'theme': 'Parks and Natural Areas',
+  'thumb': 'img/heatmap.jpg'
+}];
 
 Chart.defaults.global.animation = false;
 var DATA, centers_geom, bus_routes, center;
@@ -74,7 +97,7 @@ $(document).ready(function() {
     var center = this.params['center'];
     clearPanel().then(function(){
       if(App.data==null){
-        $.getJSON('./data/data.js').then(function(data) {
+        $.getJSON('./data/newdata.json').then(function(data) {
           App.data= data;
          
           App.center_view(center);
@@ -156,29 +179,33 @@ var App = {
   },
 
   center_view: function(center) {
-    center = center.toLowerCase().replace(' center', '').replace(' – ', '_').replace(' ', '_').replace('/', '_').replace('.', '').replace(' ', '_');
+    center = center.toLowerCase().replace(' center', '').replace(' – ', '_').replace(' ', '_').replace('/', '_').replace('.', '').replace(' ', '_').replace('-','_');
+
+    console.log(center);
    
     $('.container-fluid').append(templates['breadcrumb']({
       title: App.data[center].title
     }));
+
+    var year = 2015;
 
     $('#hh_title').html(App.data[center].title + ' ' + App.data[center].type);
 
     $('.container-fluid').append(templates['narrative_and_numbers_container']);
 
     $('#ghostNarrative, #narrative').html(templates['main'](App.data[center]));
-    //console.log(data.town_centers["Aloha"]);
+    
     $('#amenities').html(templates['amenities']({
       amenities: App.data.amenities,
-      data: App.data[center]
+      data: App.data[center][year]
     }));
 
     var numbers_obj = {
       title: App.data[center].title + ' ' + App.data[center].type,
       type: App.data[center].type,
-      stats: App.data[center].stats,
-      averages: App.data[App.data[center].type.toLowerCase().replace(' ', '_') + '_averages'],
-      stats_1mi_buff: App.data[center].stats_1mi_buff
+      stats: App.data[center][year].stats,
+      averages: App.data[App.data[center].type.toLowerCase().replace(' ', '_') + '_averages'][year],
+      stats_1mi_buff: App.data[center][year].stats_1mi_buff
     }
 
     $('#numbers').html(templates['numbers'](numbers_obj));
@@ -194,14 +221,20 @@ var App = {
   },
   charts: {
     init: function(center) {
-       center = center.toLowerCase().replace(' center', '').replace(' – ', '_').replace(' ', '_').replace('/', '_').replace('.', '').replace(' ', '_');
-       console.warn(App.data[center]);
+       center = center.toLowerCase().replace(' center', '').replace(' – ', '_').replace(' ', '_').replace('/', '').replace('.', '').replace(' ', '_').replace('-','_');
+
       $('.container-fluid').append(templates['charts']({title:App.data[center].title}));
 
-      var html = "<tr><td colspan='" + App.data.data_years.length + "'><label for='inc_slider'>Year</label><input type='range' id='inc_slider' min='" + App.data.data_years[0] + "' max='" + App.data.data_years[App.data.data_years.length - 1] + "' step='2'></td></tr>";
+      var html = "<tr><td rowspan='2'><label for='inc_slider' style='color:#fff;'>Year</label></td><td colspan='" + (App.data.data_years.length+1) + "'><input type='range' id='inc_slider' min='" + App.data.data_years[0] + "' max='" + App.data.data_years[App.data.data_years.length - 1] + "' step='4'></td></tr>";
 
-      for (var key in App.data.data_years) {
-        html += "<td style='text-align:center;'>" + App.data.data_years[key] + "</td>";
+      for (var i = 0;i< App.data.data_years.length;i++) {
+        if(i==0){
+          html += "<td style='text-align:left;color:#fff'>" + App.data.data_years[i] + "</td>";
+        }else if (i>0 && i< App.data.data_years.length-1){
+          html += "<td style='text-align:center;color:#fff'>" + App.data.data_years[i] + "</td>";
+        }else if(i==App.data.data_years.length-1){
+          html += "<td style='text-align:right;color:#fff'>" + App.data.data_years[i] + "</td>";
+        }
       }
 
       html += '</tr>';
@@ -213,6 +246,27 @@ var App = {
       this.createRadarChart(center);
 
       $('#inc_slider').on('input', function() {
+
+        var year = $('#inc_slider').val();
+
+        //change amenities
+        $('#amenities').html(templates['amenities']({
+          amenities: App.data.amenities,
+          data: App.data[center][year]
+        }));
+
+        //change by the numbers
+        var numbers_obj = {
+          title: App.data[center].title + ' ' + App.data[center].type,
+          type: App.data[center].type,
+          stats: App.data[center][year].stats,
+          averages: App.data[App.data[center].type.toLowerCase().replace(' ', '_') + '_averages'][year],
+          stats_1mi_buff: App.data[center][year].stats_1mi_buff
+        };
+
+        $('#numbers').html(templates['numbers'](numbers_obj));
+
+
         App.charts.createBarChart(center);
         App.charts.createPieChart(center);
         App.charts.createRadarChart(center);
@@ -238,9 +292,8 @@ var App = {
 
       var setBarChartData = function() {
         var year = $('#inc_slider').val();
-        var idx = App.data.data_years.indexOf(parseInt(year));
-        barChartData.datasets[0].data = App.data[center].incomes[idx];
-        barChartData.datasets[1].data = App.data[center].incomes_1mi_buff[idx];
+        barChartData.datasets[0].data = App.data[center][year].incomes;
+        barChartData.datasets[1].data = App.data[center][year].incomes_1mi_buff;
       }
 
       setBarChartData();
@@ -278,7 +331,7 @@ var App = {
       var year = $('#inc_slider').val();
       var idx = App.data.data_years.indexOf(parseInt(year));
 
-      radardata.datasets[0].data = App.data[center].context_tool_scores[idx];
+      radardata.datasets[0].data = App.data[center][year].context_tool_scores.slice(0,-1);
 
       var ctx = document.getElementById("radarchart").getContext("2d");
 
@@ -287,7 +340,7 @@ var App = {
       } catch (ex) { //it just didn't exist, not a big deal
       }
 
-      window.myRadarChart = new Chart(ctx).Radar(radardata, {});
+      window.myRadarChart = new Chart(ctx).Radar(radardata, {responsive:true});
     },
     createPieChart: function(center) {
       var pieChartData = [{
@@ -309,12 +362,12 @@ var App = {
         var year = $('#inc_slider').val();
         var idx = App.data.data_years.indexOf(parseInt(year));
 
-        pieChartData[0].value = App.data[center].emp_breakdown[idx][0];
-        $('#tdOther').html(App.data[center].emp_breakdown[idx][0] + '% Other');
-        pieChartData[1].value = App.data[center].emp_breakdown[idx][1];
-        $('#tdRetail').html(App.data[center].emp_breakdown[idx][1] + '% Retail');
-        pieChartData[2].value = App.data[center].emp_breakdown[idx][2];
-        $('#tdService').html(App.data[center].emp_breakdown[idx][2] + '% Service');
+        pieChartData[0].value = App.data[center][year].employment_breakdown[0];
+        $('#tdOther').html(App.data[center][year].employment_breakdown[0] + '% Other');
+        pieChartData[1].value = App.data[center][year].employment_breakdown[1];
+        $('#tdRetail').html(App.data[center][year].employment_breakdown[1] + '% Retail');
+        pieChartData[2].value = App.data[center][year].employment_breakdown[2];
+        $('#tdService').html(App.data[center][year].employment_breakdown[2] + '% Service');
       }
 
       setPieChartData();
@@ -326,7 +379,8 @@ var App = {
       try{
         ctx = document.getElementById("piechart").getContext("2d");
         window.myPie = new Chart(ctx).Pie(pieChartData, {
-          animateRotate: false
+          animateRotate: false,
+          responsive:true
         });
       }catch(ex){
         console.log('failtime'+ex.message)
@@ -337,11 +391,30 @@ var App = {
   map: {
     init: function(center) {
   
-      var map_center = (center!= null) ? App.data[center].centroid : [45.48228066163947, -122.70767211914064];
+      // var map_center = (center!= null) ? App.data[center].centroid : [45.48228066163947, -122.70767211914064];
 
-      var map_zoom = (center!= null) ? 14:11;
+      // var map_zoom = (center!= null) ? 14:11;
+      if (center != null) {
+        var ext = App.data[center].extent;
 
-      map = L.mapbox.map('map').setView(map_center, map_zoom);
+        var newext = [
+          [ext[1], ext[0]],
+          [ext[3], ext[2]]
+        ];
+
+        // map.on('load', function() {
+        //   console.log("i loaded");
+        //   map.fitBounds(newext);
+        // });
+
+        map = L.mapbox.map('map').setView([45.48228066163947, -122.70767211914064], 11);
+        console.log(newext)
+        map.fitBounds(newext)
+      } else {
+        map = L.mapbox.map('map').setView([45.48228066163947, -122.70767211914064], 11);
+      }
+
+
 
       L.tileLayer('//server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
         maxZoom: 21,
