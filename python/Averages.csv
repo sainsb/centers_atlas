@@ -1,0 +1,7 @@
+type,year,Total Population,Avg HH Size,Median HH Income,Median Age,Home Ownership,People/Acre,DU/Acre,Total biz/acre,Total # employees,Market Value ($/ft2),Net Acreage,Total DU,Total Biz,Gross Acreage,
+Town,2011,"2,326",2.42,"$60,133",36.0,47.4%,20.1,5.0,0.72,1745,39,222,1073,120,279,
+Regional,2011," 3,698 ",2.57,"$49,209",32.3,30.0%,24.9,3.4,0.86,8215,37,518,1726,401,649,
+Typologies,2011,5008,1.7,"$44,124",36.6,28.87%,82.4,15.4,N/A,18533,209,174,3758,N/A,272,
+Town,2015,1930,2.297,57659,37.8,46.38%,10.1,5.1,1.9,1785,35,202,933,304,255,
+Regional,2015,3764,2.26,"$40,284",34,25.93%,7.9,3.6,1.8,7090,37,503,1794,822,631,
+Typologies,2015,,,,,,,,,,,,,,,
