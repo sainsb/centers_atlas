@@ -28,5 +28,9 @@
     "grunt-contrib-jst": "^0.6.0",
     "grunt-contrib-uglify": "^0.8.0",
     "grunt-text-replace": "^0.4.0"
+  },
+  "dependencies": {
+    "connect": "^3.4.0",
+    "serve-static": "^1.10.0"
   }
 }
