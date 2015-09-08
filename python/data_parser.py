@@ -111,7 +111,7 @@ def getDataInHere(row):
   for field in [ "<$15000", "$15000-$34999","$35000-$49999", "$50000-$74999", "$75000-$99999", "$100000 +"]:
     try:
       val = str(row[field]).replace('%','')
-      print float(val)
+      #print float(val)
       data[row['NAME']][YEAR]['incomes'].append(float(val))
     except:
       data[row['NAME']][YEAR]['incomes'].append(0)
@@ -195,7 +195,7 @@ def getDataInHere(row):
 
 #Do 2011
 
-csvfile = open(r'2011_all_data.csv', 'r')
+csvfile = open(r'2011_all_data.csv', 'rU')
 reader = csv.DictReader(csvfile)
 #next(reader, None) #skip the header
 
@@ -210,11 +210,6 @@ for row in reader:
     data[row['NAME']]['narrative'] = row['Narrative'].encode('ascii', 'ignore')
   except:
     data[row['NAME']]['narrative'] = row['NAME']
-
-  try: 
-    data[row['NAME']]['extent'] = eval("["+row['extent'].encode('ascii', 'ignore')+"]")
-  except:
-    data[row['NAME']]['extent'] = ""
 
   data[row['NAME']]['title'] = row['NAME']
   data[row['NAME']]['type'] = row['TYPE']
@@ -235,12 +230,18 @@ csvfile.close()
 #print json.dumps(data, indent=4, sort_keys=True)
 
 ## Now do 2015
-csvfile = open(r'2015_all_data.csv', 'r')
+csvfile = open(r'2015_all_data.csv', 'rU')
 reader = csv.DictReader(csvfile)
 next(reader, None) #skip the header
 YEAR = "2015"
 
 for row in reader:
+  try: 
+    print row['extent']
+    data[row['NAME']]['extent'] = eval("["+row['extent'].encode('ascii', 'ignore')+"]")
+
+  except:
+    data[row['NAME']]['extent'] = ""
 
   data[row['NAME']][YEAR] = {}
   data[row['NAME']][YEAR]['incomes'] = []

@@ -199,7 +199,8 @@ var App = {
       amenities: App.data.amenities,
       data: App.data[center][year]
     }));
-
+    console.log(center)
+    console.log(year)
     var numbers_obj = {
       title: App.data[center].title + ' ' + App.data[center].type,
       type: App.data[center].type,
