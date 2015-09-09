@@ -226,21 +226,23 @@ var App = {
 
       $('.container-fluid').append(templates['charts']({title:App.data[center].title}));
 
-      var html = "<tr><td rowspan='2'><label for='inc_slider' style='color:#fff;'>Year</label></td><td colspan='" + (App.data.data_years.length+1) + "'><input type='range' id='inc_slider' min='" + App.data.data_years[0] + "' max='" + App.data.data_years[App.data.data_years.length - 1] + "' step='4'></td></tr>";
+	if(!$('#inc_slider').length){
+		var html = "<tr><td rowspan='2'><label for='inc_slider' style='color:#fff;'>Year</label></td><td colspan='" + (App.data.data_years.length+1) + "'><input type='range' id='inc_slider' min='" + App.data.data_years[0] + "' max='" + App.data.data_years[App.data.data_years.length - 1] + "' step='4'></td></tr>";
 
-      for (var i = 0;i< App.data.data_years.length;i++) {
-        if(i==0){
-          html += "<td style='text-align:left;color:#fff'>" + App.data.data_years[i] + "</td>";
-        }else if (i>0 && i< App.data.data_years.length-1){
-          html += "<td style='text-align:center;color:#fff'>" + App.data.data_years[i] + "</td>";
-        }else if(i==App.data.data_years.length-1){
-          html += "<td style='text-align:right;color:#fff'>" + App.data.data_years[i] + "</td>";
-        }
-      }
+		for (var i = 0;i< App.data.data_years.length;i++) {
+		if(i==0){
+		  html += "<td style='text-align:left;color:#fff'>" + App.data.data_years[i] + "</td>";
+		}else if (i>0 && i< App.data.data_years.length-1){
+		  html += "<td style='text-align:center;color:#fff'>" + App.data.data_years[i] + "</td>";
+		}else if(i==App.data.data_years.length-1){
+		  html += "<td style='text-align:right;color:#fff'>" + App.data.data_years[i] + "</td>";
+		}
+		}
 
-      html += '</tr>';
+		html += '</tr>';
 
-      $('#tblSliderYears').append(html);
+		$('#tblSliderYears').append(html);
+	}
 
       this.createPieChart(center);
       this.createBarChart(center);
@@ -266,7 +268,6 @@ var App = {
         };
 
         $('#numbers').html(templates['numbers'](numbers_obj));
-
 
         App.charts.createBarChart(center);
         App.charts.createPieChart(center);
