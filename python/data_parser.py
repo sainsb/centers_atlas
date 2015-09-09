@@ -39,51 +39,51 @@ if INCLUDE_GLOBAL_DATA:
         "total_du": 1073,
         "total_biz": 120
     },
-                                  "2015":{
-        "total_pop": 2326,
-        "avg_HH_size": 2.42,
-        "med_HH_income": 60133,
-        "med_age": 36.0,
-        "pct_home_ownership": 47.4,
-        "people_per_acre": 20.1,
-        "du_per_acre": 5.0,
-        "total_biz_acre": 0.72,
-        "total_num_employees": 1745,
-        "market_value": 39,
-        "net_acreage": 222,
-        "total_du": 1073,
-        "total_biz": 120
+    "2015":{
+        "total_pop": 1930,
+        "avg_HH_size": 2.297,
+        "med_HH_income": 57659,
+        "med_age": 37.8,
+        "pct_home_ownership": 46.4,
+        "people_per_acre": 10.1,
+        "du_per_acre": 5.1,
+        "total_biz_acre": 1.9,
+        "total_num_employees": 1785,
+        "market_value": 35,
+        "net_acreage": 202,
+        "total_du": 933,
+        "total_biz": 304
     }}
 
   data["regional_center_averages"] = {"2011":{
-        "total_pop": 2326,
-        "avg_HH_size": 2.42,
-        "med_HH_income": 60133,
-        "med_age": 36.0,
-        "pct_home_ownership": 47.4,
-        "people_per_acre": 20.1,
-        "du_per_acre": 5.0,
-        "total_biz_acre": 0.72,
-        "total_num_employees": 1745,
-        "market_value": 39,
-        "net_acreage": 222,
-        "total_du": 1073,
-        "total_biz": 120
+        "total_pop": 3698,
+        "avg_HH_size": 2.57,
+        "med_HH_income": 49209,
+        "med_age": 32.3,
+        "pct_home_ownership": 30,
+        "people_per_acre": 24.9,
+        "du_per_acre": 3.4,
+        "total_biz_acre": .86,
+        "total_num_employees": 8215,
+        "market_value": 37,
+        "net_acreage": 518,
+        "total_du": 1726,
+        "total_biz": 401
     },
-                                  "2015":{
-        "total_pop": 2326,
-        "avg_HH_size": 2.42,
-        "med_HH_income": 60133,
-        "med_age": 36.0,
-        "pct_home_ownership": 47.4,
-        "people_per_acre": 20.1,
-        "du_per_acre": 5.0,
-        "total_biz_acre": 0.72,
-        "total_num_employees": 1745,
-        "market_value": 39,
-        "net_acreage": 222,
-        "total_du": 1073,
-        "total_biz": 120
+     "2015":{
+        "total_pop": 3764,
+        "avg_HH_size": 2.26,
+        "med_HH_income": 40284,
+        "med_age": 34,
+        "pct_home_ownership": 25.93,
+        "people_per_acre": 7.9,
+        "du_per_acre": 3.6,
+        "total_biz_acre": 1.8,
+        "total_num_employees": 7090,
+        "market_value": 37,
+        "net_acreage": 503,
+        "total_du": 1794,
+        "total_biz": 822
     }}
 
   data['data_years'] = [2011,2015]
