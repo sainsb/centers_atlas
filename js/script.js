@@ -79,11 +79,11 @@ $(document).ready(function() {
    });
   });
 
-    Path.map("#yummy").to(function() {
-   clearPanel().then(function(){alert('you made it!')}).then(function(){
-    $('.container-fluid').fadeIn();
-   });
-  });
+  //   Path.map("#yummy").to(function() {
+  //  clearPanel().then(function(){alert('you made it!')}).then(function(){
+  //   $('.container-fluid').fadeIn();
+  //  });
+  // });
 
   Path.map("#home").to(function() {
     clearPanel().then(function(){App.home_view();}).then(function(){
@@ -99,14 +99,14 @@ $(document).ready(function() {
       if(App.data==null){
         $.getJSON('./data/newdata.json').then(function(data) {
           App.data= data;
-         
+
           App.center_view(center);
         });
       } else {
         App.center_view(center);
       }
     }).then(function(){
-    $('.container-fluid').fadeIn(100, function(){
+    $('.container-fluid').fadeIn(1, function(){
 
       App.charts.init(center);
       map.invalidateSize();
@@ -128,6 +128,9 @@ $(document).ready(function() {
 var App = {
 
   data: null,
+  analysis_centers: null,
+  analysis_buffers: null,
+  bus_routes: null,
   home_view: function() {
     $('.container-fluid').append(templates['breadcrumb']({
       title: "Home"
@@ -168,21 +171,20 @@ var App = {
     }));
 
     document.title = "State of the Centers - About";
-    //$('#brc').html("About");
 
     $('.container-fluid').append(templates['about']({
       title: "State of the Centers"
     }));
+
     var d = $.Deferred();
     d.resolve();
     return d.promise();
   },
 
   center_view: function(center) {
+
     center = center.toLowerCase().replace(' center', '').replace(' – ', '_').replace(' ', '_').replace('/', '_').replace('.', '').replace(' ', '_').replace('-','_');
 
-    console.log(center);
-   
     $('.container-fluid').append(templates['breadcrumb']({
       title: App.data[center].title
     }));
@@ -196,18 +198,17 @@ var App = {
     $('#ghostNarrative, #narrative').html(templates['main'](App.data[center]));
     
     $('#amenities').html(templates['amenities']({
-      amenities: App.data.amenities,
-      data: App.data[center][year]
+     amenities: App.data.amenities,
+     data: App.data[center][year]
     }));
-    console.log(center)
-    console.log(year)
+
     var numbers_obj = {
       title: App.data[center].title + ' ' + App.data[center].type,
       type: App.data[center].type,
       stats: App.data[center][year].stats,
       averages: App.data[App.data[center].type.toLowerCase().replace(' ', '_') + '_averages'][year],
       stats_1mi_buff: App.data[center][year].stats_1mi_buff
-    }
+    };
 
     $('#numbers').html(templates['numbers'](numbers_obj));
 
@@ -397,6 +398,11 @@ var App = {
 
       // var map_zoom = (center!= null) ? 14:11;
       if (center != null) {
+      	
+      	// if(typeof(map.on) !='undefined'){
+      	// 	map=null;
+      	// }
+
         var ext = App.data[center].extent;
 
         var newext = [
@@ -404,21 +410,9 @@ var App = {
           [ext[3], ext[2]]
         ];
 
-        // map.on('load', function() {
-        //   console.log("i loaded");
-        //   map.fitBounds(newext);
-        // });
+		map = L.mapbox.map('map');
 
-        map = L.mapbox.map('map').setView([45.48228066163947, -122.70767211914064], 11);
-        console.log(newext)
-        map.fitBounds(newext)
-      } else {
-        map = L.mapbox.map('map').setView([45.48228066163947, -122.70767211914064], 11);
-      }
-
-
-
-      L.tileLayer('//server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
+		L.tileLayer('//server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
         maxZoom: 21,
         attribution: 'ESRI'
       }).addTo(map);
@@ -442,6 +436,17 @@ var App = {
         attribution: 'RLIS'
       }).addTo(map);
 
+        map.on('load', function() {
+        	setTimeout(function(){console.log('I did it');
+        		map.fitBounds(newext);},100);
+        });
+        
+        map.setView([ext[1], ext[0]], 15);
+
+      } else {
+        map = L.mapbox.map('map').setView([45.48228066163947, -122.70767211914064], 11);
+      }
+
       // L.tileLayer('//gis.oregonmetro.gov/ArcGIS/rest/services/metromap/baseAnno/MapServer/tile/{z}/{y}/{x}?token=xPLxWVBTxtoj_Mtop4cOywUPHY6c2St2pTeS-Hg8t04.', {
       //  maxZoom: 21,
       //  attribution: 'RLIS'
@@ -455,90 +460,117 @@ var App = {
               map.panTo(map.unproject(px), {animate: true}); // pan to new center
           });
       }else{
-
         App.map.addHeatmapControls();
-
       }
-      $.getJSON('./data/analysis_buffers.json').then(function(anal_buffer) {
-        var buffers = L.geoJson(anal_buffer, {
-          style: {
-            color: '#334D59',
-            weight: 1,
-            fillOpacity: .1,
-            opacity: .1
-          }
-        })
 
-        if (center != null) {
-          map.addLayer(buffers);
-        }
+		var add_analysis_buffers = function(data) {
 
-        $.getJSON('./data/analysis_centers.json').then(function(anal_center) {
+			App.analysis_buffers = data;
 
-          var onEachFeature = function(feature, layer) {
-            var htm = '<b>' + feature.properties.NAME + '</b><br/>' + feature.properties.TYPE + '<br/><a href="./#center/' + feature.properties.NAME + '">View in Atlas</a>';
-            layer.bindPopup(htm);
-          }
+			analysis_buffers = L.geoJson(data, {
+				style: {
+					color: '#334D59',
+					weight: 1,
+					fillOpacity: .1,
+					opacity: .1
+				}
+			})
 
-          centers_geom = L.geoJson(anal_center, {
-            style: function(feature) {
-              var style = {
-                fillOpacity: .3,
-                opacity: .8,
-                weight: 1
-              };
-              switch (feature.properties.TYPE) {
-                case "Central City":
-                  style.color = '#AA5656';
-                  style.opacity = 0;
-                  style.fillOpacity = 0;
-                  break;
-                case "Regional Center":
-                  style.color = '#859F50';
-                  break;
-                case "Town Center":
-                  style.color = '#346666';
-                  break;
-              }
-              return style;
-            },
-            onEachFeature: onEachFeature
-          })
-          map.addLayer(centers_geom);
-        });
 
-        map.on('zoomend', function() {
-          if (map.getZoom() > 13) {
-            map.addLayer(bus_routes);
-          } else {
-            map.removeLayer(bus_routes);
-          }
-        });
+			if (center != null) {
+				map.addLayer(analysis_buffers);
+			}
+		};
 
-        $.getJSON('./data/bus_routes.json').then(function(bus_data) {
-          bus_routes = L.geoJson(bus_data, {
-            style: {
-              fillOpacity: .3,
-              opacity: .3,
-              weight: 3,
-              color: '#4D5E66',
-              fillColor: '#FF0000'
-            }
-          });
+		var add_analysis_centers = function(data) {
 
-          bus_routes.on('mouseover', function(e) {
-            var route = e.layer.feature.properties.ROUTES;
-            $('#hoverInfo').css('top', (window.pageYOffset + e.originalEvent.clientY) + 'px');
-            $('#hoverInfo').css('left', (window.pageXOffset + e.originalEvent.clientX + 13) + 'px');
-            $('#hoverInfo').html("Bus routes: " + route);
-            $('#hoverInfo').fadeIn(70);
-          });
-          bus_routes.on('mouseout', function(e) {
-            $('#hoverInfo').fadeOut(70);
-          });
-        });
-      });
-    },
+			App.analysis_centers = data;
+
+			var onEachFeature = function(feature, layer) {
+				var htm = '<b>' + feature.properties.NAME + '</b><br/>' + feature.properties.TYPE + '<br/><a href="./#center/' + feature.properties.NAME + '">View in Atlas</a>';
+				layer.bindPopup(htm);
+			};
+
+			analysis_centers = L.geoJson(data, {
+				style: function(feature) {
+					var style = {
+						fillOpacity: .3,
+						opacity: .8,
+						weight: 1
+					};
+					switch (feature.properties.TYPE) {
+						case "Central City":
+							style.color = '#AA5656';
+							style.opacity = 0;
+							style.fillOpacity = 0;
+							break;
+						case "Regional Center":
+							style.color = '#859F50';
+							break;
+						case "Town Center":
+							style.color = '#346666';
+							break;
+					}
+					return style;
+				},
+				onEachFeature: onEachFeature
+			});
+			map.addLayer(analysis_centers);
+		}
+
+		var add_bus_routes = function(data){
+
+			App.bus_routes = data;
+
+			bus_routes = L.geoJson(data, {
+					style: {
+						fillOpacity: .3,
+						opacity: .3,
+						weight: 3,
+						color: '#4D5E66',
+						fillColor: '#FF0000'
+					}
+				});
+
+			bus_routes.on('mouseover', function(e) {
+				var route = e.layer.feature.properties.ROUTES;
+				$('#hoverInfo').css('top', (window.pageYOffset + e.originalEvent.clientY) + 'px');
+				$('#hoverInfo').css('left', (window.pageXOffset + e.originalEvent.clientX + 13) + 'px');
+				$('#hoverInfo').html("Bus routes: " + route);
+				$('#hoverInfo').fadeIn(70);
+			});
+
+			bus_routes.on('mouseout', function(e) {
+				$('#hoverInfo').fadeOut(70);
+			});
+
+			map.on('zoomend', function() {
+				if (map.getZoom() > 13) {
+					map.addLayer(bus_routes);
+				} else {
+					map.removeLayer(bus_routes);
+				}
+			});
+		};
+
+		if (App.analysis_buffers == null) {
+			$.getJSON('./data/analysis_buffers.json').then(function(analysis_buffer_data) {
+				add_analysis_buffers(analysis_buffer_data);
+				$.getJSON('./data/analysis_centers.json').then(function(analysis_centers_data) {
+					add_analysis_centers(analysis_centers_data);
+				});
+				$.getJSON('./data/bus_routes.json').then(function(bus_data) {
+					add_bus_routes(bus_data);
+				});
+				map.fitBounds(newext);
+			});
+		} else{
+			add_analysis_buffers(App.analysis_buffers);
+			add_analysis_centers(App.analysis_centers);
+			add_bus_routes(App.bus_routes);
+			map.fitBounds(newext);
+		}
+	},
 
     addHeatmapControls : function(){
         var command = L.control({
