@@ -1,16 +1,34 @@
 State of the Centers Atlas
 
-Current Build: 0.0.0.7
-Release Date: 2015-07-20
+Current Build: 0.0.5
+Release Date: 2015-09-21
 
 App Notes:
-Aweb-based version of the state of the centers atlas.
+A web-based version of the state of the centers atlas.
 
 Initial Development: 
 	Developed by BNS
 	qa url: https://gis.oregonmetro.gov/dev/soc/#Aloha
 	issue tracking: 
 
+------------Sep 21, 2015 v0.0.5-------------------
+
+## Bugs Fixed
+- Centers zoom to their extent upon page load
+- Household income bar chart and Context Tool scores graphs set to static scales
+- Center changes respect slider year
+- Slider does not get re-created if it already exists
+- Added slider padding
+
+## Enhancements
+- Restricted map zoom and pan to Metro Region
+- Adjusted color gradient, resolution, radius, and blur of heatmap - not perfect, but looks a lot better.
+- Changed newdata.json to data.json, deleted data.js
+
+## Todo
+- Forest Grove Employment breakdown numbers
+- Typology averages... (?)
+- Happy Valley incomes 2011
 
 ------------Jul 20, 2015 v0.0.0.7-------------------------
 
