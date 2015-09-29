@@ -184,6 +184,12 @@
             -122.85176, 
             45.502793
         ], 
+        "images": [
+            "./photos/Aloha/1.jpg", 
+            "./photos/Aloha/2.jpg", 
+            "./photos/Aloha/3.jpg", 
+            "./photos/Aloha/4.jpg"
+        ], 
         "narrative": "The Aloha Town Center is located along Tualatin Valley Highway, running north and south along 185th Avenue, within Washington County. The center has one ODOT facility within its boundary: Southwest Tualatin Valley Highway (State Highway 8), which connects Beaverton to Hillsboro. Auto-oriented retail locations serve the surrounding community along Southwest Tualatin Valley Highway. The center has 6,610 residents, 1,000 employees and 2,520 dwelling units. Aloha Town Center contains 511 gross acres.", 
         "title": "Aloha", 
         "type": "Town Center"
@@ -400,6 +406,12 @@
             -122.791915, 
             45.494784
         ], 
+        "images": [
+            "./photos/Beaverton/1.jpg", 
+            "./photos/Beaverton/2.jpg", 
+            "./photos/Beaverton/3.jpg", 
+            "./photos/Beaverton/4.jpg"
+        ], 
         "narrative": "The Beaverton Regional Center serves as a retail and transportation hub for Beaverton and unincorporated Washington County. Located directly west of Highway 217 and south of Highway 26, the center is served by several additional ODOT facilities, including State Highway 8 and 10. Two MAX stops, as well as a regional transit center, provide extensive transit service in and out of the center. The center has 2,290 residents, 5,290 employees and 1,047 dwelling units. Beaverton Regional Center contains 407 gross acres.", 
         "title": "Beaverton", 
         "type": "Regional Center"
@@ -588,6 +600,12 @@
             45.550578, 
             -122.829109, 
             45.558314
+        ], 
+        "images": [
+            "./photos/Bethany/1.jpg", 
+            "./photos/Bethany/2.jpg", 
+            "./photos/Bethany/3.jpg", 
+            "./photos/Bethany/4.jpg"
         ], 
         "narrative": "The Bethany Town Center is located in northern Washington County, along Bethany Road. The area, in unincorporated Washington County, has no direct highway access and is not serviced by any ODOT facilities. The center is primarily a local retail shopping destination and multi-family housing location. It has 1,641 residents, 649 employees and 868 dwelling units. Bethany Town Center contains 122 gross acres.", 
         "title": "Bethany", 
@@ -778,6 +796,12 @@
             -122.795338, 
             45.531118
         ], 
+        "images": [
+            "./photos/Cedar-Mill/1.jpg", 
+            "./photos/Cedar-Mill/2.jpg", 
+            "./photos/Cedar-Mill/3.jpg", 
+            "./photos/Cedar-Mill/4.jpg"
+        ], 
         "narrative": "The Cedar Mill Town Center is located north of Highway 26, along Cornell Road in unincorporated Washington County. The center is accessed by two major arterials, Cornell and Murray roads, and is not served by any ODOT facilities. The area is characterized by single-family housing and local retail shopping. It has 3,185 residents, 1,476 employees and 1,735 dwelling units. Cedar Mill Town Center contains 338 gross acres.", 
         "title": "Cedar Mill", 
         "type": "Town Center"
@@ -967,6 +991,12 @@
             -122.555829, 
             45.44334
         ], 
+        "images": [
+            "./photos/Clackamas/1.jpg", 
+            "./photos/Clackamas/2.jpg", 
+            "./photos/Clackamas/3.jpg", 
+            "./photos/Clackamas/4.jpg"
+        ], 
         "narrative": "The Clackamas Regional Center is located directly adjacent to Interstate 205 and serves as the retail hub of northern Clackamas County and much of East Portland. Located in unicorporated Clackamas county, the center is home to a large regional mall and many destination shops and services. It is the final southbound stop on the newly opened MAX Green Line. This MAX station is also home to a 750-space park-and-ride facility, which allows for extended transit service to 10 bus lines. The regional center is part of an active urban renewal district and contains abundant surface parking. The center has 5,227 residents, 12,059 employees and 2,680 dwelling units. Clackamas Regional Center contains 631 gross acres.", 
         "title": "Clackamas", 
         "type": "Regional Center"
@@ -1151,6 +1181,12 @@
             }
         }, 
         "extent": [], 
+        "images": [
+            "./photos/Clinton/1.jpg", 
+            "./photos/Clinton/2.jpg", 
+            "./photos/Clinton/3.jpg", 
+            "./photos/Clinton/4.jpg"
+        ], 
         "narrative": "", 
         "title": "Clinton", 
         "type": "Typology"
@@ -1349,6 +1385,12 @@
             -123.043222, 
             45.527023
         ], 
+        "images": [
+            "./photos/Cornelius/1.jpg", 
+            "./photos/Cornelius/2.jpg", 
+            "./photos/Cornelius/3.jpg", 
+            "./photos/Cornelius/4.jpg"
+        ], 
         "narrative": "The Cornelius Town Center is located along Highway 8, in downtown Cornelius, between downtown Hillsboro and Forest Grove. The center has no major interstate access, but is served by one ODOT facility, Southwest Tualatin Valley Highway (State Highway 8). One frequent service bus line runs along Highway 8, with a connection to Hillsboro and the MAX line. The center has 1,864 residents, 352 employees and 722 dwelling units. Cornelius Town Center contains 282 gross acres.", 
         "title": "Cornelius", 
         "type": "Town Center"
@@ -1538,6 +1580,12 @@
             -122.449501, 
             45.421475
         ], 
+        "images": [
+            "./photos/Damascus/1.jpg", 
+            "./photos/Damascus/2.jpg", 
+            "./photos/Damascus/3.jpg", 
+            "./photos/Damascus/4.jpg"
+        ], 
         "narrative": "The Damascus Town Center is located in the southeastern portion of the region. The city, incorporated in 2004, has adopted a comprehensive plan but still has low-density rural zoning in place. The new plan calls for Damascus Town Center to relocate. The Damascus center has no direct access to the interstate system, but is bisected by the ODOT facility State Highway 212. The center has no transit service available. Damascus has 263 residents, 555 employees and 88 dwelling units. Damascus Town Center contains 236 gross acres.", 
         "title": "Damascus", 
         "type": "Town Center"
@@ -1726,6 +1774,12 @@
             }
         }, 
         "extent": [], 
+        "images": [
+            "./photos/DT-and-the-Pearl/1.jpg", 
+            "./photos/DT-and-the-Pearl/2.jpg", 
+            "./photos/DT-and-the-Pearl/3.jpg", 
+            "./photos/DT-and-the-Pearl/4.jpg"
+        ], 
         "narrative": "", 
         "title": "DT and the Pearl", 
         "type": "Typology"
@@ -1914,6 +1968,12 @@
             45.527819, 
             -122.426001, 
             45.536372
+        ], 
+        "images": [
+            "./photos/Fairview/1.jpg", 
+            "./photos/Fairview/2.jpg", 
+            "./photos/Fairview/3.jpg", 
+            "./photos/Fairview/4.jpg"
         ], 
         "narrative": "The Fairview/Wood Village Town Center is a combination of two local jurisdictions, located south of Interstate 84 at the intersection of Halsey Avenue and Fairview Road. The town center has direct access to I-84 and is serviced by the major arterials of Halsey and Glisan streets, but is not served by any major ODOT facilities. Both Wood Village and Fairview are serviced by two bus lines, one of which is a frequent service route. The center has 2,199 residents, 755 employees and 813 dwelling units. Fairview/Wood Village Town Center contains 287 gross acres.", 
         "title": "Fairview", 
@@ -2104,6 +2164,12 @@
             -123.104897, 
             45.524368
         ], 
+        "images": [
+            "./photos/Forest-Grove/1.jpg", 
+            "./photos/Forest-Grove/2.jpg", 
+            "./photos/Forest-Grove/3.jpg", 
+            "./photos/Forest-Grove/4.jpg"
+        ], 
         "narrative": "The Forest Grove Town Center is located on the far western edge of the region. The town center functions as the cultural and commercial heart of the town and is the home of Pacific University, which adds a student population. It has no major interstate access but is directly accessed by the ODOT facility State Highway 8. One frequent service bus line runs along Highway 8 with a connection to Hillsboro and the MAX line. The center has 991 residents (not counting students), 1,326 employees and 460 dwelling units. Forest Grove Town Center contains 107 gross acres.", 
         "title": "Forest Grove", 
         "type": "Town Center"
@@ -2292,6 +2358,12 @@
             45.51095, 
             -122.544551, 
             45.538102
+        ], 
+        "images": [
+            "./photos/Gateway/1.jpg", 
+            "./photos/Gateway/2.jpg", 
+            "./photos/Gateway/3.jpg", 
+            "./photos/Gateway/4.jpg"
         ], 
         "narrative": "The Gateway Regional Center serves the northeast and eastern portions of Portland along with shoppers and travelers from most locations east of the Willamette River and both sides of the Columbia River. The center is well connected to the entire region through the major transportation corridors of Interstate 205 and Interstate 84. Additionally, the Gateway transit center serves the Blue, Green and Red MAX lines, six bus lines, and contains 690 parking spaces devoted to park-and-ride commuters. Gateway is part of an active urban renewal district. The center has 8,709 residents, 7,447 employees and 3,878 dwelling units. Gateway Regional Center contains 809 gross acres.", 
         "title": "Gateway", 
@@ -2482,6 +2554,12 @@
             -122.591344, 
             45.385895
         ], 
+        "images": [
+            "./photos/Gladstone/1.jpg", 
+            "./photos/Gladstone/2.jpg", 
+            "./photos/Gladstone/3.jpg", 
+            "./photos/Gladstone/4.jpg"
+        ], 
         "narrative": "The Gladstone Town Center is located along the former street car line on Portland Avenue. Gladstone has no direct interstate access but has one ODOT facility, McLoughlin Boulevard, located a half mile west of the town center. The center is serviced by two bus lines and a grid street network pattern, encouraging pedestrian connectivity from the surrounding neighborhood to the main street. The center has 939 residents, 289 employees and 342 dwelling units. Gladstone Town Center contains 85 gross acres.", 
         "title": "Gladstone", 
         "type": "Town Center"
@@ -2670,6 +2748,12 @@
             45.49453, 
             -122.413895, 
             45.512677
+        ], 
+        "images": [
+            "./photos/Gresham/1.jpg", 
+            "./photos/Gresham/2.jpg", 
+            "./photos/Gresham/3.jpg", 
+            "./photos/Gresham/4.jpg"
         ], 
         "narrative": "The Gresham Regional Center serves eastern Multnomah County with destination shopping and dining. The center encompasses two distinct neighborhoods: Civic Neighborhood and downtown Gresham. Although not on an interstate highway, the center is served by State Highway 26 (Powell Boulevard), and multiple east-west arterials. Downtown Gresham is the eastern terminus of the MAX Blue Line, which contains a 540-space park-and-ride facility and serves eight separate bus lines. The newly opened Civic Station MAX stop is developing into a transit-oriented site, with ongoing public and private investments. The center has 4,684 residents, 6,902 employees and 2,098 dwelling units. Gresham Regional Center contains 692 gross acres.", 
         "title": "Gresham", 
@@ -2860,6 +2944,12 @@
             -122.480514, 
             45.430129
         ], 
+        "images": [
+            "./photos/Happy-Valley/1.jpg", 
+            "./photos/Happy-Valley/2.jpg", 
+            "./photos/Happy-Valley/3.jpg", 
+            "./photos/Happy-Valley/4.jpg"
+        ], 
         "narrative": "The Happy Valley Town Center has relocated since the 2009 State of the Centers report to the intersection of Southeast 162nd Avenue and Sunnyside Road. It is the retail and government center of Happy Valley and is served by a limited service bus line along Sunnyside Road. There are no ODOT facilities within the town center. The center has 500 residents, 400 employees and 244 dwelling units. Happy Valley Town Center contains 212 gross acres.", 
         "title": "Happy Valley", 
         "type": "Town Center"
@@ -3049,6 +3139,12 @@
             -122.963573, 
             45.52838
         ], 
+        "images": [
+            "./photos/Hillsboro/1.jpg", 
+            "./photos/Hillsboro/2.jpg", 
+            "./photos/Hillsboro/3.jpg", 
+            "./photos/Hillsboro/4.jpg"
+        ], 
         "narrative": "The Hillsboro Regional Center serves jurisdictions in the western part of region such as Forest Grove and Cornelius as well as rural portions of Washington County. Historic downtown Hillsboro is within the regional center, and is home to the Hillsboro Civic Building, Washington County Courthouse, a satellite campus of Pacific University, and Tuality Community Hospital. The center is the western terminus of the MAX Blue Line, and contains the Hillsboro Central Transit Center, which serves five bus lines. The nearby Hatfield Government Center parking garage contains 250 available spaces for park-and-ride users. The center has 2,336 residents, 6,122 employees and 784 dwelling units. Hillsboro Regional Center contains 295 gross acres.", 
         "title": "Hillsboro", 
         "type": "Regional Center"
@@ -3233,6 +3329,12 @@
             }
         }, 
         "extent": [], 
+        "images": [
+            "./photos/Hillsdale/1.jpg", 
+            "./photos/Hillsdale/2.jpg", 
+            "./photos/Hillsdale/3.jpg", 
+            "./photos/Hillsdale/4.jpg"
+        ], 
         "narrative": "", 
         "title": "Hillsdale", 
         "type": "Typology"
@@ -3421,6 +3523,12 @@
             45.531402, 
             -122.614277, 
             45.538336
+        ], 
+        "images": [
+            "./photos/Hollywood/1.jpg", 
+            "./photos/Hollywood/2.jpg", 
+            "./photos/Hollywood/3.jpg", 
+            "./photos/Hollywood/4.jpg"
         ], 
         "narrative": "The Hollywood Town Center surrounds the intersection of Sandy Boulevard and Northeast Halsey Avenue. The area is high in employment concentrations and housing relative to its size. The center serves the local population with retail services, but also draws from the region due to the development of a concentration of specialty retail. The center has direct access to Interstate 84, is serviced by one MAX stop, and has multiple bus lines that include frequent service routes. The center has 1,100 residents, 3,030 employees and 829 dwelling units. Hollywood Town Center contains 105 gross acres.", 
         "title": "Hollywood", 
@@ -3619,6 +3727,12 @@
             -122.792051, 
             45.409013
         ], 
+        "images": [
+            "./photos/King-City/1.jpg", 
+            "./photos/King-City/2.jpg", 
+            "./photos/King-City/3.jpg", 
+            "./photos/King-City/4.jpg"
+        ], 
         "narrative": "The King City Town Center is bisected by Southwest Pacific Highway (Highway 99 West), an ODOT facility. A single frequent service bus line runs along 99W, allowing for service from King City to surrounding communities along 99W and into central Portland. The center has 465 residents, 1,075 employees and 300 dwelling units. King City Town Center contains 94 gross acres.", 
         "title": "King City", 
         "type": "Town Center"
@@ -3807,6 +3921,12 @@
             45.403388, 
             -122.714944, 
             45.418273
+        ], 
+        "images": [
+            "./photos/Lake-Grove/1.jpg", 
+            "./photos/Lake-Grove/2.jpg", 
+            "./photos/Lake-Grove/3.jpg", 
+            "./photos/Lake-Grove/4.jpg"
         ], 
         "narrative": "The Lake Grove Town Center is located roughly at the intersection of Boones Ferry Road and Kruse Way. Lake Grove is serviced by two separate bus lines that allow for connectivity to downtown Lake Oswego, Portland and parts of eastern Washington County. The center has 377 residents, 2,426 employees and 234 dwelling units. Lake Grove Town Center contains 118 gross acres.", 
         "title": "Lake Grove", 
@@ -3997,6 +4117,12 @@
             -122.655718, 
             45.42561
         ], 
+        "images": [
+            "./photos/Lake-Oswego/1.jpg", 
+            "./photos/Lake-Oswego/2.jpg", 
+            "./photos/Lake-Oswego/3.jpg", 
+            "./photos/Lake-Oswego/4.jpg"
+        ], 
         "narrative": "The Lake Oswego Town Center covers the majority of downtown and land along the Willamette River waterfront. The town center is serviced by three separate bus lines that connect to Portland and eastern Washington County. Highway 43, an ODOT facility, serves the center. The center has 2,194 residents, 2,054 employees and 1,429 dwelling units. Lake Oswego Town Center contains 218 gross acres.", 
         "title": "Lake Oswego", 
         "type": "Town Center"
@@ -4186,11 +4312,17 @@
             -122.556044, 
             45.482864
         ], 
+        "images": [
+            "./photos/Lents/1.jpg", 
+            "./photos/Lents/2.jpg", 
+            "./photos/Lents/3.jpg", 
+            "./photos/Lents/4.jpg"
+        ], 
         "narrative": "The Lents Town Center is located at the intersection of Interstate 205, an ODOT facility, and Foster Road in Southeast Portland. An Interstate 205 interchange, an ODOT facility, runs through the town center, offering direct auto access. The area is serviced by two bus lines (one of which is frequent service) and the MAX Green Line with a station at Foster Road. The center has 1,653 residents, 312 employees and 636 dwelling units. Lents Town Center contains 155 gross acres.", 
         "title": "Lents", 
         "type": "Town Center"
     }, 
-    "lloydirvington": {
+    "lloyd_irvington": {
         "2011": {
             "context_tool_scores": [
                 4.13, 
@@ -4370,6 +4502,12 @@
             }
         }, 
         "extent": [], 
+        "images": [
+            "./photos/Lloyd-Irvington/1.jpg", 
+            "./photos/Lloyd-Irvington/2.jpg", 
+            "./photos/Lloyd-Irvington/3.jpg", 
+            "./photos/Lloyd-Irvington/4.jpg"
+        ], 
         "narrative": "", 
         "title": "Lloyd/Irvington", 
         "type": "Typology"
@@ -4559,11 +4697,17 @@
             -122.619527, 
             45.451752
         ], 
+        "images": [
+            "./photos/Milwaukie/1.jpg", 
+            "./photos/Milwaukie/2.jpg", 
+            "./photos/Milwaukie/3.jpg", 
+            "./photos/Milwaukie/4.jpg"
+        ], 
         "narrative": "The Milwaukie Town Center represents the historic main street of downtown Milwaukie, the Highway 224 corridor and the surrounding residential neighborhoods in the area. The area is served by multiple bus lines, has a downtown transit center and will have a light rail station when the MAX line is continued to Milwaukie within the next 5 years. The center has 3,694 residents, 3,368 employees and 1,877 dwelling units. Milwaukie Town Center contains 579 gross acres.", 
         "title": "Milwaukie", 
         "type": "Town Center"
     }, 
-    "murrayscholls": {
+    "murray_scholls": {
         "2011": {
             "context_tool_scores": [
                 4.53, 
@@ -4747,6 +4891,12 @@
             45.426593, 
             -122.821458, 
             45.43856
+        ], 
+        "images": [
+            "./photos/Murray-Scholls/1.jpg", 
+            "./photos/Murray-Scholls/2.jpg", 
+            "./photos/Murray-Scholls/3.jpg", 
+            "./photos/Murray-Scholls/4.jpg"
         ], 
         "narrative": "The Murray/Scholls Town Center in Beaverton is located at the intersection of Murray Boulevard and Scholls Ferry Road. A mixture of single- and multi-family residential units represent the majority of land uses within the center boundaries. The center has no direct interstate or highway access and is serviced by two bus lines, one along Murray Boulevard and another along Scholls Ferry Road. The center has 2,507 residents, 47 employees and 1,322 dwelling units. Murray/ Scholls Town Center contains 204 gross acres.", 
         "title": "Murray/Scholls", 
@@ -4932,6 +5082,12 @@
             }
         }, 
         "extent": [], 
+        "images": [
+            "./photos/Nob-Hill/1.jpg", 
+            "./photos/Nob-Hill/2.jpg", 
+            "./photos/Nob-Hill/3.jpg", 
+            "./photos/Nob-Hill/4.jpg"
+        ], 
         "narrative": "", 
         "title": "Nob Hill", 
         "type": "Typology"
@@ -5120,6 +5276,12 @@
             45.348135, 
             -122.58247, 
             45.378675
+        ], 
+        "images": [
+            "./photos/Oregon-City/1.jpg", 
+            "./photos/Oregon-City/2.jpg", 
+            "./photos/Oregon-City/3.jpg", 
+            "./photos/Oregon-City/4.jpg"
         ], 
         "narrative": "The Oregon City Regional Center is the southernmost regional center, serving Clackamas County and neighboring cities. The oldest incorporated city in Oregon, the center abuts the Willamette River and is known for its historic, small town feel. The transportation network consists of direct access to Interstate 205 and the additional ODOT facilities of McLoughlin Boulevard (Highway 99 East) and Highway 213. The center has 256 residents, 3,380 employees and 125 dwelling units. The center is served by several bus lines, and is included for a potential high capacity transit service in the the Regional Transportation Plan. Oregon City Regional Center contains 503 gross acres.", 
         "title": "Oregon City", 
@@ -5310,6 +5472,12 @@
             -122.899793, 
             45.539691
         ], 
+        "images": [
+            "./photos/Orenco/1.jpg", 
+            "./photos/Orenco/2.jpg", 
+            "./photos/Orenco/3.jpg", 
+            "./photos/Orenco/4.jpg"
+        ], 
         "narrative": "The Orenco Town Center in Hillsboro functions as a local retail destination and medium-density housing location. No major interstate access is available to the town center however, the major arterial of Cornell Road bisects it. The center is serviced by multiple bus lines and a MAX stop, located within its southern portion. The center has 3,200 residents, 1,175 employees and 1,910 dwelling units. Orenco Town Center contains 235 gross acres.", 
         "title": "Orenco", 
         "type": "Town Center"
@@ -5499,6 +5667,12 @@
             -122.480755, 
             45.475361
         ], 
+        "images": [
+            "./photos/Pleasant-Valley/1.jpg", 
+            "./photos/Pleasant-Valley/2.jpg", 
+            "./photos/Pleasant-Valley/3.jpg", 
+            "./photos/Pleasant-Valley/4.jpg"
+        ], 
         "narrative": "The Pleasant Valley Town Center in Gresham is a rural area brought into the urban growth boundary in 1998. It has no direct highway access and is serviced by Foster Road, the only major street in the center. No bus service is available in Pleasant Valley. Urban development has yet to occur with any frequency in this center. It has 31 residents, 17 employees and 14 dwelling units. Pleasant Valley Town Center contains 77 gross acres.", 
         "title": "Pleasant Valley", 
         "type": "Town Center"
@@ -5593,6 +5767,12 @@
                 "total_pop": ""
             }
         }, 
+        "images": [
+            "./photos/Portland/1.jpg", 
+            "./photos/Portland/2.jpg", 
+            "./photos/Portland/3.jpg", 
+            "./photos/Portland/4.jpg"
+        ], 
         "narrative": "", 
         "title": "Portland", 
         "type": "Central City"
@@ -5781,6 +5961,12 @@
             45.483415, 
             -122.734725, 
             45.489752
+        ], 
+        "images": [
+            "./photos/Raleigh-Hills/1.jpg", 
+            "./photos/Raleigh-Hills/2.jpg", 
+            "./photos/Raleigh-Hills/3.jpg", 
+            "./photos/Raleigh-Hills/4.jpg"
         ], 
         "narrative": "The Raleigh Hills Town Center is located at the intersection of the Beaverton- Hillsdale Highway, an ODOT facility, and Scholls Ferry Road in unincorporated Washington County, adjacent to Portland. The center is served by three separate bus lines, two of which are frequent service. It has 1,599 residents, 1,800 employees and 948 dwelling units. Raleigh Hills Town Center contains 153 gross acres.", 
         "title": "Raleigh Hills", 
@@ -6003,6 +6189,12 @@
             -122.455099, 
             45.532928
         ], 
+        "images": [
+            "./photos/Rockwood/1.jpg", 
+            "./photos/Rockwood/2.jpg", 
+            "./photos/Rockwood/3.jpg", 
+            "./photos/Rockwood/4.jpg"
+        ], 
         "narrative": "The Rockwood Town Center is located along the Eastside MAX line in Gresham. The center is bisected by two major arterials, Burnside and Stark streets. Two separate MAX stops are within the town center boundaries, as well as two bus lines along Stark Street and 182nd Avenue. The center has 16,456 residents, 2,264 employees and 6,278 dwelling units. Rockwood Town Center contains 1,029 gross acres.", 
         "title": "Rockwood", 
         "type": "Town Center"
@@ -6191,6 +6383,12 @@
             45.364087, 
             -122.836199, 
             45.371289
+        ], 
+        "images": [
+            "./photos/Sherwood/1.jpg", 
+            "./photos/Sherwood/2.jpg", 
+            "./photos/Sherwood/3.jpg", 
+            "./photos/Sherwood/4.jpg"
         ], 
         "narrative": "The Sherwood Town Center is located at the junction of Highway 99 West, an ODOT facility, and Tualatin-Sherwood Road. Sherwood has no direct interstate access. One bus line services the town center and continues to the Old Town portion of downtown Sherwood. Sherwood has 138 residents, 1,325 employees and 69 dwelling units. Sherwood Town Center contains 109 gross acres.", 
         "title": "Sherwood", 
@@ -6381,6 +6579,12 @@
             -122.748098, 
             45.594032
         ], 
+        "images": [
+            "./photos/St-Johns/1.jpg", 
+            "./photos/St-Johns/2.jpg", 
+            "./photos/St-Johns/3.jpg", 
+            "./photos/St-Johns/4.jpg"
+        ], 
         "narrative": "The St. Johns Town Center is located in North Portland, adjacent to the Willamette River. St. Johns has no direct interstate access, but can access U.S. Highway 30 by crossing the Willamette River at the St. Johns Bridge. The area is served by five bus lines, including one frequent service line, allowing for multiple transportation options both in and out of the center. St. Johns has 437 residents, 857 employees and 219 dwelling units. St. Johns Town Center contains 70 gross acres.", 
         "title": "St. Johns", 
         "type": "Town Center"
@@ -6570,11 +6774,17 @@
             -122.77108, 
             45.520039
         ], 
+        "images": [
+            "./photos/Sunset-Transit/1.jpg", 
+            "./photos/Sunset-Transit/2.jpg", 
+            "./photos/Sunset-Transit/3.jpg", 
+            "./photos/Sunset-Transit/4.jpg"
+        ], 
         "narrative": "The Sunset Transit Town Center in unincorporated Washington County, adjacent to Beaverton, is located at the intersection of several major arterials including Barnes Road, Highway 26, Highway 217 and the MAX. The Sunset Transit Center serves as a transportation hub for the north portion of Washington County and northwest Portland. As a transit center, the area is serviced by multiple bus lines and both Blue and Red Line MAX trains. The center has 1,940 residents, 6,220 employees and 879 dwelling units. Sunset Transit Town Center contains 262 gross acres.", 
         "title": "Sunset Transit", 
         "type": "Town Center"
     }, 
-    "tanasbourne": {
+    "tanasbourne_amber_glen": {
         "2011": {
             "context_tool_scores": [
                 3.69, 
@@ -6758,6 +6968,12 @@
             45.516533, 
             -122.859388, 
             45.54802
+        ], 
+        "images": [
+            "./photos/Tanasbourne/1.jpg", 
+            "./photos/Tanasbourne/2.jpg", 
+            "./photos/Tanasbourne/3.jpg", 
+            "./photos/Tanasbourne/4.jpg"
         ], 
         "narrative": "The Tanasbourne Regional Center is located along Cornell Road, south of Highway 26 in Hillsboro. Tanasbourne was upgraded to a regional center in 2010 when the City of Hillsboro completed a new area plan for AmberGlen, subsequently added it to the center boundary, and petitioned the Metro Council for the new designation. The area includes a mix of employment and commercial businesses, notably the Streets of Tanasbourne regional shopping center. The center is serviced by two major arterials, Cornell Road and Northwest 185th Avenue. The center has 3,614 residents, 6,084 employees and 2,037 dwelling units. Tanasbourne Regional Center contains 678 gross acres.", 
         "title": "Tanasbourne/Amber Glen", 
@@ -6947,6 +7163,12 @@
             45.421738, 
             -122.7437, 
             45.443006
+        ], 
+        "images": [
+            "./photos/Tigard/1.jpg", 
+            "./photos/Tigard/2.jpg", 
+            "./photos/Tigard/3.jpg", 
+            "./photos/Tigard/4.jpg"
         ], 
         "narrative": "The Tigard Town Center includes the newly added Tigard Triangle area to the existing town center. The center is focused around the ODOT facility of Highway 99 West and has been chosen as the priority corridor for a study of future high capacity transit expansion in the region. The center is serviced by multiple bus lines and is home to a TriMet transit center and a Westside Express Service (WES) commuter rail station. The center has 1,923 residents, 6,876 employees and 944 dwelling units. Tigard Town Center contains 702 gross acres.", 
         "title": "Tigard", 
@@ -7169,6 +7391,12 @@
             -122.377007, 
             45.544427
         ], 
+        "images": [
+            "./photos/Troutdale/1.jpg", 
+            "./photos/Troutdale/2.jpg", 
+            "./photos/Troutdale/3.jpg", 
+            "./photos/Troutdale/4.jpg"
+        ], 
         "narrative": "The Troutdale Town Center is located at the eastern end of the region. The center includes a historic main street in downtown Troutdale as well as a significant portion of land west of downtown. The center has direct access to Interstate 84 and contains the historic Columbia River Highway, an ODOT facility. The center has 1,924 residents, 775 employees and 853 dwelling units. Troutdale Town Center contains 418 gross acres.", 
         "title": "Troutdale", 
         "type": "Town Center"
@@ -7357,6 +7585,12 @@
             45.375375, 
             -122.751821, 
             45.387274
+        ], 
+        "images": [
+            "./photos/Tualatin/1.jpg", 
+            "./photos/Tualatin/2.jpg", 
+            "./photos/Tualatin/3.jpg", 
+            "./photos/Tualatin/4.jpg"
         ], 
         "narrative": "The Tualatin Town Center is located at the intersection of Tualatin-Sherwood and Boones Ferry roads, both major arterials. The center is serviced by multiple bus lines and has a stop on the Westside Express Service (WES) commuter rail line. The center has 3,636 residents, 3,332 employees and 1,660 dwelling units. Tualatin Town Center contains 462 gross acres.", 
         "title": "Tualatin", 
@@ -7547,6 +7781,12 @@
             -122.763095, 
             45.466082
         ], 
+        "images": [
+            "./photos/Washington-Square/1.jpg", 
+            "./photos/Washington-Square/2.jpg", 
+            "./photos/Washington-Square/3.jpg", 
+            "./photos/Washington-Square/4.jpg"
+        ], 
         "narrative": "The Washington Square Regional Center is a major retail hub for central and southern Washington County, western Clackamas County, and surrounding cities. It is located in the jurisdictions of both Beaverton and Tigard and a portion of unincorporated Washington County. The Washington Square mall is a thriving shopping center and has attracted many other satellite retail developments. The center is served by Highway 217, Southwest Scholls Ferry Road and Southwest Hall Boulevard. Additionally, the center has a Westside Express Service (WES) commuter rail stop and three bus lines. The center has 2,465 residents, 12,742 employees and 1,161 dwelling units. Washington Square Regional Center contains 914 gross acres.", 
         "title": "Washington Square", 
         "type": "Regional Center"
@@ -7735,6 +7975,12 @@
             45.339779, 
             -122.606162, 
             45.372827
+        ], 
+        "images": [
+            "./photos/West-Linn/1.jpg", 
+            "./photos/West-Linn/2.jpg", 
+            "./photos/West-Linn/3.jpg", 
+            "./photos/West-Linn/4.jpg"
         ], 
         "narrative": "The West Linn town centers are represented by two distinct geographic locations, Bolton and Historic Willamette. Both locations are served by Interstate 205, an ODOT facility. Both centers are also serviced by bus lines. The centers have a combined total of 2,492 residents, 1,620 employees and 896 dwelling units. West Linn town centers contain a combined total of 462 gross acres, 274 in Bolton and 188 in Historic Willamette. Metro context tool results and center boundary map (p. 105) are specific to Historic Willamette. All other data reflect both Historic Willamette and Bolton locations.", 
         "title": "West Linn", 
@@ -7925,6 +8171,12 @@
             -122.710439, 
             45.458675
         ], 
+        "images": [
+            "./photos/West-Portland/1.jpg", 
+            "./photos/West-Portland/2.jpg", 
+            "./photos/West-Portland/3.jpg", 
+            "./photos/West-Portland/4.jpg"
+        ], 
         "narrative": "The West Portland Town Center is located at the interchange of Highway 99 West. The majority of service activity in the center revolves around Capital Highway and businesses located along Barbur Boulevard. The center is bisected by two ODOT facilities: Interstate 5 and Highway 99 West. The area is serviced by multiple bus lines, with one frequent service line along Barbur Boulevard. It has 2,880 residents, 3,820 employees and 1,489 dwelling units. West Portland Town Center contains 339 gross acres.", 
         "title": "West Portland", 
         "type": "Town Center"
@@ -8109,6 +8361,12 @@
             }
         }, 
         "extent": [], 
+        "images": [
+            "./photos/Westmoreland/1.jpg", 
+            "./photos/Westmoreland/2.jpg", 
+            "./photos/Westmoreland/3.jpg", 
+            "./photos/Westmoreland/4.jpg"
+        ], 
         "narrative": "", 
         "title": "Westmoreland", 
         "type": "Typology"
@@ -8297,6 +8555,12 @@
             45.29846, 
             -122.758705, 
             45.309257
+        ], 
+        "images": [
+            "./photos/Wilsonville/1.jpg", 
+            "./photos/Wilsonville/2.jpg", 
+            "./photos/Wilsonville/3.jpg", 
+            "./photos/Wilsonville/4.jpg"
         ], 
         "narrative": "Wilsonville", 
         "title": "Wilsonville", 

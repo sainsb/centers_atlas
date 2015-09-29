@@ -213,6 +213,14 @@ for row in reader:
 
   data[row['NAME']]['title'] = row['NAME']
   data[row['NAME']]['type'] = row['TYPE']
+  
+  Center_name = data[row['NAME']]['title']
+  print Center_name
+  Center_name = Center_name.replace(' ','-').replace('/','-').replace('.','')
+  if Center_name == 'Tanasbourne-Amber-Glen': Center_name = "Tanasbourne"
+  image_path = ["./photos/"+Center_name+"/1.jpg","./photos/"+Center_name+"/2.jpg","./photos/"+Center_name+"/3.jpg","./photos/"+Center_name+"/4.jpg"]
+  print image_path
+  data[row['NAME']]['images'] = image_path
 
   data[row['NAME']][YEAR]['incomes'] = []
   data[row['NAME']][YEAR]['incomes_1mi_buff'] = []
@@ -263,7 +271,7 @@ newdata = {}
 
 #massage objectproperty names (center names)
 for k in data.keys():
-   newdata[str(k).lower().replace(' ','_').replace('.','').replace('/','')] = data[k]
+   newdata[str(k).lower().replace(' ','_').replace('.','').replace('/','_')] = data[k]
 
 with open('../data/newdata.json', 'w') as f:
   f.write(json.dumps(newdata, indent=4, sort_keys=True))
