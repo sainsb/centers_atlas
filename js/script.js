@@ -193,7 +193,7 @@ var App = {
 
 	center_view: function(center) {
 
-		center = center.toLowerCase().replace(' center', '').replace(' – ', '_').replace(' ', '_').replace('/', '_').replace('.', '').replace(' ', '_').replace('-', '_');
+		center = center.toLowerCase().replace(' center', '').replace(' – ', '_').replace(' ', '_').replace('/', '_').replace('.', '').replace(' ', '_').replace(/\-/g, '_');
 
 		$('.container-fluid').append(templates['breadcrumb']({
 			title: App.data[center].title
@@ -233,7 +233,7 @@ var App = {
 	charts: {
 		init: function(center) {
 
-			center = center.toLowerCase().replace(' center', '').replace(' – ', '_').replace(' ', '_').replace('/', '').replace('.', '').replace(' ', '_').replace('-', '_');
+			center = center.toLowerCase().replace(' center', '').replace(' – ', '_').replace(' ', '_').replace('/', '').replace('.', '').replace(' ', '_').replace(/\-/g, '_');
 
 			$('.container-fluid').append(templates['charts']({
 				title: App.data[center].title
