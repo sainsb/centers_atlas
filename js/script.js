@@ -208,10 +208,9 @@ var App = {
 		}));
 
 		$('.town-center, .town-center-alt,.regional-center, .regional-center-alt').on('click', function() {
-			var centername = $(this).html().toLowerCase().replace(' center', '').replace(' – ', '_').replace(' ', '_').replace('/', '_').replace('.', '').replace(' ', '_');
 
 			var that = this;
-			centers_geom.eachLayer(function(layer) {
+			analysis_centers.eachLayer(function(layer) {
 				if (layer.feature.properties.NAME == $(that).html()) {
 					layer.openPopup();
 				}
@@ -268,6 +267,7 @@ var App = {
 		d.resolve();
 		return d.promise();
 	},
+	
 	about_SOC2009_view: function() {
 
 		$('.container-fluid').append(templates['breadcrumb']({
@@ -363,7 +363,7 @@ var App = {
 
 	center_view: function(center) {
 
-		center = center.toLowerCase().replace(' center', '').replace(' – ', '_').replace(' ', '_').replace('/', '_').replace('.', '').replace(' ', '_').replace(/\-/g, '_');
+		center = center.toLowerCase().replace(' center', '').replace(' – ', '_').replace('/', '_').replace('.', '').replace(' ', '_').replace(/\-/g, '_').replace(/\s/g,'');
 
 		$('.container-fluid').append(templates['breadcrumb']({
 			title: App.data[center].title
@@ -769,7 +769,9 @@ var App = {
 				add_analysis_buffers(App.analysis_buffers);
 				add_analysis_centers(App.analysis_centers);
 				add_bus_routes(App.bus_routes);
-				map.fitBounds(newext);
+				if(typeof(newext) != 'undefined'){
+					map.fitBounds(newext);
+				}
 			}
 		},
 
