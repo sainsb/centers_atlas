@@ -81,6 +81,62 @@ $(document).ready(function() {
 		});
 	});
 
+	Path.map("#about_Where").to(function() {
+		clearPanel().then(function() {
+			App.about_where_view();
+		}).then(function() {
+			$('.container-fluid').fadeIn();
+		});
+	});
+
+
+
+	Path.map("#about_SOC2009").to(function() {
+		clearPanel().then(function() {
+			App.about_SOC2009_view();
+		}).then(function() {
+			$('.container-fluid').fadeIn();
+
+		});
+	});
+
+	Path.map("#about_SOC2011").to(function() {
+		clearPanel().then(function() {
+			App.about_SOC2011_view();
+		}).then(function() {
+			$('.container-fluid').fadeIn();
+
+		});
+	});
+
+	Path.map("#about_CIS").to(function() {
+		clearPanel().then(function() {
+			App.about_CIS_view();
+		}).then(function() {
+			$('.container-fluid').fadeIn();
+
+		});
+	});
+
+	Path.map("#about_looking_forward").to(function() {
+		clearPanel().then(function() {
+			App.about_looking_forward_view();
+		}).then(function() {
+			$('.container-fluid').fadeIn();
+
+		});
+	});
+
+	Path.map("#about_data_sources").to(function() {
+		clearPanel().then(function() {
+			App.about_data_sources_view();
+		}).then(function() {
+			$('.container-fluid').fadeIn();
+
+		});
+	});
+
+
 	//   Path.map("#yummy").to(function() {
 	//  clearPanel().then(function(){alert('you made it!')}).then(function(){
 	//   $('.container-fluid').fadeIn();
@@ -181,10 +237,124 @@ var App = {
 		}));
 
 		document.title = "State of the Centers - About";
-
-		$('.container-fluid').append(templates['about']({
-			title: "State of the Centers"
+		// $('.container-fluid').append(templates['about_TOC']({title: "State of the Centers"
+		// }));
+		$('.container-fluid').append(templates['about_container']);
+		
+		$('#about_content').html(templates['about']({title: "State of the Centers"
 		}));
+		$('#about_photos').html(templates['about_photos']);
+
+		var d = $.Deferred();
+		d.resolve();
+		return d.promise();
+	},
+	
+	about_where_view: function() {
+
+		$('.container-fluid').append(templates['breadcrumb']({
+			title: "About - Where we are today"
+		}));
+
+		document.title = "State of the Centers - About - Where we are today";
+		$('.container-fluid').append(templates['about_container']);
+		// $('#about_TOC').html(templates['about_TOC']({title: "State of the Centers"
+		// }));
+		$('#about_content').html(templates['about_Where']({title: "State of the Centers"
+		}));
+		$('#about_photos').html(templates['about_photos']);
+
+		var d = $.Deferred();
+		d.resolve();
+		return d.promise();
+	},
+	about_SOC2009_view: function() {
+
+		$('.container-fluid').append(templates['breadcrumb']({
+			title: "About - 2009 Report"
+		}));
+
+		document.title = "State of the Centers - About - 2009 Report";
+		$('.container-fluid').append(templates['about_container']);
+		// $('#about_TOC').html(templates['about_TOC']({title: "State of the Centers"
+		// }));
+		$('#about_content').html(templates['about_SOC2009']({title: "State of the Centers"
+		}));
+		$('#about_photos').html(templates['about_photos']);
+
+		var d = $.Deferred();
+		d.resolve();
+		return d.promise();
+	},
+	about_SOC2011_view: function() {
+
+		$('.container-fluid').append(templates['breadcrumb']({
+			title: "About - 2011 Report"
+		}));
+
+		document.title = "State of the Centers - About - 2011 Report";
+		$('.container-fluid').append(templates['about_container']);
+		// $('#about_TOC').html(templates['about_TOC']({title: "State of the Centers"
+		// }));
+		$('#about_content').html(templates['about_SOC2011']({title: "State of the Centers"
+		}));
+		$('#about_photos').html(templates['about_photos']);
+
+		var d = $.Deferred();
+		d.resolve();
+		return d.promise();
+	},
+
+	about_CIS_view: function() {
+
+		$('.container-fluid').append(templates['breadcrumb']({
+			title: "About - Community Investment Strategy"
+		}));
+
+		document.title = "State of the Centers - About - Community Investment Strategy";
+		$('.container-fluid').append(templates['about_container']);
+		// $('#about_TOC').html(templates['about_TOC']({title: "State of the Centers"
+		// }));
+		$('#about_content').html(templates['about_CIS']({title: "State of the Centers"
+		}));
+		$('#about_photos').html(templates['about_photos']);
+
+		var d = $.Deferred();
+		d.resolve();
+		return d.promise();
+	},
+	about_looking_forward_view: function() {
+
+		$('.container-fluid').append(templates['breadcrumb']({
+			title: "About - Looking Forward"
+		}));
+
+		document.title = "State of the Centers - About - Looking Forward";
+		$('.container-fluid').append(templates['about_container']);
+		// $('#about_TOC').html(templates['about_TOC']({title: "State of the Centers"
+		// }));
+		$('#about_content').html(templates['about_looking_forward']({title: "State of the Centers"
+		}));
+		$('#about_photos').html(templates['about_photos']);
+
+		var d = $.Deferred();
+		d.resolve();
+		return d.promise();
+	},
+	about_data_sources_view: function() {
+
+		$('.container-fluid').append(templates['breadcrumb']({
+			title: "About - Measures and Data Sources"
+		}));
+
+		document.title = "State of the Centers - About - Measures and Data Sources";
+		$('.container-fluid').append(templates['about_container']);
+		// $('#about_TOC').html(templates['about_TOC']({title: "State of the Centers"
+		// }));
+		$('#about_content').html(templates['about_data_sources']({title: "State of the Centers"
+		}));
+		$('#about_photos').html(templates['about_photos']);
+
 
 		var d = $.Deferred();
 		d.resolve();

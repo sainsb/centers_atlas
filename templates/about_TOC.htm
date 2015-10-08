@@ -1,0 +1,44 @@
+<style>
+* {
+  /* So 100% means 100% */
+  box-sizing: border-box;
+}
+.hero-image{
+  height:200px;
+  width:200px;
+  margin:14px;
+  float:left;
+}
+
+@media only screen and (max-width: 406px) {
+.bar {display:none;}
+}
+ul.a {list-style-type: none;}
+</style>
+
+<div class='row'>
+<div class='col-md-6'>
+   <h1 id='txtCenterTitle'><%=obj.title%></h1>
+</div>
+</div>
+<div class='row'>
+  <div class='col-md-6 col-md-offset-2'>
+    <div style='background-color:#EEE;height:150px;' class='col-md-1 col-xs-1 col-sm-1 bar' >
+    </div>
+    <div>
+    <ul class="a">
+      <li> <a href="#about" >About </a></li>
+      <li> <a href="#about_Where" >Where we are today </a></li>
+      <li> <a href="#about_SOC2009">2009 State of the Centers report </a></li>
+      <li> <a href="#about_SOC2011">2011 State of the Centers report </a></li>
+      <li> <a href="#about_CIS">Community Investment Strategy</a></li>
+      <li> <a href="#about_looking_forward">Looking forward</a></li>
+      <li> <a href="#about_data_sources">Measures and Data Sources</a></li>
+    </ul>
+
+    </div>
+</div>
+
+   
+</div>
+</div>

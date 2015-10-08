@@ -1,0 +1,121 @@
+<style>
+* {
+  /* So 100% means 100% */
+  box-sizing: border-box;
+}
+.hero-image{
+  height:200px;
+  width:200px;
+  margin:14px;
+  float:left;
+}
+
+@media only screen and (max-width: 406px) {
+.bar {display:none;}
+}
+ul.a {list-style-type: none;}
+</style>
+
+<div class='row'>
+   <div class='col-md-6'>
+      <h1 id='txtCenterTitle'><%=obj.title%></h1>
+   </div>
+</div>
+<div class='row'>
+  <div class='col-md-12' >
+    <!-- <div style='background-color:#EEE;height:400px;' class='col-md-1 col-xs-1 col-sm-1 bar' >
+    </div> -->
+    <div>
+      <h2 id="Data_sources">Measures and Data Sources</h2> 
+
+      <div id="sources">
+        <div style="padding:10px;border:1px solid #DDD;border-radius:5px;background-color:#F5FAEC;">
+          <table class="table table-condensed">
+            <tbody>
+              <tr>
+                <th><b>Measure</b></th>
+                <th><b>Data source</b></th>
+              </tr>
+              <tr>
+                <td>Numbers of residents</td>
+                <td>Metro’s Regional Land Information System (RLIS) single-family/multi-family inventory</td>
+              </tr>
+              <tr>
+                <td>Numbers of employees</td>
+                <td>Environmental Systems Research Institute (ESRI) Business Analyst</td>
+              </tr>
+              <tr>
+                <td>Household size</td>
+                <td>2000 Census (2010 projections)</td>
+              </tr>
+              <tr>
+                <td>Home ownership</td>
+                <td>2000 Census (2010 projections)</td>
+              </tr>
+              <tr>
+                <td>Household income</td>
+                <td>2000 Census (2010 projections)</td>
+              </tr>
+              <tr>
+                <td>Urban amenities - private</td>
+                <td>Businesses that correlate with increased market strength, ranging from coffee shops to boutiques. Data provided by ESRI Business Analyst.</td>
+              </tr>
+              <tr>
+                <td>Urban amenities - public</td>
+                <td>Libraries, government offices, fire stations, community centers and schools as reported in Metro’s Regional Land Information System (RLIS)</td>
+              </tr>
+              <tr>
+                <td>Businesses</td>
+                <td>Total businesses in the center from ESRI Business Analyst</td>
+              </tr>
+              <tr>
+                <td>Mode share</td>
+                <td>The nonsingle occupant vehicle mode share presented here includes all non-SOV modes (bicycle, walk, transit, carpool, etc) for all trips per day. This represents trips to, from and within a center. The data is based on the 2005 base year from Metro’s Travel Behavior Forecasting Model.</td>
+              </tr>
+              <tr>
+                <td>Market value</td>
+                <td>Calculated at dollars per square foot using county assessor data; publicly owned land was subtracted to avoid distorting the market potential.</td>
+              </tr>
+              <tr>
+                <td>Job types</td>
+                <td>Summarized by retail, service and other using Metro Employment data. “Other” encompasses jobs related to office and industrial work.</td>
+              </tr>
+              <tr>
+                <td>One-mile buffer</td>
+                <td>The one-mile buffer represents a 20-minute walk, consistent with the 20-minute neighborhood concept that has been adopted by several local jurisdictions in the region.</td>
+              </tr>
+              <tr>
+                <td>Net acres</td>
+                <td>Total acres within the center boundaries with a subtraction for all public right-of-way.</td>
+              </tr>
+              <tr>
+                <td>People per acre</td>
+                <td>A measure of the density of people within one-quarter mile of the grid cell. The measure counts both residents and employees and is an indication of the relative activity of an area.</td>
+              </tr>
+              <tr>
+                <td>Amenity density</td>
+                <td>A measure of the density of specific private businesses that contribute to the livability of an area within one-quarter mile of the grid cell.</td>
+              </tr>
+              <tr>
+                <td>Sidewalk density</td>
+                <td>A measure of the density of sidewalks within one-quarter mile of the grid cell. The measure is an indication of the accessibility of safe walking routes.</td>
+              </tr>
+              <tr>
+                <td>Transit density</td>
+                <td>A measure of the density of transit within one-quarter mile of the grid cell. The measure reflects the frequency of trips through bus stops. Therefore, a bus stop that serves two high-frequency bus lines will have a higher weighting than a stop that serves a single, more limited frequency line.</td>
+              </tr>
+              <tr>
+                <td>Block size</td>
+                <td>A measure of the block sizes within one-quarter mile of the grid cell. Block sizes were grouped into classifications and given weighted scores based on research tying smaller block sizes to increase transit mode split.</td>
+              </tr>
+              <tr>
+                <td>Bike access</td>
+                <td>A measure of the relative “bikeability” of an area based on the bike lane classifications in Metro’s “Bike There!” map. Every cell in the grid is based on the density of bike routes within one mile of the cell. The better the “Bike There!” classification, the higher the weighting of the route.</td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
