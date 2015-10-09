@@ -1,0 +1,40 @@
+<div class='row' id='regional_center_row'>
+    <div class='col-md-8 col-md-offset-2'>
+        <div style='padding:10px;border:1px solid #DDD;border-radius:5px;background-color:#F1F7E5;margin-bottom:10px;'>
+            <table class='table table-condensed'>
+                <tr>
+                    <td style='text-align:right;'></td>
+                    <td style='text-align:right;'>Net acreage</td>
+                    <td style='text-align:right;'>Total population</td>
+                    <td style='text-align:right;'>Total employment</td>
+                    <td style='text-align:right;'>People per acre</td>
+                    <td style='text-align:right;'>Dwelling units per acre</td>
+                    <td style='text-align:right;'>Market value per square foot</td>
+                </tr>
+                <% for(var i=0;i<obj.data.length;i++) { console.log(obj.data[i].title); %>
+                    <tr>
+                        <td><strong><%=obj.data[i].title%></strong></td>
+                        <td style='text-align:right;'>
+                            <%=obj.data[i][obj.year].stats.net_acreage%>
+                        </td>
+                        <td style='text-align:right;'>
+                            <%=obj.data[i][obj.year].stats.total_pop%>
+                        </td>
+                        <td style='text-align:right;'>
+                            <%=obj.data[i][obj.year].stats.total_num_employees%>
+                        </td>
+                        <td style='text-align:right;'>
+                            <%=obj.data[i][obj.year].stats.people_per_acre%>
+                        </td>
+                        <td style='text-align:right;'>
+                            <%=obj.data[i][obj.year].stats.du_per_acre%>
+                        </td>
+                        <td style='text-align:right;'>
+                            <%=obj.data[i][obj.year].stats.market_value%>
+                        </td>
+                    </tr>
+                    <%}%>
+            </table>
+        </div>
+    </div>
+</div>

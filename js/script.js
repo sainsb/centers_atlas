@@ -89,8 +89,6 @@ $(document).ready(function() {
 		});
 	});
 
-
-
 	Path.map("#about_SOC2009").to(function() {
 		clearPanel().then(function() {
 			App.about_SOC2009_view();
@@ -136,6 +134,20 @@ $(document).ready(function() {
 		});
 	});
 
+	Path.map("#regional_centers").to(function() {
+		clearPanel().then(function() {
+			if (App.data == null) {
+				$.getJSON('./data/data.json').then(function(data) {
+					App.data = data;
+					App.regional_centers_view();
+				});
+			} else {
+				App.regional_centers_view();
+			}
+		}).then(function() {
+			$('.container-fluid').fadeIn();
+		});
+	});
 
 	//   Path.map("#yummy").to(function() {
 	//  clearPanel().then(function(){alert('you made it!')}).then(function(){
@@ -249,6 +261,57 @@ var App = {
 		return d.promise();
 	},
 	
+	regional_centers_view: function() {
+
+		//if the slider hasn't already appeared in the app we need to add it.
+		App.slider.init();
+
+		$('.container-fluid').append(templates['breadcrumb']({
+			title: "Regional Centers Overview"
+		}));
+
+		document.title = "State of the Centers - Regional Centers - Overview";
+
+		//put the regional centers into an array
+
+		var regional_centers = [];
+
+		for(var key in App.data){
+			if (App.data[key].type=='Regional Center'){
+				regional_centers.push(App.data[key]);
+			}
+		}
+
+		//alphabetize regional centers.
+		function compare(a,b) {
+		  if (a.name < b.name)
+		    return -1;
+		  if (a.name > b.name)
+		    return 1;
+		  return 0;
+		}
+
+		regional_centers.sort(compare);
+
+		//get year:
+		var year = $('#inc_slider').val();
+
+		$('.container-fluid').append(templates['regional_centers']({data:regional_centers, year:year.toString()})
+		);
+
+		$('#inc_slider').off('input.t').on('input.t', function() {
+			console.log('yay')
+				var year = $('#inc_slider').val();
+
+				$('#regional_center_row').fadeOut(0, function(){	$('#regional_center_row').remove();
+					$('.container-fluid').append(templates['regional_centers']({data:regional_centers, year:year.toString()}))});
+			
+		});
+
+		var d = $.Deferred();
+		d.resolve();
+		return d.promise();
+	},
 	about_where_view: function() {
 
 		$('.container-fluid').append(templates['breadcrumb']({
@@ -267,7 +330,6 @@ var App = {
 		d.resolve();
 		return d.promise();
 	},
-	
 	about_SOC2009_view: function() {
 
 		$('.container-fluid').append(templates['breadcrumb']({
@@ -415,7 +477,7 @@ var App = {
 			this.createBarChart(center);
 			this.createRadarChart(center);
 
-			$('#inc_slider').on('input', function() {
+			$('#inc_slider').off('input').on('input', function() {
 
 				var year = $('#inc_slider').val();
 
