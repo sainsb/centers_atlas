@@ -7,22 +7,22 @@ data = {}
 if INCLUDE_GLOBAL_DATA:
   data['amenities'] = {}
   data['amenities']['private'] = ["Bakery",
-			  "Bar",
-			  "Bike Shop",
-			  "Bookstore",
-			  "Brewpub",
-			  "Child Care",
-			  "Cinema",
-			  "Clothing Store",
-			  "Coffee Shop",
-			  "Department Store",
-			  "Dry Cleaners",
-			  "Fitness Gym",
-			  "Grocery Store",
-			  "Music Store",
-			  "Restaurant",
-			  "Specialty Snacks & Beverages"
-		  ]
+        "Bar",
+        "Bike Shop",
+        "Bookstore",
+        "Brewpub",
+        "Child Care",
+        "Cinema",
+        "Clothing Store",
+        "Coffee Shop",
+        "Department Store",
+        "Dry Cleaners",
+        "Fitness Gym",
+        "Grocery Store",
+        "Music Store",
+        "Restaurant",
+        "Specialty Snacks & Beverages"
+      ]
 
   data["town_center_averages"] = {"2011":{
         "total_pop": 2326,
@@ -36,7 +36,6 @@ if INCLUDE_GLOBAL_DATA:
         "total_num_employees": 1745,
         "market_value": 39,
         "net_acreage": 222,
-        "Non_SOV": 52,
         "total_du": 1073,
         "total_biz": 120
     },
@@ -52,7 +51,6 @@ if INCLUDE_GLOBAL_DATA:
         "total_num_employees": 1785,
         "market_value": 35,
         "net_acreage": 202,
-        "Non_SOV": 53,
         "total_du": 933,
         "total_biz": 304
     }}
@@ -69,7 +67,6 @@ if INCLUDE_GLOBAL_DATA:
         "total_num_employees": 8215,
         "market_value": 37,
         "net_acreage": 518,
-        "Non_SOV": 53,
         "total_du": 1726,
         "total_biz": 401
     },
@@ -85,7 +82,6 @@ if INCLUDE_GLOBAL_DATA:
         "total_num_employees": 7090,
         "market_value": 37,
         "net_acreage": 503,
-        "Non_SOV": 52,
         "total_du": 1794,
         "total_biz": 822
     }}
@@ -93,20 +89,20 @@ if INCLUDE_GLOBAL_DATA:
   data['data_years'] = [2011,2015]
 
   data['amenities']['public'] = [
-			  "Community Center",
-			  "Fire Station",
-			  "Govt. Building",
-			  "Library",
-			  "School"
-		  ]
+        "Community Center",
+        "Fire Station",
+        "Govt. Building",
+        "Library",
+        "School"
+      ]
   data ['income_breaks'] = [
-		  "<$15,000",
-		  "$15,000-$34,999",
-		  "$35,000-$49,999",
-		  "$50,000-$74,999",
-		  "$75,000-$99,999",
-		  "$100,000 +"
-	  ]
+      "<$15,000",
+      "$15,000-$34,999",
+      "$35,000-$49,999",
+      "$50,000-$74,999",
+      "$75,000-$99,999",
+      "$100,000 +"
+    ]
   data['context_tool_labels'] = ["Parks Access", "Transit Access", "Bike route density", "People per acre", "Sidewalk density", "Private amenities", "Block size"]
  
 def getDataInHere(row):
@@ -137,7 +133,7 @@ def getDataInHere(row):
       data[row['NAME']][YEAR]['public_amenities'].append(int(float(row[field].replace('%',''))))
      except:
       data[row['NAME']][YEAR]['public_amenities'].append(0)
-  for field in ['total_pop', 'avg_HH_size', 'med_HH_income', 'med_age', 'pct_home_ownership', 'people_per_acre', 'du_per_acre', 'total_biz_acre', 'total_num_employees', 'market_value', 'net_acreage', 'total_du', 'total_biz', 'gross_acreage', 'Non_SOV']:
+  for field in ['total_pop', 'avg_HH_size', 'med_HH_income', 'med_age', 'pct_home_ownership', 'people_per_acre', 'du_per_acre', 'total_biz_acre', 'total_num_employees', 'market_value', 'net_acreage', 'total_du', 'total_biz', 'gross_acreage']:
     if '$' in row[field]:
       value =row[field]
       value = value.replace(' ', '').replace('$','').replace(',','')
@@ -217,14 +213,6 @@ for row in reader:
 
   data[row['NAME']]['title'] = row['NAME']
   data[row['NAME']]['type'] = row['TYPE']
-  
-  Center_name = data[row['NAME']]['title']
-  print Center_name
-  Center_name = Center_name.replace(' ','-').replace('/','-').replace('.','')
-  #if Center_name == 'Tanasbourne-Amber-Glen': Center_name = "Tanasbourne"
-  image_path = ["./photos/"+Center_name+"/1.jpg","./photos/"+Center_name+"/2.jpg","./photos/"+Center_name+"/3.jpg","./photos/"+Center_name+"/4.jpg"]
-  print image_path
-  data[row['NAME']]['images'] = image_path
 
   data[row['NAME']][YEAR]['incomes'] = []
   data[row['NAME']][YEAR]['incomes_1mi_buff'] = []
@@ -234,7 +222,7 @@ for row in reader:
   data[row['NAME']][YEAR]['stats_1mi_buff'] = {}
   data[row['NAME']][YEAR]['context_tool_scores'] = []
   data[row['NAME']][YEAR]['employment_breakdown'] = []
-   
+ 
   getDataInHere(row)
 
 csvfile.close()
@@ -275,7 +263,7 @@ newdata = {}
 
 #massage objectproperty names (center names)
 for k in data.keys():
-   newdata[str(k).lower().replace(' ','_').replace('.','').replace('/','_')] = data[k]
+   newdata[str(k).lower().replace(' ','_').replace('.','').replace('/','')] = data[k]
 
 with open('../data/newdata.json', 'w') as f:
   f.write(json.dumps(newdata, indent=4, sort_keys=True))

@@ -148,6 +148,20 @@ $(document).ready(function() {
 			$('.container-fluid').fadeIn();
 		});
 	});
+	Path.map("#town_centers").to(function() {
+		clearPanel().then(function() {
+			if (App.data == null) {
+				$.getJSON('./data/data.json').then(function(data) {
+					App.data = data;
+					App.town_centers_view();
+				});
+			} else {
+				App.town_centers_view();
+			}
+		}).then(function() {
+			$('.container-fluid').fadeIn();
+		});
+	});
 
 	//   Path.map("#yummy").to(function() {
 	//  clearPanel().then(function(){alert('you made it!')}).then(function(){
@@ -312,6 +326,59 @@ var App = {
 		d.resolve();
 		return d.promise();
 	},
+	
+		town_centers_view: function() {
+
+		//if the slider hasn't already appeared in the app we need to add it.
+		App.slider.init();
+
+		$('.container-fluid').append(templates['breadcrumb']({
+			title: "Town Centers Overview"
+		}));
+
+		document.title = "State of the Centers - Town Centers - Overview";
+
+		//put the town centers into an array
+
+		var town_centers = [];
+
+		for(var key in App.data){
+			if (App.data[key].type=='Town Center'){
+				town_centers.push(App.data[key]);
+			}
+		}
+
+		//alphabetize town centers.
+		function compare(a,b) {
+		  if (a.name < b.name)
+		    return -1;
+		  if (a.name > b.name)
+		    return 1;
+		  return 0;
+		}
+
+		town_centers.sort(compare);
+
+		//get year:
+		var year = $('#inc_slider').val();
+
+		$('.container-fluid').append(templates['town_centers']({data:town_centers, year:year.toString()})
+		);
+
+		$('#inc_slider').off('input.t').on('input.t', function() {
+			console.log('yay')
+				var year = $('#inc_slider').val();
+
+				$('#town_center_row').fadeOut(0, function(){	$('#town_center_row').remove();
+					$('.container-fluid').append(templates['town_centers']({data:town_centers, year:year.toString()}))});
+			
+		});
+
+		var d = $.Deferred();
+		d.resolve();
+		return d.promise();
+	},
+
 	about_where_view: function() {
 
 		$('.container-fluid').append(templates['breadcrumb']({
@@ -425,7 +492,7 @@ var App = {
 
 	center_view: function(center) {
 
-		center = center.toLowerCase().replace(' center', '').replace(' – ', '_').replace('/', '_').replace('.', '').replace(' ', '_').replace(/\-/g, '_').replace(/\s/g,'');
+		center = center.toLowerCase().replace(' center', '').replace(' â€“ ', '_').replace('/', '_').replace('.', '').replace(' ', '_').replace(/\-/g, '_').replace(/\s/g,'');
 
 		$('.container-fluid').append(templates['breadcrumb']({
 			title: App.data[center].title
@@ -465,7 +532,7 @@ var App = {
 	charts: {
 		init: function(center) {
 
-			center = center.toLowerCase().replace(' center', '').replace(' – ', '_').replace(' ', '_').replace('/', '').replace('.', '').replace(' ', '_').replace(/\-/g, '_');
+			center = center.toLowerCase().replace(' center', '').replace(' â€“ ', '_').replace(' ', '_').replace('/', '').replace('.', '').replace(' ', '_').replace(/\-/g, '_');
 
 			$('.container-fluid').append(templates['charts']({
 				title: App.data[center].title

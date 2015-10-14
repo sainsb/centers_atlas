@@ -58,6 +58,7 @@
                 1
             ], 
             "stats": {
+                "Non_SOV": 54.0, 
                 "avg_HH_size": 2.91, 
                 "du_per_acre": 6.0, 
                 "gross_acreage": 511.0, 
@@ -147,6 +148,7 @@
                 2
             ], 
             "stats": {
+                "Non_SOV": 52.0, 
                 "avg_HH_size": 2.92, 
                 "du_per_acre": 6.3, 
                 "gross_acreage": 511.0, 
@@ -280,6 +282,7 @@
                 1
             ], 
             "stats": {
+                "Non_SOV": 56.0, 
                 "avg_HH_size": 2.58, 
                 "du_per_acre": 3.2, 
                 "gross_acreage": 407.0, 
@@ -369,6 +372,7 @@
                 2
             ], 
             "stats": {
+                "Non_SOV": 52.0, 
                 "avg_HH_size": 2.42, 
                 "du_per_acre": 3.6, 
                 "gross_acreage": 426.0, 
@@ -475,6 +479,7 @@
                 0
             ], 
             "stats": {
+                "Non_SOV": 53.0, 
                 "avg_HH_size": 1.98, 
                 "du_per_acre": 8.1, 
                 "gross_acreage": 122.0, 
@@ -564,6 +569,7 @@
                 1
             ], 
             "stats": {
+                "Non_SOV": 57.0, 
                 "avg_HH_size": 1.91, 
                 "du_per_acre": 7.7, 
                 "gross_acreage": 122.0, 
@@ -670,6 +676,7 @@
                 1
             ], 
             "stats": {
+                "Non_SOV": 50.0, 
                 "avg_HH_size": 2.27, 
                 "du_per_acre": 5.8, 
                 "gross_acreage": 338.0, 
@@ -759,6 +766,7 @@
                 1
             ], 
             "stats": {
+                "Non_SOV": 53.0, 
                 "avg_HH_size": 1.95, 
                 "du_per_acre": 8.2, 
                 "gross_acreage": 358.0, 
@@ -865,6 +873,7 @@
                 2
             ], 
             "stats": {
+                "Non_SOV": 54.0, 
                 "avg_HH_size": 2.22, 
                 "du_per_acre": 5.4, 
                 "gross_acreage": 631.0, 
@@ -954,6 +963,7 @@
                 4
             ], 
             "stats": {
+                "Non_SOV": 53.0, 
                 "avg_HH_size": 2.12, 
                 "du_per_acre": 5.4, 
                 "gross_acreage": 631.0, 
@@ -1069,6 +1079,7 @@
                 1
             ], 
             "stats": {
+                "Non_SOV": 54.0, 
                 "avg_HH_size": 2.95, 
                 "du_per_acre": 3.3, 
                 "gross_acreage": 282.0, 
@@ -1158,6 +1169,7 @@
                 2
             ], 
             "stats": {
+                "Non_SOV": 54.0, 
                 "avg_HH_size": 3.2, 
                 "du_per_acre": 3.2, 
                 "gross_acreage": 282.0, 
@@ -1264,6 +1276,7 @@
                 0
             ], 
             "stats": {
+                "Non_SOV": 50.0, 
                 "avg_HH_size": 3.13, 
                 "du_per_acre": 0.4, 
                 "gross_acreage": 236.0, 
@@ -1353,6 +1366,7 @@
                 0
             ], 
             "stats": {
+                "Non_SOV": 43.0, 
                 "avg_HH_size": 2.63, 
                 "du_per_acre": 0.3, 
                 "gross_acreage": 236.0, 
@@ -1463,6 +1477,7 @@
                 0
             ], 
             "stats": {
+                "Non_SOV": 53.0, 
                 "avg_HH_size": 2.5, 
                 "du_per_acre": 3.4, 
                 "gross_acreage": 287.0, 
@@ -1552,6 +1567,7 @@
                 1
             ], 
             "stats": {
+                "Non_SOV": 53.0, 
                 "avg_HH_size": 2.63, 
                 "du_per_acre": 3.7, 
                 "gross_acreage": 287.0, 
@@ -1658,6 +1674,7 @@
                 2
             ], 
             "stats": {
+                "Non_SOV": 53.0, 
                 "avg_HH_size": 6.37, 
                 "du_per_acre": 5.2, 
                 "gross_acreage": 107.0, 
@@ -1747,6 +1764,7 @@
                 4
             ], 
             "stats": {
+                "Non_SOV": 53.0, 
                 "avg_HH_size": 3.59, 
                 "du_per_acre": 1.9, 
                 "gross_acreage": 107.0, 
@@ -1853,6 +1871,7 @@
                 6
             ], 
             "stats": {
+                "Non_SOV": 55.0, 
                 "avg_HH_size": 2.45, 
                 "du_per_acre": 6.0, 
                 "gross_acreage": 809.0, 
@@ -1942,6 +1961,7 @@
                 7
             ], 
             "stats": {
+                "Non_SOV": 53.0, 
                 "avg_HH_size": 2.18, 
                 "du_per_acre": 6.3, 
                 "gross_acreage": 809.0, 
@@ -2048,6 +2068,7 @@
                 0
             ], 
             "stats": {
+                "Non_SOV": 52.0, 
                 "avg_HH_size": 2.76, 
                 "du_per_acre": 6.0, 
                 "gross_acreage": 85.0, 
@@ -2137,6 +2158,7 @@
                 1
             ], 
             "stats": {
+                "Non_SOV": 51.0, 
                 "avg_HH_size": 2.61, 
                 "du_per_acre": 4.7, 
                 "gross_acreage": 85.0, 
@@ -2243,6 +2265,7 @@
                 6
             ], 
             "stats": {
+                "Non_SOV": 55.0, 
                 "avg_HH_size": 2.73, 
                 "du_per_acre": 3.8, 
                 "gross_acreage": 692.0, 
@@ -2332,6 +2355,7 @@
                 8
             ], 
             "stats": {
+                "Non_SOV": 53.0, 
                 "avg_HH_size": 2.27, 
                 "du_per_acre": 4.4, 
                 "gross_acreage": 503.0, 
@@ -2438,6 +2462,7 @@
                 0
             ], 
             "stats": {
+                "Non_SOV": 51.0, 
                 "avg_HH_size": "n/a", 
                 "du_per_acre": 1.3, 
                 "gross_acreage": 212.0, 
@@ -2527,6 +2552,7 @@
                 0
             ], 
             "stats": {
+                "Non_SOV": 55.0, 
                 "avg_HH_size": 2.74, 
                 "du_per_acre": 0.2, 
                 "gross_acreage": 212.0, 
@@ -2633,6 +2659,7 @@
                 3
             ], 
             "stats": {
+                "Non_SOV": 55.0, 
                 "avg_HH_size": 3.8, 
                 "du_per_acre": 3.7, 
                 "gross_acreage": 295.0, 
@@ -2722,6 +2749,7 @@
                 12
             ], 
             "stats": {
+                "Non_SOV": 54.0, 
                 "avg_HH_size": 3.1, 
                 "du_per_acre": 3.0, 
                 "gross_acreage": 295.0, 
@@ -2828,6 +2856,7 @@
                 4
             ], 
             "stats": {
+                "Non_SOV": 52.0, 
                 "avg_HH_size": 2.02, 
                 "du_per_acre": 6.5, 
                 "gross_acreage": 181.0, 
@@ -2917,6 +2946,7 @@
                 5
             ], 
             "stats": {
+                "Non_SOV": 56.0, 
                 "avg_HH_size": 1.93, 
                 "du_per_acre": 5.5, 
                 "gross_acreage": 181.0, 
@@ -3023,6 +3053,7 @@
                 1
             ], 
             "stats": {
+                "Non_SOV": 53.0, 
                 "avg_HH_size": 1.35, 
                 "du_per_acre": 12.1, 
                 "gross_acreage": 105.0, 
@@ -3112,6 +3143,7 @@
                 1
             ], 
             "stats": {
+                "Non_SOV": 55.0, 
                 "avg_HH_size": 1.54, 
                 "du_per_acre": 13.8, 
                 "gross_acreage": 105.0, 
@@ -3226,6 +3258,7 @@
                 0
             ], 
             "stats": {
+                "Non_SOV": 54.0, 
                 "avg_HH_size": 1.35, 
                 "du_per_acre": 4.0, 
                 "gross_acreage": 94.0, 
@@ -3315,6 +3348,7 @@
                 0
             ], 
             "stats": {
+                "Non_SOV": 52.0, 
                 "avg_HH_size": 1.23, 
                 "du_per_acre": 6.3, 
                 "gross_acreage": 94.0, 
@@ -3421,6 +3455,7 @@
                 1
             ], 
             "stats": {
+                "Non_SOV": 47.0, 
                 "avg_HH_size": 1.95, 
                 "du_per_acre": 2.4, 
                 "gross_acreage": 118.0, 
@@ -3510,6 +3545,7 @@
                 2
             ], 
             "stats": {
+                "Non_SOV": 51.0, 
                 "avg_HH_size": 1.98, 
                 "du_per_acre": 1.5, 
                 "gross_acreage": 118.0, 
@@ -3616,6 +3652,7 @@
                 0
             ], 
             "stats": {
+                "Non_SOV": 51.0, 
                 "avg_HH_size": 1.69, 
                 "du_per_acre": 8.7, 
                 "gross_acreage": 218.0, 
@@ -3705,6 +3742,7 @@
                 0
             ], 
             "stats": {
+                "Non_SOV": 53.0, 
                 "avg_HH_size": 1.68, 
                 "du_per_acre": 8.8, 
                 "gross_acreage": 218.0, 
@@ -3811,6 +3849,7 @@
                 0
             ], 
             "stats": {
+                "Non_SOV": 56.0, 
                 "avg_HH_size": 2.8, 
                 "du_per_acre": 7.2, 
                 "gross_acreage": 155.0, 
@@ -3900,6 +3939,7 @@
                 0
             ], 
             "stats": {
+                "Non_SOV": 56.0, 
                 "avg_HH_size": 2.77, 
                 "du_per_acre": 7.2, 
                 "gross_acreage": 155.0, 
@@ -4006,6 +4046,7 @@
                 7
             ], 
             "stats": {
+                "Non_SOV": 50.0, 
                 "avg_HH_size": 2.07, 
                 "du_per_acre": 4.5, 
                 "gross_acreage": 579.0, 
@@ -4095,6 +4136,7 @@
                 8
             ], 
             "stats": {
+                "Non_SOV": 51.0, 
                 "avg_HH_size": 2.11, 
                 "du_per_acre": 4.7, 
                 "gross_acreage": 579.0, 
@@ -4201,6 +4243,7 @@
                 0
             ], 
             "stats": {
+                "Non_SOV": 53.0, 
                 "avg_HH_size": 2.02, 
                 "du_per_acre": 7.3, 
                 "gross_acreage": 204.0, 
@@ -4290,6 +4333,7 @@
                 0
             ], 
             "stats": {
+                "Non_SOV": 53.0, 
                 "avg_HH_size": 1.97, 
                 "du_per_acre": 11.2, 
                 "gross_acreage": 204.0, 
@@ -4396,6 +4440,7 @@
                 0
             ], 
             "stats": {
+                "Non_SOV": 50.0, 
                 "avg_HH_size": 2.53, 
                 "du_per_acre": 0.2, 
                 "gross_acreage": 768.0, 
@@ -4485,6 +4530,7 @@
                 0
             ], 
             "stats": {
+                "Non_SOV": 49.0, 
                 "avg_HH_size": 1.83, 
                 "du_per_acre": 0.4, 
                 "gross_acreage": 768.0, 
@@ -4591,6 +4637,7 @@
                 0
             ], 
             "stats": {
+                "Non_SOV": 55.0, 
                 "avg_HH_size": 1.78, 
                 "du_per_acre": 10.5, 
                 "gross_acreage": 235.0, 
@@ -4680,6 +4727,7 @@
                 0
             ], 
             "stats": {
+                "Non_SOV": 54.0, 
                 "avg_HH_size": 1.76, 
                 "du_per_acre": 9.8, 
                 "gross_acreage": 235.0, 
@@ -4786,6 +4834,7 @@
                 0
             ], 
             "stats": {
+                "Non_SOV": 48.0, 
                 "avg_HH_size": 2.21, 
                 "du_per_acre": 0.2, 
                 "gross_acreage": 77.0, 
@@ -4875,6 +4924,7 @@
                 0
             ], 
             "stats": {
+                "Non_SOV": 51.0, 
                 "avg_HH_size": 2.74, 
                 "du_per_acre": 0.1, 
                 "gross_acreage": 157.0, 
@@ -4981,6 +5031,7 @@
                 0
             ], 
             "stats": {
+                "Non_SOV": 0.0, 
                 "avg_HH_size": "", 
                 "du_per_acre": "", 
                 "gross_acreage": "", 
@@ -5081,6 +5132,7 @@
                 0
             ], 
             "stats": {
+                "Non_SOV": 51.0, 
                 "avg_HH_size": 1.91, 
                 "du_per_acre": 7.2, 
                 "gross_acreage": 153.0, 
@@ -5170,6 +5222,7 @@
                 0
             ], 
             "stats": {
+                "Non_SOV": 52.0, 
                 "avg_HH_size": 1.88, 
                 "du_per_acre": 5.2, 
                 "gross_acreage": 153.0, 
@@ -5219,6 +5272,7 @@
     }, 
     "regional_center_averages": {
         "2011": {
+            "Non_SOV": 53.0, 
             "avg_HH_size": 2.57, 
             "du_per_acre": 3.4, 
             "market_value": 37, 
@@ -5234,6 +5288,7 @@
             "total_pop": 3698
         }, 
         "2015": {
+            "Non_SOV": 52.0, 
             "avg_HH_size": 2.26, 
             "du_per_acre": 3.6, 
             "market_value": 37, 
@@ -5308,6 +5363,7 @@
                 4
             ], 
             "stats": {
+                "Non_SOV": 59.0, 
                 "avg_HH_size": 3.39, 
                 "du_per_acre": 7.6, 
                 "gross_acreage": 1029.0, 
@@ -5397,6 +5453,7 @@
                 7
             ], 
             "stats": {
+                "Non_SOV": 56.0, 
                 "avg_HH_size": 3.08, 
                 "du_per_acre": 9.9, 
                 "gross_acreage": 197.0, 
@@ -5503,6 +5560,7 @@
                 0
             ], 
             "stats": {
+                "Non_SOV": 54.0, 
                 "avg_HH_size": 2.6, 
                 "du_per_acre": 0.8, 
                 "gross_acreage": 109.0, 
@@ -5592,6 +5650,7 @@
                 1
             ], 
             "stats": {
+                "Non_SOV": 57.0, 
                 "avg_HH_size": 2.46, 
                 "du_per_acre": 1.5, 
                 "gross_acreage": 109.0, 
@@ -5698,6 +5757,7 @@
                 1
             ], 
             "stats": {
+                "Non_SOV": 54.0, 
                 "avg_HH_size": 2.12, 
                 "du_per_acre": 5.1, 
                 "gross_acreage": 70.0, 
@@ -5787,6 +5847,7 @@
                 1
             ], 
             "stats": {
+                "Non_SOV": 57.0, 
                 "avg_HH_size": 1.95, 
                 "du_per_acre": 6.6, 
                 "gross_acreage": 70.0, 
@@ -5893,6 +5954,7 @@
                 0
             ], 
             "stats": {
+                "Non_SOV": 51.0, 
                 "avg_HH_size": "n/a", 
                 "du_per_acre": 4.2, 
                 "gross_acreage": 262.0, 
@@ -5982,6 +6044,7 @@
                 0
             ], 
             "stats": {
+                "Non_SOV": 51.0, 
                 "avg_HH_size": 1.92, 
                 "du_per_acre": 4.1, 
                 "gross_acreage": 262.0, 
@@ -6088,6 +6151,7 @@
                 1
             ], 
             "stats": {
+                "Non_SOV": 52.0, 
                 "avg_HH_size": 1.97, 
                 "du_per_acre": 3.3, 
                 "gross_acreage": 678.0, 
@@ -6177,6 +6241,7 @@
                 4
             ], 
             "stats": {
+                "Non_SOV": 51.0, 
                 "avg_HH_size": 1.95, 
                 "du_per_acre": 3.8, 
                 "gross_acreage": 678.0, 
@@ -6283,6 +6348,7 @@
                 4
             ], 
             "stats": {
+                "Non_SOV": 50.0, 
                 "avg_HH_size": 2.32, 
                 "du_per_acre": 1.7, 
                 "gross_acreage": 702.0, 
@@ -6372,6 +6438,7 @@
                 3
             ], 
             "stats": {
+                "Non_SOV": 49.0, 
                 "avg_HH_size": 2.35, 
                 "du_per_acre": 1.9, 
                 "gross_acreage": 702.0, 
@@ -6421,6 +6488,7 @@
     }, 
     "town_center_averages": {
         "2011": {
+            "Non_SOV": 52.0, 
             "avg_HH_size": 2.42, 
             "du_per_acre": 5.0, 
             "market_value": 39, 
@@ -6436,6 +6504,7 @@
             "total_pop": 2326
         }, 
         "2015": {
+            "Non_SOV": 53.0, 
             "avg_HH_size": 2.297, 
             "du_per_acre": 5.1, 
             "market_value": 35, 
@@ -6510,6 +6579,7 @@
                 2
             ], 
             "stats": {
+                "Non_SOV": 54.0, 
                 "avg_HH_size": 2.53, 
                 "du_per_acre": 2.5, 
                 "gross_acreage": 418.0, 
@@ -6599,6 +6669,7 @@
                 1
             ], 
             "stats": {
+                "Non_SOV": 51.0, 
                 "avg_HH_size": 2.37, 
                 "du_per_acre": 1.5, 
                 "gross_acreage": 418.0, 
@@ -6705,6 +6776,7 @@
                 3
             ], 
             "stats": {
+                "Non_SOV": 49.0, 
                 "avg_HH_size": 2.05, 
                 "du_per_acre": 4.2, 
                 "gross_acreage": 462.0, 
@@ -6794,6 +6866,7 @@
                 3
             ], 
             "stats": {
+                "Non_SOV": 50.0, 
                 "avg_HH_size": 2.34, 
                 "du_per_acre": 3.6, 
                 "gross_acreage": 462.0, 
@@ -6900,6 +6973,7 @@
                 2
             ], 
             "stats": {
+                "Non_SOV": 51.0, 
                 "avg_HH_size": 2.29, 
                 "du_per_acre": 1.5, 
                 "gross_acreage": 914.0, 
@@ -6989,6 +7063,7 @@
                 1
             ], 
             "stats": {
+                "Non_SOV": 51.0, 
                 "avg_HH_size": 2.17, 
                 "du_per_acre": 1.8, 
                 "gross_acreage": 936.0, 
@@ -7095,6 +7170,7 @@
                 5
             ], 
             "stats": {
+                "Non_SOV": 50.0, 
                 "avg_HH_size": 2.44, 
                 "du_per_acre": 2.8, 
                 "gross_acreage": 462.0, 
@@ -7184,6 +7260,7 @@
                 5
             ], 
             "stats": {
+                "Non_SOV": 54.0, 
                 "avg_HH_size": 2.44, 
                 "du_per_acre": 2.6, 
                 "gross_acreage": 462.0, 
@@ -7290,6 +7367,7 @@
                 2
             ], 
             "stats": {
+                "Non_SOV": 47.0, 
                 "avg_HH_size": 2.33, 
                 "du_per_acre": 6.5, 
                 "gross_acreage": 339.0, 
@@ -7379,6 +7457,7 @@
                 2
             ], 
             "stats": {
+                "Non_SOV": 53.0, 
                 "avg_HH_size": 2.24, 
                 "du_per_acre": 6.8, 
                 "gross_acreage": 339.0, 
@@ -7485,6 +7564,7 @@
                 1
             ], 
             "stats": {
+                "Non_SOV": 55.0, 
                 "avg_HH_size": 2.02, 
                 "du_per_acre": 3.5, 
                 "gross_acreage": 230.0, 
@@ -7574,6 +7654,7 @@
                 1
             ], 
             "stats": {
+                "Non_SOV": 56.0, 
                 "avg_HH_size": 1.99, 
                 "du_per_acre": 4.0, 
                 "gross_acreage": 230.0, 
