@@ -239,26 +239,26 @@ __p += '<div style=\'padding:10px;border:1px solid #DDD;border-radius:5px;backgr
 '</th><th>' +
 ((__t = (obj.type)) == null ? '' : __t) +
 ' Average</th><th>One-mile buffer</th></tr><tr><td>Net acreage</td><td>' +
-((__t = (obj.stats.net_acreage)) == null ? '' : __t) +
+((__t = (obj.stats.net_acreage.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","))) == null ? '' : __t) +
 '</td><td>' +
-((__t = (obj.averages.net_acreage)) == null ? '' : __t) +
+((__t = (obj.averages.net_acreage.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","))) == null ? '' : __t) +
 '</td><td>' +
-((__t = (obj.stats_1mi_buff.net_acreage)) == null ? '' : __t) +
+((__t = (obj.stats_1mi_buff.net_acreage.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","))) == null ? '' : __t) +
 '</td></tr><tr><td>Total population</td><td>' +
-((__t = (obj.stats.total_pop)) == null ? '' : __t) +
+((__t = (obj.stats.total_pop.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","))) == null ? '' : __t) +
 '</td><td>' +
-((__t = (obj.averages.total_pop)) == null ? '' : __t) +
+((__t = (obj.averages.total_pop.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","))) == null ? '' : __t) +
 '</td><td>' +
-((__t = (obj.stats_1mi_buff.total_pop)) == null ? '' : __t) +
+((__t = (obj.stats_1mi_buff.total_pop.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","))) == null ? '' : __t) +
 '</td></tr><tr><td>Total employees</td><td>' +
-((__t = (obj.stats.total_num_employees)) == null ? '' : __t) +
+((__t = (obj.stats.total_num_employees.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","))) == null ? '' : __t) +
 '</td><td>' +
-((__t = (obj.averages.total_num_employees)) == null ? '' : __t) +
+((__t = (obj.averages.total_num_employees.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","))) == null ? '' : __t) +
 '</td><td>' +
-((__t = (obj.stats_1mi_buff.total_num_employees)) == null ? '' : __t) +
-'</td></tr><tr><td>Non-SOV mode share (all trips)</td><td>' +
+((__t = (obj.stats_1mi_buff.total_num_employees.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","))) == null ? '' : __t) +
+'</td></tr><tr><td>Non-SOV mode share (all trips)</td><td>%' +
 ((__t = (obj.stats.Non_SOV)) == null ? '' : __t) +
-'</td><td>' +
+'</td><td>%' +
 ((__t = (obj.averages.Non_SOV)) == null ? '' : __t) +
 '</td><td>N/A</td></tr><tr><td>Market value per square foot</td><td>$' +
 ((__t = (obj.stats.market_value)) == null ? '' : __t) +
@@ -291,11 +291,11 @@ __p += '<div style=\'padding:10px;border:1px solid #DDD;border-radius:5px;backgr
 '%</td><td>' +
 ((__t = (obj.stats_1mi_buff.pct_home_ownership)) == null ? '' : __t) +
 '%</td></tr><tr><td>Median household income</td><td>$' +
-((__t = (obj.stats.med_HH_income)) == null ? '' : __t) +
+((__t = (obj.stats.med_HH_income.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","))) == null ? '' : __t) +
 '</td><td>$' +
-((__t = (obj.averages.med_HH_income)) == null ? '' : __t) +
+((__t = (obj.averages.med_HH_income.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","))) == null ? '' : __t) +
 '</td><td>$' +
-((__t = (obj.stats_1mi_buff.med_HH_income)) == null ? '' : __t) +
+((__t = (obj.stats_1mi_buff.med_HH_income.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","))) == null ? '' : __t) +
 '</td></tr><tr><td>Median household size</td><td>' +
 ((__t = (obj.stats.avg_HH_size)) == null ? '' : __t) +
 '</td><td>' +
@@ -324,45 +324,16 @@ __p += '<div class=\'row\' id=\'regional_center_row\'><div class=\'col-md-8 col-
 __p += '<tr><td><strong>' +
 ((__t = (obj.data[i].title)) == null ? '' : __t) +
 '</strong></td><td style=\'text-align:right;\'>' +
-((__t = (obj.data[i][obj.year].stats.net_acreage)) == null ? '' : __t) +
+((__t = (obj.data[i][obj.year].stats.net_acreage.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","))) == null ? '' : __t) +
 '</td><td style=\'text-align:right;\'>' +
-((__t = (obj.data[i][obj.year].stats.total_pop)) == null ? '' : __t) +
+((__t = (obj.data[i][obj.year].stats.total_pop.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","))) == null ? '' : __t) +
 '</td><td style=\'text-align:right;\'>' +
-((__t = (obj.data[i][obj.year].stats.total_num_employees)) == null ? '' : __t) +
-'</td><td style=\'text-align:right;\'>' +
-((__t = (obj.data[i][obj.year].stats.people_per_acre)) == null ? '' : __t) +
-'</td><td style=\'text-align:right;\'>' +
-((__t = (obj.data[i][obj.year].stats.du_per_acre)) == null ? '' : __t) +
-'</td><td style=\'text-align:right;\'>' +
-((__t = (obj.data[i][obj.year].stats.market_value)) == null ? '' : __t) +
-'</td></tr>';
-};
-__p += '</table></div></div></div>';
-
-}
-return __p
-};
-
-this["templates"]["regional_ctr_average"] = function(obj) {
-obj || (obj = {});
-var __t, __p = '', __j = Array.prototype.join;
-function print() { __p += __j.call(arguments, '') }
-with (obj) {
-__p += '<div class=\'row\' id=\'regional_center_row\'><div class=\'col-md-8 col-md-offset-2\'><div style=\'padding:10px;border:1px solid #DDD;border-radius:5px;background-color:#F1F7E5;margin-bottom:10px;\'><table class=\'table table-condensed\'><tr><td style=\'text-align:right;\'></td><td style=\'text-align:right;\'>Net acreage</td><td style=\'text-align:right;\'>Total population</td><td style=\'text-align:right;\'>Total employment</td><td style=\'text-align:right;\'>People per acre</td><td style=\'text-align:right;\'>Dwelling units per acre</td><td style=\'text-align:right;\'>Market value per square foot</td></tr>';
- for(var i=0;i<obj.data.length;i++) { console.log(obj.data[i].title); ;
-__p += '<tr><td><strong>' +
-((__t = (obj.data[i].title)) == null ? '' : __t) +
-'</strong></td><td style=\'text-align:right;\'>' +
-((__t = (obj.data[i][obj.year].stats.net_acreage)) == null ? '' : __t) +
-'</td><td style=\'text-align:right;\'>' +
-((__t = (obj.data[i][obj.year].stats.total_pop)) == null ? '' : __t) +
-'</td><td style=\'text-align:right;\'>' +
-((__t = (obj.data[i][obj.year].stats.total_num_employees)) == null ? '' : __t) +
+((__t = (obj.data[i][obj.year].stats.total_num_employees.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","))) == null ? '' : __t) +
 '</td><td style=\'text-align:right;\'>' +
 ((__t = (obj.data[i][obj.year].stats.people_per_acre)) == null ? '' : __t) +
 '</td><td style=\'text-align:right;\'>' +
 ((__t = (obj.data[i][obj.year].stats.du_per_acre)) == null ? '' : __t) +
-'</td><td style=\'text-align:right;\'>' +
+'</td><td style=\'text-align:right;\'>$' +
 ((__t = (obj.data[i][obj.year].stats.market_value)) == null ? '' : __t) +
 '</td></tr>';
 };
@@ -377,105 +348,25 @@ obj || (obj = {});
 var __t, __p = '', __j = Array.prototype.join;
 function print() { __p += __j.call(arguments, '') }
 with (obj) {
-__p += '<?xml version="1.0"?><xsl:stylesheet version="1.0"xmlns:xsl="http://www.w3.org/1999/XSL/Transform"><xsl:template match="/"><div class=\'row\' id=\'regional_center_row\'><div class=\'col-md-8 col-md-offset-2\'><div style=\'padding:10px;border:1px solid #DDD;border-radius:5px;background-color:#F1F7E5;margin-bottom:10px;\'><table class=\'table table-condensed\'><tr><td style=\'text-align:right;\'></td><td style=\'text-align:right;\'>Net acreage</td><td style=\'text-align:right;\'>Total population</td><td style=\'text-align:right;\'>Total employment</td><td style=\'text-align:right;\'>People per acre</td><td style=\'text-align:right;\'>Dwelling units per acre</td><td style=\'text-align:right;\'>Market value per square foot</td></tr>';
+__p += '<div class=\'row\' id=\'regional_center_row\'><div class=\'col-md-8 col-md-offset-2\'><div style=\'padding:10px;border:1px solid #DDD;border-radius:5px;background-color:#F1F7E5;margin-bottom:10px;\'><table class=\'table table-condensed\'><tr><td style=\'text-align:right;\'></td><td style=\'text-align:right;\'>Net acreage</td><td style=\'text-align:right;\'>Total population</td><td style=\'text-align:right;\'>Total employment</td><td style=\'text-align:right;\'>People per acre</td><td style=\'text-align:right;\'>Dwelling units per acre</td><td style=\'text-align:right;\'>Market value per square foot</td></tr>';
  for(var i=0;i<obj.data.length;i++) { console.log(obj.data[i].title); ;
 __p += '<tr><td><strong>' +
 ((__t = (obj.data[i].title)) == null ? '' : __t) +
 '</strong></td><td style=\'text-align:right;\'>' +
-((__t = (obj.data[i][obj.year].stats.net_acreage)) == null ? '' : __t) +
-'</td><td style=\'text-align:right;\'><xsl:value-of select="format-number(' +
-((__t = (obj.data[i][obj.year].stats.total_pop)) == null ? '' : __t) +
-', "###,###.00")"/></td><td style=\'text-align:right;\'>' +
-((__t = (obj.data[i][obj.year].stats.total_num_employees)) == null ? '' : __t) +
+((__t = (obj.data[i][obj.year].stats.net_acreage.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","))) == null ? '' : __t) +
+'</td><td style=\'text-align:right;\'>' +
+((__t = (obj.data[i][obj.year].stats.total_pop.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","))) == null ? '' : __t) +
+'</td><td style=\'text-align:right;\'>' +
+((__t = (obj.data[i][obj.year].stats.total_num_employees.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","))) == null ? '' : __t) +
 '</td><td style=\'text-align:right;\'>' +
 ((__t = (obj.data[i][obj.year].stats.people_per_acre)) == null ? '' : __t) +
 '</td><td style=\'text-align:right;\'>' +
 ((__t = (obj.data[i][obj.year].stats.du_per_acre)) == null ? '' : __t) +
-'</td><td style=\'text-align:right;\'>' +
+'</td><td style=\'text-align:right;\'>$' +
 ((__t = (obj.data[i][obj.year].stats.market_value)) == null ? '' : __t) +
 '</td></tr>';
 };
-__p += '</table></div></div></div></xsl:template></xsl:stylesheet>';
-
-}
-return __p
-};
-
-this["templates"]["town_ctr_average"] = function(obj) {
-obj || (obj = {});
-var __t, __p = '';
-with (obj) {
-__p += '<div style=\'padding:10px;border:1px solid #DDD;border-radius:5px;background-color:#F1F9FD;\'><table class=\'table table-condensed\'><tr><th><strong>By the numbers</strong></th><th>' +
-((__t = (obj.title)) == null ? '' : __t) +
-'</th><th>' +
-((__t = (obj.type)) == null ? '' : __t) +
-' Average</th><th>One-mile buffer</th></tr><tr><td>Net acreage</td><td>' +
-((__t = (obj.stats.net_acreage)) == null ? '' : __t) +
-'</td><td>' +
-((__t = (obj.averages.net_acreage)) == null ? '' : __t) +
-'</td><td>' +
-((__t = (obj.stats_1mi_buff.net_acreage)) == null ? '' : __t) +
-'</td></tr><tr><td>Total population</td><td>' +
-((__t = (obj.stats.total_pop)) == null ? '' : __t) +
-'</td><td>' +
-((__t = (obj.averages.total_pop)) == null ? '' : __t) +
-'</td><td>' +
-((__t = (obj.stats_1mi_buff.total_pop)) == null ? '' : __t) +
-'</td></tr><tr><td>Total employees</td><td>' +
-((__t = (obj.stats.total_num_employees)) == null ? '' : __t) +
-'</td><td>' +
-((__t = (obj.averages.total_num_employees)) == null ? '' : __t) +
-'</td><td>' +
-((__t = (obj.stats_1mi_buff.total_num_employees)) == null ? '' : __t) +
-'</td></tr><tr><td>Non-SOV mode share (all trips)</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Market value per square foot</td><td>' +
-((__t = (obj.stats.market_value)) == null ? '' : __t) +
-'</td><td>' +
-((__t = (obj.averages.market_value)) == null ? '' : __t) +
-'</td><td>' +
-((__t = (obj.stats_1mi_buff.market_value)) == null ? '' : __t) +
-'</td></tr><tr><td>People per acre</td><td>' +
-((__t = (obj.stats.people_per_acre)) == null ? '' : __t) +
-'</td><td>' +
-((__t = (obj.averages.people_per_acre)) == null ? '' : __t) +
-'</td><td>' +
-((__t = (obj.stats_1mi_buff.people_per_acre)) == null ? '' : __t) +
-'</td></tr><tr><td>Dwelling units per acre</td><td>' +
-((__t = (obj.stats.du_per_acre)) == null ? '' : __t) +
-'</td><td>' +
-((__t = (obj.averages.du_per_acre)) == null ? '' : __t) +
-'</td><td>' +
-((__t = (obj.stats_1mi_buff.du_per_acre)) == null ? '' : __t) +
-'</td></tr><tr><td>Total businesses per acre</td><td>' +
-((__t = (obj.stats.total_biz_acre)) == null ? '' : __t) +
-'</td><td>' +
-((__t = (obj.averages.total_biz_acre)) == null ? '' : __t) +
-'</td><td>' +
-((__t = (obj.stats_1mi_buff.total_biz_acre)) == null ? '' : __t) +
-'</td></tr><tr><td>Home ownership</td><td>' +
-((__t = (obj.stats.pct_home_ownership)) == null ? '' : __t) +
-'</td><td>' +
-((__t = (obj.averages.pct_home_ownership)) == null ? '' : __t) +
-'</td><td>' +
-((__t = (obj.stats_1mi_buff.pct_home_ownership)) == null ? '' : __t) +
-'</td></tr><tr><td>Median household income</td><td>' +
-((__t = (obj.stats.med_HH_income)) == null ? '' : __t) +
-'</td><td>' +
-((__t = (obj.averages.med_HH_income)) == null ? '' : __t) +
-'</td><td>' +
-((__t = (obj.stats_1mi_buff.med_HH_income)) == null ? '' : __t) +
-'</td></tr><tr><td>Median household size</td><td>' +
-((__t = (obj.stats.avg_HH_size)) == null ? '' : __t) +
-'</td><td>' +
-((__t = (obj.averages.avg_HH_size)) == null ? '' : __t) +
-'</td><td>' +
-((__t = (obj.stats_1mi_buff.avg_HH_size)) == null ? '' : __t) +
-'</td></tr><tr><td>Median age</td><td>' +
-((__t = (obj.stats.med_age)) == null ? '' : __t) +
-'</td><td>' +
-((__t = (obj.averages.med_age)) == null ? '' : __t) +
-'</td><td>' +
-((__t = (obj.stats_1mi_buff.med_age)) == null ? '' : __t) +
-'</td></tr></table></div>';
+__p += '</table></div></div></div>';
 
 }
 return __p

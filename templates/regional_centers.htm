@@ -15,13 +15,13 @@
                     <tr>
                         <td><strong><%=obj.data[i].title%></strong></td>
                         <td style='text-align:right;'>
-                            <%=obj.data[i][obj.year].stats.net_acreage%>
+                            <%=obj.data[i][obj.year].stats.net_acreage.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")%>
                         </td>
                         <td style='text-align:right;'>
-                            <%=obj.data[i][obj.year].stats.total_pop%>
+                            <%=obj.data[i][obj.year].stats.total_pop.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")%>
                         </td>
                         <td style='text-align:right;'>
-                            <%=obj.data[i][obj.year].stats.total_num_employees%>
+                            <%=obj.data[i][obj.year].stats.total_num_employees.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")%>
                         </td>
                         <td style='text-align:right;'>
                             <%=obj.data[i][obj.year].stats.people_per_acre%>
@@ -30,7 +30,7 @@
                             <%=obj.data[i][obj.year].stats.du_per_acre%>
                         </td>
                         <td style='text-align:right;'>
-                            <%=obj.data[i][obj.year].stats.market_value%>
+                            $<%=obj.data[i][obj.year].stats.market_value%>
                         </td>
                     </tr>
                     <%}%>
