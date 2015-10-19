@@ -256,11 +256,11 @@ __p += '<div style=\'padding:10px;border:1px solid #DDD;border-radius:5px;backgr
 ((__t = (obj.averages.total_num_employees.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","))) == null ? '' : __t) +
 '</td><td>' +
 ((__t = (obj.stats_1mi_buff.total_num_employees.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","))) == null ? '' : __t) +
-'</td></tr><tr><td>Non-SOV mode share (all trips)</td><td>%' +
+'</td></tr><tr><td>Non-SOV mode share (all trips)</td><td>' +
 ((__t = (obj.stats.Non_SOV)) == null ? '' : __t) +
-'</td><td>%' +
+'%</td><td>' +
 ((__t = (obj.averages.Non_SOV)) == null ? '' : __t) +
-'</td><td>N/A</td></tr><tr><td>Market value per square foot</td><td>$' +
+'%</td><td>N/A</td></tr><tr><td>Market value per square foot</td><td>$' +
 ((__t = (obj.stats.market_value)) == null ? '' : __t) +
 '</td><td>$' +
 ((__t = (obj.averages.market_value)) == null ? '' : __t) +
