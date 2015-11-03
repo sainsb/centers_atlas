@@ -13,7 +13,7 @@
                 </tr>
                 <% for(var i=0;i<obj.data.length;i++) { console.log(obj.data[i].title); %>
                     <tr>
-                        <td><strong><%=obj.data[i].title%></strong></td>
+                        <td><strong><a href="#center/<%=obj.data[i].title.toLowerCase().replace(' center', '').replace(' â€“ ', '_').replace('/', '_').replace('.', '').replace(' ', '_').replace(/\-/g, '_').replace(/\s/g,'')%>"><%=obj.data[i].title%></a></strong></td>
                         <td style='text-align:right;'>
                             <%=obj.data[i][obj.year].stats.net_acreage.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")%>
                         </td>
