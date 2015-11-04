@@ -321,13 +321,7 @@ function print() { __p += __j.call(arguments, '') }
 with (obj) {
 __p += '<div class=\'row\' id=\'regional_center_row\'><div class=\'col-md-8 col-md-offset-2\'><div style=\'padding:10px;border:1px solid #DDD;border-radius:5px;background-color:#F1F7E5;margin-bottom:10px;\'><table class=\'table table-condensed\'><tr><td style=\'text-align:right;\'></td><td style=\'text-align:right;\'>Net acreage</td><td style=\'text-align:right;\'>Total population</td><td style=\'text-align:right;\'>Total employment</td><td style=\'text-align:right;\'>People per acre</td><td style=\'text-align:right;\'>Dwelling units per acre</td><td style=\'text-align:right;\'>Market value per square foot</td></tr>';
  for(var i=0;i<obj.data.length;i++) { console.log(obj.data[i].title); ;
-__p += '<tr><!-- <td><strong>' +
-((__t = (obj.data[i].title)) == null ? '' : __t) +
-'</strong></td> --><!-- <td><strong><a href="#center/' +
-((__t = (obj.data[i].title.toString())) == null ? '' : __t) +
-'">' +
-((__t = (obj.data[i].title)) == null ? '' : __t) +
-'</strong></td> --><td><strong><a href="#center/' +
+__p += '<tr><td><strong><a href="#center/' +
 ((__t = (obj.data[i].title.toLowerCase().replace(' center', '').replace(' â€“ ', '_').replace('/', '_').replace('.', '').replace(' ', '_').replace(/\-/g, '_').replace(/\s/g,''))) == null ? '' : __t) +
 '">' +
 ((__t = (obj.data[i].title)) == null ? '' : __t) +
@@ -342,6 +336,35 @@ __p += '<tr><!-- <td><strong>' +
 '</td><td style=\'text-align:right;\'>' +
 ((__t = (obj.data[i][obj.year].stats.du_per_acre)) == null ? '' : __t) +
 '</td><td style=\'text-align:right;\'>$' +
+((__t = (obj.data[i][obj.year].stats.market_value)) == null ? '' : __t) +
+'</td></tr>';
+};
+__p += '</table></div></div></div>';
+
+}
+return __p
+};
+
+this["templates"]["regional_ctr_average"] = function(obj) {
+obj || (obj = {});
+var __t, __p = '', __j = Array.prototype.join;
+function print() { __p += __j.call(arguments, '') }
+with (obj) {
+__p += 'div class=\'row\' id=\'regional_center_row\'><div class=\'col-md-8 col-md-offset-2\'><div style=\'padding:10px;border:1px solid #DDD;border-radius:5px;background-color:#F1F7E5;margin-bottom:10px;\'><table class=\'table table-condensed\'><tr><td style=\'text-align:right;\'></td><td style=\'text-align:right;\'>Net acreage</td><td style=\'text-align:right;\'>Total population</td><td style=\'text-align:right;\'>Total employment</td><td style=\'text-align:right;\'>People per acre</td><td style=\'text-align:right;\'>Dwelling units per acre</td><td style=\'text-align:right;\'>Market value per square foot</td></tr>';
+ for(var i=0;i<obj.data.length;i++) { console.log(obj.data[i].title); ;
+__p += '<tr><td><strong>' +
+((__t = (obj.data[i].title)) == null ? '' : __t) +
+'</strong></td><td style=\'text-align:right;\'>' +
+((__t = (obj.data[i][obj.year].stats.net_acreage)) == null ? '' : __t) +
+'</td><td style=\'text-align:right;\'>' +
+((__t = (obj.data[i][obj.year].stats.total_pop)) == null ? '' : __t) +
+'</td><td style=\'text-align:right;\'>' +
+((__t = (obj.data[i][obj.year].stats.total_num_employees)) == null ? '' : __t) +
+'</td><td style=\'text-align:right;\'>' +
+((__t = (obj.data[i][obj.year].stats.people_per_acre)) == null ? '' : __t) +
+'</td><td style=\'text-align:right;\'>' +
+((__t = (obj.data[i][obj.year].stats.du_per_acre)) == null ? '' : __t) +
+'</td><td style=\'text-align:right;\'>' +
 ((__t = (obj.data[i][obj.year].stats.market_value)) == null ? '' : __t) +
 '</td></tr>';
 };
