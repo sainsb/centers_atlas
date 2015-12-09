@@ -816,7 +816,8 @@ var App = {
 				App.analysis_centers = data;
 
 				var onEachFeature = function(feature, layer) {
-					var htm = '<b>' + feature.properties.NAME + '</b><br/>' + feature.properties.TYPE + '<br/><a href="./#center/' + feature.properties.NAME.toLowerCase().replace(' center', '').replace(' â€“ ', '_').replace('/', '_').replace('.', '').replace(' ', '_').replace(/\-/g, '_').replace(/\s/g,'') + '">View in Atlas</a>';
+					if (feature.properties.NAME == 'Wood Village') {var htm = '<b>' + feature.properties.NAME + '</b><br/>' + feature.properties.TYPE + '<br/><a href="./#center/fairview">View in Atlas</a>';}
+					else {var htm = '<b>' + feature.properties.NAME + '</b><br/>' + feature.properties.TYPE + '<br/><a href="./#center/' + feature.properties.NAME.toLowerCase().replace(' center', '').replace(' â€“ ', '_').replace('/', '_').replace('.', '').replace(' ', '_').replace(/\-/g, '_').replace(/\s/g,'') + '">View in Atlas</a>';}
 					layer.bindPopup(htm);
 				};
 
