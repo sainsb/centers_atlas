@@ -134,6 +134,20 @@ $(document).ready(function() {
 		});
 	});
 
+	Path.map("#central_city").to(function() {
+		clearPanel().then(function() {
+			if (App.data == null) {
+				$.getJSON('./data/data.json').then(function(data) {
+					App.data = data;
+					App.central_city_view();
+				});
+			} else {
+				App.central_city_view();
+			}
+		}).then(function() {
+			$('.container-fluid').fadeIn();
+		});
+	});
 	Path.map("#regional_centers").to(function() {
 		clearPanel().then(function() {
 			if (App.data == null) {
@@ -275,6 +289,47 @@ var App = {
 		return d.promise();
 	},
 	
+	central_city_view: function() {
+
+		//if the slider hasn't already appeared in the app we need to add it.
+		App.slider.init();
+
+		$('.container-fluid').append(templates['breadcrumb']({
+			title: "Central City Overview"
+		}));
+
+		document.title = "State of the Centers - Central City";
+
+		//put the regional centers into an array
+
+		var central_city = [];
+
+		for(var key in App.data){
+			if (App.data[key].type=='Central City'){
+				central_city.push(App.data[key]);
+			}
+		}
+
+		
+		//get year:
+		var year = $('#inc_slider').val();
+
+		$('.container-fluid').append(templates['central_city']({data:central_city, year:year.toString()})
+		);
+
+		$('#inc_slider').off('input.t').on('input.t', function() {
+			console.log('yay')
+				var year = $('#inc_slider').val();
+
+				$('#central_city_row').fadeOut(0, function(){	$('#central_city_row').remove();
+					$('.container-fluid').append(templates['central_city']({data:central_city, year:year.toString()}))});
+			
+		});
+
+		var d = $.Deferred();
+		d.resolve();
+		return d.promise();
+	},
 	regional_centers_view: function() {
 
 		//if the slider hasn't already appeared in the app we need to add it.
@@ -516,7 +571,8 @@ var App = {
 			type: App.data[center].type,
 			stats: App.data[center][year].stats,
 			averages: App.data[App.data[center].type.toLowerCase().replace(' ', '_') + '_averages'][year],
-			stats_1mi_buff: App.data[center][year].stats_1mi_buff
+			stats_1mi_buff: App.data[center][year].stats_1mi_buff,
+			narrative: App.data[center][year].narrative
 		};
 
 		$('#numbers').html(templates['numbers'](numbers_obj));
@@ -560,7 +616,8 @@ var App = {
 					type: App.data[center].type,
 					stats: App.data[center][year].stats,
 					averages: App.data[App.data[center].type.toLowerCase().replace(' ', '_') + '_averages'][year],
-					stats_1mi_buff: App.data[center][year].stats_1mi_buff
+					stats_1mi_buff: App.data[center][year].stats_1mi_buff,
+					narrative: App.data[center][year].narrative
 				};
 
 				$('#numbers').html(templates['numbers'](numbers_obj));

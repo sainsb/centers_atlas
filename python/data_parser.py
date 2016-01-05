@@ -210,10 +210,10 @@ for row in reader:
   data[row['NAME']] = {}
   data[row['NAME']][YEAR] = {}
 
-  try: 
-    data[row['NAME']]['narrative'] = row['Narrative'].encode('ascii', 'ignore')
-  except:
-    data[row['NAME']]['narrative'] = row['NAME']
+  # try: 
+  #   data[row['NAME']]['narrative'] = row['Narrative'].encode('ascii', 'ignore')
+  # except:
+  #   data[row['NAME']]['narrative'] = row['NAME']
 
   data[row['NAME']]['title'] = row['NAME']
   data[row['NAME']]['type'] = row['TYPE']
@@ -234,6 +234,10 @@ for row in reader:
   data[row['NAME']][YEAR]['stats_1mi_buff'] = {}
   data[row['NAME']][YEAR]['context_tool_scores'] = []
   data[row['NAME']][YEAR]['employment_breakdown'] = []
+  try: 
+    data[row['NAME']][YEAR]['narrative'] = row['Narrative'].encode('ascii', 'ignore')
+  except:
+    data[row['NAME']][YEAR]['narrative'] = row['NAME']
    
   getDataInHere(row)
 
@@ -264,6 +268,10 @@ for row in reader:
   data[row['NAME']][YEAR]['stats'] = {}
   data[row['NAME']][YEAR]['stats_1mi_buff'] = {}
   data[row['NAME']][YEAR]['employment_breakdown'] = []
+  try: 
+    data[row['NAME']][YEAR]['narrative'] = row['Narrative'].encode('ascii', 'ignore')
+  except:
+    data[row['NAME']][YEAR]['narrative'] = row['NAME']
 
   getDataInHere(row)
 
@@ -275,7 +283,7 @@ newdata = {}
 
 #massage objectproperty names (center names)
 for k in data.keys():
-   newdata[str(k).lower().replace(' ','_').replace('.','').replace('/','_')] = data[k]
+   newdata[str(k).lower().replace(' ','_').replace('.','').replace('/','_').replace('-','_')] = data[k]
 
 with open('../data/newdata.json', 'w') as f:
   f.write(json.dumps(newdata, indent=4, sort_keys=True))

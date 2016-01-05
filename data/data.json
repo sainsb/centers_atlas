@@ -32,6 +32,7 @@
                 16.1, 
                 19.3
             ], 
+            "narrative": "The Aloha Town Center is located along Tualatin Valley Highway, running north and south along 185th Avenue, within Washington County. The center has one ODOT facility within its boundary: Southwest Tualatin Valley Highway (State Highway 8), which connects Beaverton to Hillsboro. Auto-oriented retail locations serve the surrounding community along Southwest Tualatin Valley Highway. The center has 6,610 residents, 1,000 employees and 2,520 dwelling units. Aloha Town Center contains 511 gross acres.", 
             "private_amenities": [
                 3, 
                 2, 
@@ -122,6 +123,7 @@
                 14.6, 
                 18.4
             ], 
+            "narrative": "The Aloha Town Center is located along Tualatin Valley Highway in unincorporated Washington County. While Tualatin Valley Highway provides access to the center, it along with the Portland and Western Railroad track is a controlling force that divides the town center. Single family homes are the predominant development pattern in the center with retail and employment clustered along Tualatin Valley Highway. Two TriMet bus lines provide transit access to the town center. A community plan for the larger Aloha-Reedville area calls for retaining the predominant residential character in the town center, while increasing density and locating the most intensive land use patterns at the intersection of Tualatin Valley Highway and 185th Avenue. Washington County is continuing to refine the plan for the town center.", 
             "private_amenities": [
                 2, 
                 3, 
@@ -192,7 +194,6 @@
             "./photos/Aloha/3.jpg", 
             "./photos/Aloha/4.jpg"
         ], 
-        "narrative": "The Aloha Town Center is located along Tualatin Valley Highway, running north and south along 185th Avenue, within Washington County. The center has one ODOT facility within its boundary: Southwest Tualatin Valley Highway (State Highway 8), which connects Beaverton to Hillsboro. Auto-oriented retail locations serve the surrounding community along Southwest Tualatin Valley Highway. The center has 6,610 residents, 1,000 employees and 2,520 dwelling units. Aloha Town Center contains 511 gross acres.", 
         "title": "Aloha", 
         "type": "Town Center"
     }, 
@@ -256,6 +257,7 @@
                 11.8, 
                 14.8
             ], 
+            "narrative": "The Beaverton Regional Center serves as a retail and transportation hub for Beaverton and unincorporated Washington County. Located directly west of Highway 217 and south of Highway 26, the center is served by several additional ODOT facilities, including State Highway 8 and 10. Two MAX stops, as well as a regional transit center, provide extensive transit service in and out of the center. The center has 2,290 residents, 5,290 employees and 1,047 dwelling units. Beaverton Regional Center contains 407 gross acres.", 
             "private_amenities": [
                 1, 
                 5, 
@@ -346,6 +348,7 @@
                 10.3, 
                 18.0
             ], 
+            "narrative": "The Beaverton Regional Center is located just west of Highway 217 and is defined by SW Canyon Road and SW Beaverton-Hillsdale Highway/SW Farmington Road, along with the Portland and Western Railroad track that form distinct sections of the regional center. South of the railroad is the walkable older part of the city that is mostly residential and includes the library. The area along SW Canyon Road and SW Beaverton Hillsdale Highway, east of SW Lombard is composed mostly of large scale auto oriented commercial development. The resulting mix of commercial uses including shops and restaurants, make this regional center the commercial and retail hub for much of Beaverton and parts of unincorporated Washington County. The Beaverton Transit Center provides transit access via MAX Light Rail Red and Blue Lines, numerous TriMet bus lines and the northern terminus of the Westside Express Service Commuter Rail.", 
             "private_amenities": [
                 1, 
                 8, 
@@ -416,7 +419,6 @@
             "./photos/Beaverton/3.jpg", 
             "./photos/Beaverton/4.jpg"
         ], 
-        "narrative": "The Beaverton Regional Center serves as a retail and transportation hub for Beaverton and unincorporated Washington County. Located directly west of Highway 217 and south of Highway 26, the center is served by several additional ODOT facilities, including State Highway 8 and 10. Two MAX stops, as well as a regional transit center, provide extensive transit service in and out of the center. The center has 2,290 residents, 5,290 employees and 1,047 dwelling units. Beaverton Regional Center contains 407 gross acres.", 
         "title": "Beaverton", 
         "type": "Regional Center"
     }, 
@@ -453,6 +455,7 @@
                 17.2, 
                 46.8
             ], 
+            "narrative": "The Bethany Town Center is located in northern Washington County, along Bethany Road. The area, in unincorporated Washington County, has no direct highway access and is not serviced by any ODOT facilities. The center is primarily a local retail shopping destination and multi-family housing location. It has 1,641 residents, 649 employees and 868 dwelling units. Bethany Town Center contains 122 gross acres.", 
             "private_amenities": [
                 0, 
                 0, 
@@ -543,6 +546,7 @@
                 13.2, 
                 50.5
             ], 
+            "narrative": "The Bethany Town Center is located in northern unincorporated Washington County. The Bethany Community Plan calls for a mix of local retail and small community-based office uses that provide a community village atmosphere. The town center supports this vision with a mix of commercial and retail uses providing a wide range of services to the community as well as numerous housing options. Access to the town center is provided by NW Bethany Boulevard and one TriMet bus line.", 
             "private_amenities": [
                 0, 
                 1, 
@@ -613,7 +617,6 @@
             "./photos/Bethany/3.jpg", 
             "./photos/Bethany/4.jpg"
         ], 
-        "narrative": "The Bethany Town Center is located in northern Washington County, along Bethany Road. The area, in unincorporated Washington County, has no direct highway access and is not serviced by any ODOT facilities. The center is primarily a local retail shopping destination and multi-family housing location. It has 1,641 residents, 649 employees and 868 dwelling units. Bethany Town Center contains 122 gross acres.", 
         "title": "Bethany", 
         "type": "Town Center"
     }, 
@@ -650,6 +653,7 @@
                 14.8, 
                 31.8
             ], 
+            "narrative": "The Cedar Mill Town Center is located north of Highway 26, along Cornell Road in unincorporated Washington County. The center is accessed by two major arterials, Cornell and Murray roads, and is not served by any ODOT facilities. The area is characterized by single-family housing and local retail shopping. It has 3,185 residents, 1,476 employees and 1,735 dwelling units. Cedar Mill Town Center contains 338 gross acres.", 
             "private_amenities": [
                 0, 
                 2, 
@@ -740,6 +744,7 @@
                 15.7, 
                 35.5
             ], 
+            "narrative": "The Cedar Mill Town Center is located in unincorporated Washington County, just north of Highway 26. It is bisected by NW Cornell Road, NW Murray Boulevard and SW Barnes Rd. TriMet bus lines on these major roads provide transit access to and within the center. Predominant uses today include auto-oriented retail and low-density single family homes. Future plans call for additional shopping and employment opportunities and nodes of medium and high-density residential development.", 
             "private_amenities": [
                 0, 
                 2, 
@@ -810,7 +815,6 @@
             "./photos/Cedar-Mill/3.jpg", 
             "./photos/Cedar-Mill/4.jpg"
         ], 
-        "narrative": "The Cedar Mill Town Center is located north of Highway 26, along Cornell Road in unincorporated Washington County. The center is accessed by two major arterials, Cornell and Murray roads, and is not served by any ODOT facilities. The area is characterized by single-family housing and local retail shopping. It has 3,185 residents, 1,476 employees and 1,735 dwelling units. Cedar Mill Town Center contains 338 gross acres.", 
         "title": "Cedar Mill", 
         "type": "Town Center"
     }, 
@@ -847,6 +851,7 @@
                 12.9, 
                 19.3
             ], 
+            "narrative": "The Clackamas Regional Center is located directly adjacent to Interstate 205 and serves as the retail hub of northern Clackamas County and much of East Portland. Located in unicorporated Clackamas county, the center is home to a large regional mall and many destination shops and services. It is the final southbound stop on the newly opened MAX Green Line. This MAX station is also home to a 750-space park-and-ride facility, which allows for extended transit service to 10 bus lines. The regional center is part of an active urban renewal district and contains abundant surface parking. The center has 5,227 residents, 12,059 employees and 2,680 dwelling units. Clackamas Regional Center contains 631 gross acres.", 
             "private_amenities": [
                 2, 
                 0, 
@@ -937,6 +942,7 @@
                 12.4, 
                 17.8
             ], 
+            "narrative": "Clackamas", 
             "private_amenities": [
                 0, 
                 2, 
@@ -1007,9 +1013,201 @@
             "./photos/Clackamas/3.jpg", 
             "./photos/Clackamas/4.jpg"
         ], 
-        "narrative": "The Clackamas Regional Center is located directly adjacent to Interstate 205 and serves as the retail hub of northern Clackamas County and much of East Portland. Located in unicorporated Clackamas county, the center is home to a large regional mall and many destination shops and services. It is the final southbound stop on the newly opened MAX Green Line. This MAX station is also home to a 750-space park-and-ride facility, which allows for extended transit service to 10 bus lines. The regional center is part of an active urban renewal district and contains abundant surface parking. The center has 5,227 residents, 12,059 employees and 2,680 dwelling units. Clackamas Regional Center contains 631 gross acres.", 
         "title": "Clackamas", 
         "type": "Regional Center"
+    }, 
+    "clinton": {
+        "2011": {
+            "context_tool_scores": [
+                4.69, 
+                2.67, 
+                4.14, 
+                3.0, 
+                5.0, 
+                2.43, 
+                4.5, 
+                69.56
+            ], 
+            "employment_breakdown": [
+                0, 
+                0, 
+                0
+            ], 
+            "incomes": [
+                7.0, 
+                12.0, 
+                24.0, 
+                26.0, 
+                8.0, 
+                23.0
+            ], 
+            "incomes_1mi_buff": [
+                11.0, 
+                18.0, 
+                19.0, 
+                24.0, 
+                14.0, 
+                14.0
+            ], 
+            "narrative": "", 
+            "private_amenities": [
+                1, 
+                6, 
+                1, 
+                0, 
+                0, 
+                0, 
+                1, 
+                3, 
+                2, 
+                0, 
+                0, 
+                0, 
+                3, 
+                3, 
+                13, 
+                1
+            ], 
+            "public_amenities": [
+                0, 
+                0, 
+                0, 
+                0, 
+                1
+            ], 
+            "stats": {
+                "Non_SOV": "", 
+                "avg_HH_size": 1.97, 
+                "du_per_acre": 11.0, 
+                "gross_acreage": 60.0, 
+                "market_value": 102.0, 
+                "med_HH_income": 50126.0, 
+                "med_age": 34.1, 
+                "net_acreage": 38.0, 
+                "pct_home_ownership": 42.1, 
+                "people_per_acre": 45.2, 
+                "total_biz": "N/A", 
+                "total_biz_acre": "N/A", 
+                "total_du": 417.0, 
+                "total_num_employees": 945.0, 
+                "total_pop": 774.0
+            }, 
+            "stats_1mi_buff": {
+                "avg_HH_size": 2.01, 
+                "du_per_acre": "", 
+                "market_value": 76.0, 
+                "med_HH_income": 52067.0, 
+                "med_age": 35.8, 
+                "net_acreage": "", 
+                "pct_home_ownership": 37.6, 
+                "people_per_acre": "", 
+                "total_biz": "", 
+                "total_biz_acre": "", 
+                "total_du": "", 
+                "total_num_employees": "", 
+                "total_pop": ""
+            }
+        }, 
+        "2015": {
+            "context_tool_scores": [
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0
+            ], 
+            "employment_breakdown": [
+                0, 
+                0, 
+                0
+            ], 
+            "incomes": [
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0
+            ], 
+            "incomes_1mi_buff": [
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0
+            ], 
+            "narrative": "", 
+            "private_amenities": [
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0
+            ], 
+            "public_amenities": [
+                0, 
+                0, 
+                0, 
+                0, 
+                0
+            ], 
+            "stats": {
+                "Non_SOV": "", 
+                "avg_HH_size": "", 
+                "du_per_acre": "", 
+                "gross_acreage": "", 
+                "market_value": "", 
+                "med_HH_income": "", 
+                "med_age": "", 
+                "net_acreage": "", 
+                "pct_home_ownership": "", 
+                "people_per_acre": "", 
+                "total_biz": "", 
+                "total_biz_acre": "", 
+                "total_du": "", 
+                "total_num_employees": "", 
+                "total_pop": ""
+            }, 
+            "stats_1mi_buff": {
+                "avg_HH_size": "", 
+                "du_per_acre": "", 
+                "market_value": "", 
+                "med_HH_income": "", 
+                "med_age": "", 
+                "net_acreage": "", 
+                "pct_home_ownership": "", 
+                "people_per_acre": "", 
+                "total_biz": "", 
+                "total_biz_acre": "", 
+                "total_du": "", 
+                "total_num_employees": "", 
+                "total_pop": ""
+            }
+        }, 
+        "extent": [], 
+        "images": [
+            "./photos/Clinton/1.jpg", 
+            "./photos/Clinton/2.jpg", 
+            "./photos/Clinton/3.jpg", 
+            "./photos/Clinton/4.jpg"
+        ], 
+        "title": "Clinton", 
+        "type": "Typology"
     }, 
     "context_tool_labels": [
         "Parks Access", 
@@ -1053,6 +1251,7 @@
                 16.6, 
                 14.9
             ], 
+            "narrative": "The Cornelius Town Center is located along Highway 8, in downtown Cornelius, between downtown Hillsboro and Forest Grove. The center has no major interstate access, but is served by one ODOT facility, Southwest Tualatin Valley Highway (State Highway 8). One frequent service bus line runs along Highway 8, with a connection to Hillsboro and the MAX line. The center has 1,864 residents, 352 employees and 722 dwelling units. Cornelius Town Center contains 282 gross acres.", 
             "private_amenities": [
                 1, 
                 1, 
@@ -1143,6 +1342,7 @@
                 11.0, 
                 16.9
             ], 
+            "narrative": "The Cornelius Town Center is located along Adair and Baseline Streets (Highway 8) between downtown Hillsboro and Forest Grove. Two Portland and Western Railroad tracks, one north and one south of Highway 8, traverse east-west through the town center. While auto-oriented development is the predominant land use along the highway, there is a significant amount of single family residences in the town center along with civic uses such as the library and city offices. The center is served by one TriMet bus line that connects to Forest Grove and additional transit options in Hillsboro, including the terminus of the MAX Light Rail Blue Line. Local plans highlight the desire to concentrate retail, businesses and civic uses along Adair and Baseline Streets in order to make the area more of a community focused destination and less of a thoroughfare.", 
             "private_amenities": [
                 0, 
                 3, 
@@ -1213,7 +1413,6 @@
             "./photos/Cornelius/3.jpg", 
             "./photos/Cornelius/4.jpg"
         ], 
-        "narrative": "The Cornelius Town Center is located along Highway 8, in downtown Cornelius, between downtown Hillsboro and Forest Grove. The center has no major interstate access, but is served by one ODOT facility, Southwest Tualatin Valley Highway (State Highway 8). One frequent service bus line runs along Highway 8, with a connection to Hillsboro and the MAX line. The center has 1,864 residents, 352 employees and 722 dwelling units. Cornelius Town Center contains 282 gross acres.", 
         "title": "Cornelius", 
         "type": "Town Center"
     }, 
@@ -1250,6 +1449,7 @@
                 18.6, 
                 41.8
             ], 
+            "narrative": "The Damascus Town Center is located in the southeastern portion of the region. The city, incorporated in 2004, has adopted a comprehensive plan but still has low-density rural zoning in place. The new plan calls for Damascus Town Center to relocate. The Damascus center has no direct access to the interstate system, but is bisected by the ODOT facility State Highway 212. The center has no transit service available. Damascus has 263 residents, 555 employees and 88 dwelling units. Damascus Town Center contains 236 gross acres.", 
             "private_amenities": [
                 0, 
                 1, 
@@ -1340,6 +1540,7 @@
                 19.3, 
                 45.4
             ], 
+            "narrative": "The Damascus Town Center is located at the junction of SE Foster Road, SE Sunnyside Road and Highway 212 in the southeastern portion of the region. The Damascus area was included in the regional urban growth boundary in 2002 and to date no urban development has occurred in the town center. There is no transit service and the roads within Damascus are still at rural road standards.", 
             "private_amenities": [
                 0, 
                 0, 
@@ -1410,7 +1611,6 @@
             "./photos/Damascus/3.jpg", 
             "./photos/Damascus/4.jpg"
         ], 
-        "narrative": "The Damascus Town Center is located in the southeastern portion of the region. The city, incorporated in 2004, has adopted a comprehensive plan but still has low-density rural zoning in place. The new plan calls for Damascus Town Center to relocate. The Damascus center has no direct access to the interstate system, but is bisected by the ODOT facility State Highway 212. The center has no transit service available. Damascus has 263 residents, 555 employees and 88 dwelling units. Damascus Town Center contains 236 gross acres.", 
         "title": "Damascus", 
         "type": "Town Center"
     }, 
@@ -1418,6 +1618,199 @@
         2011, 
         2015
     ], 
+    "dt_and_the_pearl": {
+        "2011": {
+            "context_tool_scores": [
+                4.92, 
+                3.51, 
+                4.74, 
+                4.08, 
+                4.3, 
+                3.53, 
+                4.31, 
+                80.09
+            ], 
+            "employment_breakdown": [
+                0, 
+                0, 
+                0
+            ], 
+            "incomes": [
+                11.0, 
+                24.0, 
+                20.0, 
+                20.0, 
+                11.0, 
+                14.0
+            ], 
+            "incomes_1mi_buff": [
+                24.0, 
+                22.0, 
+                14.0, 
+                15.0, 
+                9.0, 
+                16.0
+            ], 
+            "narrative": "", 
+            "private_amenities": [
+                4, 
+                23, 
+                1, 
+                7, 
+                5, 
+                10, 
+                7, 
+                71, 
+                48, 
+                7, 
+                20, 
+                22, 
+                16, 
+                4, 
+                281, 
+                10
+            ], 
+            "public_amenities": [
+                0, 
+                1, 
+                1, 
+                1, 
+                17
+            ], 
+            "stats": {
+                "Non_SOV": "", 
+                "avg_HH_size": 1.28, 
+                "du_per_acre": 30.8, 
+                "gross_acreage": 754.0, 
+                "market_value": 573.0, 
+                "med_HH_income": 27000.0, 
+                "med_age": 37.2, 
+                "net_acreage": 413.0, 
+                "pct_home_ownership": 13.6, 
+                "people_per_acre": 232.6, 
+                "total_biz": "N/A", 
+                "total_biz_acre": "N/A", 
+                "total_du": 12725.0, 
+                "total_num_employees": 79750.0, 
+                "total_pop": 16316.0
+            }, 
+            "stats_1mi_buff": {
+                "avg_HH_size": 1.48, 
+                "du_per_acre": "", 
+                "market_value": 160.0, 
+                "med_HH_income": 37868.0, 
+                "med_age": 38.1, 
+                "net_acreage": "", 
+                "pct_home_ownership": 20.2, 
+                "people_per_acre": "", 
+                "total_biz": "", 
+                "total_biz_acre": "", 
+                "total_du": "", 
+                "total_num_employees": "", 
+                "total_pop": ""
+            }
+        }, 
+        "2015": {
+            "context_tool_scores": [
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0
+            ], 
+            "employment_breakdown": [
+                0, 
+                0, 
+                0
+            ], 
+            "incomes": [
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0
+            ], 
+            "incomes_1mi_buff": [
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0
+            ], 
+            "narrative": "", 
+            "private_amenities": [
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0
+            ], 
+            "public_amenities": [
+                0, 
+                0, 
+                0, 
+                0, 
+                0
+            ], 
+            "stats": {
+                "Non_SOV": "", 
+                "avg_HH_size": "", 
+                "du_per_acre": "", 
+                "gross_acreage": "", 
+                "market_value": "", 
+                "med_HH_income": "", 
+                "med_age": "", 
+                "net_acreage": "", 
+                "pct_home_ownership": "", 
+                "people_per_acre": "", 
+                "total_biz": "", 
+                "total_biz_acre": "", 
+                "total_du": "", 
+                "total_num_employees": "", 
+                "total_pop": ""
+            }, 
+            "stats_1mi_buff": {
+                "avg_HH_size": "", 
+                "du_per_acre": "", 
+                "market_value": "", 
+                "med_HH_income": "", 
+                "med_age": "", 
+                "net_acreage": "", 
+                "pct_home_ownership": "", 
+                "people_per_acre": "", 
+                "total_biz": "", 
+                "total_biz_acre": "", 
+                "total_du": "", 
+                "total_num_employees": "", 
+                "total_pop": ""
+            }
+        }, 
+        "extent": [], 
+        "images": [
+            "./photos/DT-and-the-Pearl/1.jpg", 
+            "./photos/DT-and-the-Pearl/2.jpg", 
+            "./photos/DT-and-the-Pearl/3.jpg", 
+            "./photos/DT-and-the-Pearl/4.jpg"
+        ], 
+        "title": "DT and the Pearl", 
+        "type": "Typology"
+    }, 
     "fairview": {
         "2011": {
             "context_tool_scores": [
@@ -1451,6 +1844,7 @@
                 17.5, 
                 15.6
             ], 
+            "narrative": "The Fairview/Wood Village Town Center is a combination of two local jurisdictions, located south of Interstate 84 at the intersection of Halsey Avenue and Fairview Road. The town center has direct access to I-84 and is serviced by the major arterials of Halsey and Glisan streets, but is not served by any major ODOT facilities. Both Wood Village and Fairview are serviced by two bus lines, one of which is a frequent service route. The center has 2,199 residents, 755 employees and 813 dwelling units. Fairview/Wood Village Town Center contains 287 gross acres.", 
             "private_amenities": [
                 0, 
                 1, 
@@ -1541,6 +1935,7 @@
                 12.0, 
                 17.0
             ], 
+            "narrative": "The Fairview/Wood Village Town Center is located near the eastern edge of the region within the cities of Fairview and Wood Village. The town center is accessed by NE Halsey Street and NE 223rd Ave with transit connections through two TriMet bus lines along these arterials. The town center has two distinct patterns of development. The Fairview portion is defined by a compact residential and commercial development pattern that prioritizes walking and biking. The Wood Village portion of the town center is more auto-oriented with significant vacant and underutilized land and is currently undergoing a planning process that will set the future vision for that portion of the town center.", 
             "private_amenities": [
                 0, 
                 3, 
@@ -1611,8 +2006,7 @@
             "./photos/Fairview/3.jpg", 
             "./photos/Fairview/4.jpg"
         ], 
-        "narrative": "The Fairview/Wood Village Town Center is a combination of two local jurisdictions, located south of Interstate 84 at the intersection of Halsey Avenue and Fairview Road. The town center has direct access to I-84 and is serviced by the major arterials of Halsey and Glisan streets, but is not served by any major ODOT facilities. Both Wood Village and Fairview are serviced by two bus lines, one of which is a frequent service route. The center has 2,199 residents, 755 employees and 813 dwelling units. Fairview/Wood Village Town Center contains 287 gross acres.", 
-        "title": "Fairview/Wood Village", 
+        "title": "Fairview", 
         "type": "Town Center"
     }, 
     "forest_grove": {
@@ -1648,6 +2042,7 @@
                 13.1, 
                 12.3
             ], 
+            "narrative": "The Forest Grove Town Center is located on the far western edge of the region. The town center functions as the cultural and commercial heart of the town and is the home of Pacific University, which adds a student population. It has no major interstate access but is directly accessed by the ODOT facility State Highway 8. One frequent service bus line runs along Highway 8 with a connection to Hillsboro and the MAX line. The center has 991 residents (not counting students), 1,326 employees and 460 dwelling units. Forest Grove Town Center contains 107 gross acres.", 
             "private_amenities": [
                 0, 
                 1, 
@@ -1738,6 +2133,7 @@
                 12.4, 
                 18.0
             ], 
+            "narrative": "Forest Grove", 
             "private_amenities": [
                 1, 
                 1, 
@@ -1808,7 +2204,6 @@
             "./photos/Forest-Grove/3.jpg", 
             "./photos/Forest-Grove/4.jpg"
         ], 
-        "narrative": "The Forest Grove Town Center is located on the far western edge of the region. The town center functions as the cultural and commercial heart of the town and is the home of Pacific University, which adds a student population. It has no major interstate access but is directly accessed by the ODOT facility State Highway 8. One frequent service bus line runs along Highway 8 with a connection to Hillsboro and the MAX line. The center has 991 residents (not counting students), 1,326 employees and 460 dwelling units. Forest Grove Town Center contains 107 gross acres.", 
         "title": "Forest Grove", 
         "type": "Town Center"
     }, 
@@ -1845,6 +2240,7 @@
                 14.6, 
                 19.9
             ], 
+            "narrative": "The Gateway Regional Center serves the northeast and eastern portions of Portland along with shoppers and travelers from most locations east of the Willamette River and both sides of the Columbia River. The center is well connected to the entire region through the major transportation corridors of Interstate 205 and Interstate 84. Additionally, the Gateway transit center serves the Blue, Green and Red MAX lines, six bus lines, and contains 690 parking spaces devoted to park-and-ride commuters. Gateway is part of an active urban renewal district. The center has 8,709 residents, 7,447 employees and 3,878 dwelling units. Gateway Regional Center contains 809 gross acres.", 
             "private_amenities": [
                 0, 
                 5, 
@@ -1935,6 +2331,7 @@
                 11.0, 
                 12.9
             ], 
+            "narrative": "Gateway", 
             "private_amenities": [
                 0, 
                 5, 
@@ -2005,7 +2402,6 @@
             "./photos/Gateway/3.jpg", 
             "./photos/Gateway/4.jpg"
         ], 
-        "narrative": "The Gateway Regional Center serves the northeast and eastern portions of Portland along with shoppers and travelers from most locations east of the Willamette River and both sides of the Columbia River. The center is well connected to the entire region through the major transportation corridors of Interstate 205 and Interstate 84. Additionally, the Gateway transit center serves the Blue, Green and Red MAX lines, six bus lines, and contains 690 parking spaces devoted to park-and-ride commuters. Gateway is part of an active urban renewal district. The center has 8,709 residents, 7,447 employees and 3,878 dwelling units. Gateway Regional Center contains 809 gross acres.", 
         "title": "Gateway", 
         "type": "Regional Center"
     }, 
@@ -2042,6 +2438,7 @@
                 16.0, 
                 18.5
             ], 
+            "narrative": "The Gladstone Town Center is located along the former street car line on Portland Avenue. Gladstone has no direct interstate access but has one ODOT facility, McLoughlin Boulevard, located a half mile west of the town center. The center is serviced by two bus lines and a grid street network pattern, encouraging pedestrian connectivity from the surrounding neighborhood to the main street. The center has 939 residents, 289 employees and 342 dwelling units. Gladstone Town Center contains 85 gross acres.", 
             "private_amenities": [
                 1, 
                 2, 
@@ -2132,6 +2529,7 @@
                 17.2, 
                 15.4
             ], 
+            "narrative": "The Gladstone Town Center is located along Portland Avenue on what used to be a former streetcar line. The development pattern of the center is reminiscent of this, with small store fronts dotting much of the frontage along Portland Avenue and a single family residential neighborhood beyond. Gladstone High School anchors the northern edge of the town center and numerous civic uses such as the post office, fire and police departments and city hall are located on Portland Avenue. The town center is accessible via three TriMet bus lines. Gladstone has initiated a planning effort focused on revitalizing the town center. ", 
             "private_amenities": [
                 0, 
                 0, 
@@ -2202,7 +2600,6 @@
             "./photos/Gladstone/3.jpg", 
             "./photos/Gladstone/4.jpg"
         ], 
-        "narrative": "The Gladstone Town Center is located along the former street car line on Portland Avenue. Gladstone has no direct interstate access but has one ODOT facility, McLoughlin Boulevard, located a half mile west of the town center. The center is serviced by two bus lines and a grid street network pattern, encouraging pedestrian connectivity from the surrounding neighborhood to the main street. The center has 939 residents, 289 employees and 342 dwelling units. Gladstone Town Center contains 85 gross acres.", 
         "title": "Gladstone", 
         "type": "Town Center"
     }, 
@@ -2239,6 +2636,7 @@
                 17.1, 
                 10.8
             ], 
+            "narrative": "The Gresham Regional Center serves eastern Multnomah County with destination shopping and dining. The center encompasses two distinct neighborhoods: Civic Neighborhood and downtown Gresham. Although not on an interstate highway, the center is served by State Highway 26 (Powell Boulevard), and multiple east-west arterials. Downtown Gresham is the eastern terminus of the MAX Blue Line, which contains a 540-space park-and-ride facility and serves eight separate bus lines. The newly opened Civic Station MAX stop is developing into a transit-oriented site, with ongoing public and private investments. The center has 4,684 residents, 6,902 employees and 2,098 dwelling units. Gresham Regional Center contains 692 gross acres.", 
             "private_amenities": [
                 1, 
                 5, 
@@ -2329,6 +2727,7 @@
                 11.3, 
                 14.3
             ], 
+            "narrative": "Gresham", 
             "private_amenities": [
                 1, 
                 8, 
@@ -2399,7 +2798,6 @@
             "./photos/Gresham/3.jpg", 
             "./photos/Gresham/4.jpg"
         ], 
-        "narrative": "The Gresham Regional Center serves eastern Multnomah County with destination shopping and dining. The center encompasses two distinct neighborhoods: Civic Neighborhood and downtown Gresham. Although not on an interstate highway, the center is served by State Highway 26 (Powell Boulevard), and multiple east-west arterials. Downtown Gresham is the eastern terminus of the MAX Blue Line, which contains a 540-space park-and-ride facility and serves eight separate bus lines. The newly opened Civic Station MAX stop is developing into a transit-oriented site, with ongoing public and private investments. The center has 4,684 residents, 6,902 employees and 2,098 dwelling units. Gresham Regional Center contains 692 gross acres.", 
         "title": "Gresham", 
         "type": "Regional Center"
     }, 
@@ -2436,6 +2834,7 @@
                 17.1, 
                 40.5
             ], 
+            "narrative": "The Happy Valley Town Center has relocated since the 2009 State of the Centers report to the intersection of Southeast 162nd Avenue and Sunnyside Road. It is the retail and government center of Happy Valley and is served by a limited service bus line along Sunnyside Road. There are no ODOT facilities within the town center. The center has 500 residents, 400 employees and 244 dwelling units. Happy Valley Town Center contains 212 gross acres.", 
             "private_amenities": [
                 0, 
                 0, 
@@ -2526,6 +2925,7 @@
                 16.8, 
                 40.4
             ], 
+            "narrative": "Happy Valley", 
             "private_amenities": [
                 0, 
                 0, 
@@ -2596,7 +2996,6 @@
             "./photos/Happy-Valley/3.jpg", 
             "./photos/Happy-Valley/4.jpg"
         ], 
-        "narrative": "The Happy Valley Town Center has relocated since the 2009 State of the Centers report to the intersection of Southeast 162nd Avenue and Sunnyside Road. It is the retail and government center of Happy Valley and is served by a limited service bus line along Sunnyside Road. There are no ODOT facilities within the town center. The center has 500 residents, 400 employees and 244 dwelling units. Happy Valley Town Center contains 212 gross acres.", 
         "title": "Happy Valley", 
         "type": "Town Center"
     }, 
@@ -2633,6 +3032,7 @@
                 15.5, 
                 14.1
             ], 
+            "narrative": "The Hillsboro Regional Center serves jurisdictions in the western part of region such as Forest Grove and Cornelius as well as rural portions of Washington County. Historic downtown Hillsboro is within the regional center, and is home to the Hillsboro Civic Building, Washington County Courthouse, a satellite campus of Pacific University, and Tuality Community Hospital. The center is the western terminus of the MAX Blue Line, and contains the Hillsboro Central Transit Center, which serves five bus lines. The nearby Hatfield Government Center parking garage contains 250 available spaces for park-and-ride users. The center has 2,336 residents, 6,122 employees and 784 dwelling units. Hillsboro Regional Center contains 295 gross acres.", 
             "private_amenities": [
                 2, 
                 1, 
@@ -2723,6 +3123,7 @@
                 13.4, 
                 20.5
             ], 
+            "narrative": "The Hillsboro Regional Center includes historic downtown Hillsboro and a large surrounding area that includes a wide variety of residential, employment and commercial uses. The downtown area includes many civic and institutional uses such as the Washington County Court House, the Hillsboro Civic Center, the Washington County Public Services Building, Tuality Community Hospital and a satellite campus of Pacific University. The regional center has four MAX Light Rail Blue Line stations, including the terminus of the Blue Line at the Hatfield Government Station. Additionally, the area is served by four TriMet bus lines and a Washington County Bus Service line providing connections to Banks and North Plains. Portland and Western Railroad tracks run north-south and east-west through the regional center.", 
             "private_amenities": [
                 5, 
                 3, 
@@ -2793,43 +3194,43 @@
             "./photos/Hillsboro/3.jpg", 
             "./photos/Hillsboro/4.jpg"
         ], 
-        "narrative": "The Hillsboro Regional Center serves jurisdictions in the western part of region such as Forest Grove and Cornelius as well as rural portions of Washington County. Historic downtown Hillsboro is within the regional center, and is home to the Hillsboro Civic Building, Washington County Courthouse, a satellite campus of Pacific University, and Tuality Community Hospital. The center is the western terminus of the MAX Blue Line, and contains the Hillsboro Central Transit Center, which serves five bus lines. The nearby Hatfield Government Center parking garage contains 250 available spaces for park-and-ride users. The center has 2,336 residents, 6,122 employees and 784 dwelling units. Hillsboro Regional Center contains 295 gross acres.", 
         "title": "Hillsboro", 
         "type": "Regional Center"
     }, 
     "hillsdale": {
         "2011": {
             "context_tool_scores": [
-                4.18, 
-                2.5, 
-                3.57, 
-                2.5, 
-                1.96, 
-                1.98, 
-                2.67, 
-                44.13
+                4.22, 
+                2.7, 
+                3.35, 
+                2.73, 
+                1.81, 
+                1.95, 
+                2.56, 
+                43.99
             ], 
             "employment_breakdown": [
-                31.0, 
-                54.0, 
-                15.0
+                0, 
+                0, 
+                0
             ], 
             "incomes": [
-                8.4, 
-                16.4, 
-                17.7, 
-                23.5, 
-                11.7, 
-                22.4
+                14.0, 
+                23.0, 
+                13.0, 
+                27.0, 
+                18.0, 
+                5.0
             ], 
             "incomes_1mi_buff": [
-                6.9, 
-                13.9, 
-                15.1, 
-                21.5, 
-                14.4, 
-                28.2
+                7.0, 
+                14.0, 
+                15.0, 
+                21.0, 
+                15.0, 
+                28.0
             ], 
+            "narrative": "", 
             "private_amenities": [
                 1, 
                 0, 
@@ -2842,7 +3243,7 @@
                 1, 
                 0, 
                 2, 
-                2, 
+                1, 
                 2, 
                 0, 
                 14, 
@@ -2850,149 +3251,144 @@
             ], 
             "public_amenities": [
                 0, 
-                1, 
+                0, 
                 0, 
                 1, 
-                4
+                2
             ], 
             "stats": {
-                "Non_SOV": 52.0, 
-                "avg_HH_size": 2.02, 
-                "du_per_acre": 6.5, 
-                "gross_acreage": 181.0, 
-                "market_value": 47.0, 
-                "med_HH_income": 56912.0, 
+                "Non_SOV": "", 
+                "avg_HH_size": 2.1, 
+                "du_per_acre": 5.8, 
+                "gross_acreage": 108.0, 
+                "market_value": 50.0, 
+                "med_HH_income": 54436.0, 
                 "med_age": 34.1, 
-                "net_acreage": 145.0, 
-                "pct_home_ownership": 42.3, 
-                "people_per_acre": 18.3, 
-                "total_biz": 111.0, 
-                "total_biz_acre": 0.77, 
-                "total_du": 935.0, 
-                "total_num_employees": 1048.0, 
-                "total_pop": 1600.0
+                "net_acreage": 67.0, 
+                "pct_home_ownership": 35.5, 
+                "people_per_acre": 16.7, 
+                "total_biz": "N/A", 
+                "total_biz_acre": "N/A", 
+                "total_du": 389.0, 
+                "total_num_employees": 342.0, 
+                "total_pop": 778.0
             }, 
             "stats_1mi_buff": {
-                "avg_HH_size": 2.07, 
-                "du_per_acre": 4.5, 
-                "market_value": 43.0, 
-                "med_HH_income": 64800.0, 
-                "med_age": 39.3, 
-                "net_acreage": 2730.0, 
-                "pct_home_ownership": 55.3, 
-                "people_per_acre": 11.3, 
-                "total_biz": 801.0, 
-                "total_biz_acre": 0.29, 
-                "total_du": 12155.0, 
-                "total_num_employees": 8381.0, 
-                "total_pop": 22495.0
+                "avg_HH_size": 2.08, 
+                "du_per_acre": "", 
+                "market_value": 38.0, 
+                "med_HH_income": 64446.0, 
+                "med_age": 40.0, 
+                "net_acreage": "", 
+                "pct_home_ownership": 55.4, 
+                "people_per_acre": "", 
+                "total_biz": "", 
+                "total_biz_acre": "", 
+                "total_du": "", 
+                "total_num_employees": "", 
+                "total_pop": ""
             }
         }, 
         "2015": {
             "context_tool_scores": [
-                4.68, 
-                2.51, 
-                4.1, 
-                2.57, 
-                2.09, 
-                2.15, 
-                2.63, 
-                49.55
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0
             ], 
             "employment_breakdown": [
-                30.0, 
-                28.0, 
-                43.0
+                0, 
+                0, 
+                0
             ], 
             "incomes": [
-                8.0, 
-                19.4, 
-                13.7, 
-                17.2, 
-                10.3, 
-                31.5
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0
             ], 
             "incomes_1mi_buff": [
-                10.2, 
-                16.1, 
-                12.2, 
-                14.7, 
-                13.7, 
-                33.1
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0
             ], 
+            "narrative": "", 
             "private_amenities": [
-                1, 
-                1, 
                 0, 
                 0, 
                 0, 
-                2, 
-                0, 
-                2, 
                 0, 
                 0, 
-                1, 
-                2, 
-                3, 
                 0, 
-                6, 
-                1
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0
             ], 
             "public_amenities": [
-                1, 
-                1, 
                 0, 
-                1, 
-                5
+                0, 
+                0, 
+                0, 
+                0
             ], 
             "stats": {
-                "Non_SOV": 56.0, 
-                "avg_HH_size": 1.93, 
-                "du_per_acre": 5.5, 
-                "gross_acreage": 181.0, 
-                "market_value": 42.0, 
-                "med_HH_income": 60759.0, 
-                "med_age": 37.1, 
-                "net_acreage": 145.0, 
-                "pct_home_ownership": 46.2, 
-                "people_per_acre": 10.0, 
-                "total_biz": 302.0, 
-                "total_biz_acre": 2.1, 
-                "total_du": 795.0, 
-                "total_num_employees": 1072.0, 
-                "total_pop": 1453.0
+                "Non_SOV": "", 
+                "avg_HH_size": "", 
+                "du_per_acre": "", 
+                "gross_acreage": "", 
+                "market_value": "", 
+                "med_HH_income": "", 
+                "med_age": "", 
+                "net_acreage": "", 
+                "pct_home_ownership": "", 
+                "people_per_acre": "", 
+                "total_biz": "", 
+                "total_biz_acre": "", 
+                "total_du": "", 
+                "total_num_employees": "", 
+                "total_pop": ""
             }, 
             "stats_1mi_buff": {
-                "avg_HH_size": 2.11, 
-                "du_per_acre": 4.6, 
-                "market_value": 37.0, 
-                "med_HH_income": 67971.0, 
-                "med_age": 39.5, 
-                "net_acreage": 2734.0, 
-                "pct_home_ownership": 53.7, 
-                "people_per_acre": 9.2, 
-                "total_biz": 2628.0, 
-                "total_biz_acre": 1.0, 
-                "total_du": 12467.0, 
-                "total_num_employees": 9310.0, 
-                "total_pop": 25058.0
+                "avg_HH_size": "", 
+                "du_per_acre": "", 
+                "market_value": "", 
+                "med_HH_income": "", 
+                "med_age": "", 
+                "net_acreage": "", 
+                "pct_home_ownership": "", 
+                "people_per_acre": "", 
+                "total_biz": "", 
+                "total_biz_acre": "", 
+                "total_du": "", 
+                "total_num_employees": "", 
+                "total_pop": ""
             }
         }, 
-        "extent": [
-            -122.7052, 
-            45.472856, 
-            -122.688372, 
-            45.481746
-        ], 
+        "extent": [], 
         "images": [
             "./photos/Hillsdale/1.jpg", 
             "./photos/Hillsdale/2.jpg", 
             "./photos/Hillsdale/3.jpg", 
             "./photos/Hillsdale/4.jpg"
         ], 
-        "narrative": "The Hillsdale Town Center is located in Southwest Portland, along the Beaverton- Hillsdale Highway (State Highway 10), an ODOT-managed facility. The center includes a high school and grade school with an adjacent middle school and is serviced by multiple bus lines, one of which is frequent service. Hillsdale has 1,600 residents, 1,048 employees and 935 dwelling units. Hillsdale Town Center contains 181 gross acres.", 
         "title": "Hillsdale", 
-        "type": "Town Center"
+        "type": "Typology"
     }, 
     "hollywood": {
         "2011": {
@@ -3027,6 +3423,7 @@
                 16.2, 
                 24.6
             ], 
+            "narrative": "The Hollywood Town Center surrounds the intersection of Sandy Boulevard and Northeast Halsey Avenue. The area is high in employment concentrations and housing relative to its size. The center serves the local population with retail services, but also draws from the region due to the development of a concentration of specialty retail. The center has direct access to Interstate 84, is serviced by one MAX stop, and has multiple bus lines that include frequent service routes. The center has 1,100 residents, 3,030 employees and 829 dwelling units. Hollywood Town Center contains 105 gross acres.", 
             "private_amenities": [
                 0, 
                 3, 
@@ -3117,6 +3514,7 @@
                 13.2, 
                 31.7
             ], 
+            "narrative": "Hollywood", 
             "private_amenities": [
                 0, 
                 4, 
@@ -3187,7 +3585,6 @@
             "./photos/Hollywood/3.jpg", 
             "./photos/Hollywood/4.jpg"
         ], 
-        "narrative": "The Hollywood Town Center surrounds the intersection of Sandy Boulevard and Northeast Halsey Avenue. The area is high in employment concentrations and housing relative to its size. The center serves the local population with retail services, but also draws from the region due to the development of a concentration of specialty retail. The center has direct access to Interstate 84, is serviced by one MAX stop, and has multiple bus lines that include frequent service routes. The center has 1,100 residents, 3,030 employees and 829 dwelling units. Hollywood Town Center contains 105 gross acres.", 
         "title": "Hollywood", 
         "type": "Town Center"
     }, 
@@ -3232,6 +3629,7 @@
                 11.8, 
                 21.7
             ], 
+            "narrative": "The King City Town Center is bisected by Southwest Pacific Highway (Highway 99 West), an ODOT facility. A single frequent service bus line runs along 99W, allowing for service from King City to surrounding communities along 99W and into central Portland. The center has 465 residents, 1,075 employees and 300 dwelling units. King City Town Center contains 94 gross acres.", 
             "private_amenities": [
                 1, 
                 1, 
@@ -3322,6 +3720,7 @@
                 11.0, 
                 30.2
             ], 
+            "narrative": "The King City Town Center is located at the intersection of Highway 99W and SW Durham Road. Highway 99W bisects the town center and is a controlling force, resulting in auto-oriented commercial development as the predominant use along the highway. There are a few pockets of multi-family housing in the town center focused on senior living. The center is served by two TriMet bus lines that run along Highway 99W. The area just outside of the town center contains both single and multi-family housing. Local plans envision the area becoming a more walkable commercial district that will continue to be a valuable community asset.", 
             "private_amenities": [
                 0, 
                 0, 
@@ -3392,7 +3791,6 @@
             "./photos/King-City/3.jpg", 
             "./photos/King-City/4.jpg"
         ], 
-        "narrative": "The King City Town Center is bisected by Southwest Pacific Highway (Highway 99 West), an ODOT facility. A single frequent service bus line runs along 99W, allowing for service from King City to surrounding communities along 99W and into central Portland. The center has 465 residents, 1,075 employees and 300 dwelling units. King City Town Center contains 94 gross acres.", 
         "title": "King City", 
         "type": "Town Center"
     }, 
@@ -3429,6 +3827,7 @@
                 13.1, 
                 38.4
             ], 
+            "narrative": "The Lake Grove Town Center is located roughly at the intersection of Boones Ferry Road and Kruse Way. Lake Grove is serviced by two separate bus lines that allow for connectivity to downtown Lake Oswego, Portland and parts of eastern Washington County. The center has 377 residents, 2,426 employees and 234 dwelling units. Lake Grove Town Center contains 118 gross acres.", 
             "private_amenities": [
                 2, 
                 0, 
@@ -3519,6 +3918,7 @@
                 11.2, 
                 40.9
             ], 
+            "narrative": "Lake Grove", 
             "private_amenities": [
                 0, 
                 1, 
@@ -3589,7 +3989,6 @@
             "./photos/Lake-Grove/3.jpg", 
             "./photos/Lake-Grove/4.jpg"
         ], 
-        "narrative": "The Lake Grove Town Center is located roughly at the intersection of Boones Ferry Road and Kruse Way. Lake Grove is serviced by two separate bus lines that allow for connectivity to downtown Lake Oswego, Portland and parts of eastern Washington County. The center has 377 residents, 2,426 employees and 234 dwelling units. Lake Grove Town Center contains 118 gross acres.", 
         "title": "Lake Grove", 
         "type": "Town Center"
     }, 
@@ -3626,6 +4025,7 @@
                 11.9, 
                 33.0
             ], 
+            "narrative": "The Lake Oswego Town Center covers the majority of downtown and land along the Willamette River waterfront. The town center is serviced by three separate bus lines that connect to Portland and eastern Washington County. Highway 43, an ODOT facility, serves the center. The center has 2,194 residents, 2,054 employees and 1,429 dwelling units. Lake Oswego Town Center contains 218 gross acres.", 
             "private_amenities": [
                 2, 
                 3, 
@@ -3716,6 +4116,7 @@
                 12.0, 
                 38.0
             ], 
+            "narrative": "Lake Oswego", 
             "private_amenities": [
                 2, 
                 5, 
@@ -3786,7 +4187,6 @@
             "./photos/Lake-Oswego/3.jpg", 
             "./photos/Lake-Oswego/4.jpg"
         ], 
-        "narrative": "The Lake Oswego Town Center covers the majority of downtown and land along the Willamette River waterfront. The town center is serviced by three separate bus lines that connect to Portland and eastern Washington County. Highway 43, an ODOT facility, serves the center. The center has 2,194 residents, 2,054 employees and 1,429 dwelling units. Lake Oswego Town Center contains 218 gross acres.", 
         "title": "Lake Oswego", 
         "type": "Town Center"
     }, 
@@ -3823,6 +4223,7 @@
                 14.6, 
                 10.8
             ], 
+            "narrative": "The Lents Town Center is located at the intersection of Interstate 205, an ODOT facility, and Foster Road in Southeast Portland. An Interstate 205 interchange, an ODOT facility, runs through the town center, offering direct auto access. The area is serviced by two bus lines (one of which is frequent service) and the MAX Green Line with a station at Foster Road. The center has 1,653 residents, 312 employees and 636 dwelling units. Lents Town Center contains 155 gross acres.", 
             "private_amenities": [
                 1, 
                 0, 
@@ -3913,6 +4314,7 @@
                 11.5, 
                 10.5
             ], 
+            "narrative": "The Lents Town Center in southeast Portland is centered along the SE Foster Road in the vicinity of the Interstate 205 interchange and includes area on both sides of the highway. Retail and commercial development is concentrated along SE Foster Road, with rest of the center comprised of predominantly single family homes. The center is an active urban renewal district with the Portland Development Commission owning a number of undeveloped parcels. The town center has three TriMet bus lines that travel through it, a MAX Light Rail Green Line station, and direct access to two regional trails, the 1-205 Trail and the Springwater Corridor Trail.", 
             "private_amenities": [
                 0, 
                 0, 
@@ -3983,9 +4385,201 @@
             "./photos/Lents/3.jpg", 
             "./photos/Lents/4.jpg"
         ], 
-        "narrative": "The Lents Town Center is located at the intersection of Interstate 205, an ODOT facility, and Foster Road in Southeast Portland. An Interstate 205 interchange, an ODOT facility, runs through the town center, offering direct auto access. The area is serviced by two bus lines (one of which is frequent service) and the MAX Green Line with a station at Foster Road. The center has 1,653 residents, 312 employees and 636 dwelling units. Lents Town Center contains 155 gross acres.", 
         "title": "Lents", 
         "type": "Town Center"
+    }, 
+    "lloyd_irvington": {
+        "2011": {
+            "context_tool_scores": [
+                4.13, 
+                3.21, 
+                4.58, 
+                3.52, 
+                4.67, 
+                3.03, 
+                3.9, 
+                71.56
+            ], 
+            "employment_breakdown": [
+                0, 
+                0, 
+                0
+            ], 
+            "incomes": [
+                30.0, 
+                24.0, 
+                12.0, 
+                12.0, 
+                8.0, 
+                14.0
+            ], 
+            "incomes_1mi_buff": [
+                15.0, 
+                20.0, 
+                15.0, 
+                18.0, 
+                12.0, 
+                20.0
+            ], 
+            "narrative": "", 
+            "private_amenities": [
+                3, 
+                1, 
+                0, 
+                1, 
+                0, 
+                3, 
+                2, 
+                37, 
+                11, 
+                6, 
+                3, 
+                3, 
+                2, 
+                2, 
+                58, 
+                4
+            ], 
+            "public_amenities": [
+                0, 
+                1, 
+                0, 
+                0, 
+                1
+            ], 
+            "stats": {
+                "Non_SOV": "", 
+                "avg_HH_size": 1.55, 
+                "du_per_acre": 9.1, 
+                "gross_acreage": 294.0, 
+                "market_value": 200.0, 
+                "med_HH_income": 48433.0, 
+                "med_age": 37.8, 
+                "net_acreage": 252.0, 
+                "pct_home_ownership": 19.5, 
+                "people_per_acre": 75.5, 
+                "total_biz": "N/A", 
+                "total_biz_acre": "N/A", 
+                "total_du": 2282.0, 
+                "total_num_employees": 15818.0, 
+                "total_pop": 3202.0
+            }, 
+            "stats_1mi_buff": {
+                "avg_HH_size": 1.86, 
+                "du_per_acre": "", 
+                "market_value": 136.0, 
+                "med_HH_income": 49440.0, 
+                "med_age": 39.2, 
+                "net_acreage": "", 
+                "pct_home_ownership": 37.5, 
+                "people_per_acre": "", 
+                "total_biz": "", 
+                "total_biz_acre": "", 
+                "total_du": "", 
+                "total_num_employees": "", 
+                "total_pop": ""
+            }
+        }, 
+        "2015": {
+            "context_tool_scores": [
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0
+            ], 
+            "employment_breakdown": [
+                0, 
+                0, 
+                0
+            ], 
+            "incomes": [
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0
+            ], 
+            "incomes_1mi_buff": [
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0
+            ], 
+            "narrative": "", 
+            "private_amenities": [
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0
+            ], 
+            "public_amenities": [
+                0, 
+                0, 
+                0, 
+                0, 
+                0
+            ], 
+            "stats": {
+                "Non_SOV": "", 
+                "avg_HH_size": "", 
+                "du_per_acre": "", 
+                "gross_acreage": "", 
+                "market_value": "", 
+                "med_HH_income": "", 
+                "med_age": "", 
+                "net_acreage": "", 
+                "pct_home_ownership": "", 
+                "people_per_acre": "", 
+                "total_biz": "", 
+                "total_biz_acre": "", 
+                "total_du": "", 
+                "total_num_employees": "", 
+                "total_pop": ""
+            }, 
+            "stats_1mi_buff": {
+                "avg_HH_size": "", 
+                "du_per_acre": "", 
+                "market_value": "", 
+                "med_HH_income": "", 
+                "med_age": "", 
+                "net_acreage": "", 
+                "pct_home_ownership": "", 
+                "people_per_acre": "", 
+                "total_biz": "", 
+                "total_biz_acre": "", 
+                "total_du": "", 
+                "total_num_employees": "", 
+                "total_pop": ""
+            }
+        }, 
+        "extent": [], 
+        "images": [
+            "./photos/Lloyd-Irvington/1.jpg", 
+            "./photos/Lloyd-Irvington/2.jpg", 
+            "./photos/Lloyd-Irvington/3.jpg", 
+            "./photos/Lloyd-Irvington/4.jpg"
+        ], 
+        "title": "Lloyd/Irvington", 
+        "type": "Typology"
     }, 
     "milwaukie": {
         "2011": {
@@ -4020,6 +4614,7 @@
                 15.0, 
                 18.5
             ], 
+            "narrative": "The Milwaukie Town Center represents the historic main street of downtown Milwaukie, the Highway 224 corridor and the surrounding residential neighborhoods in the area. The area is served by multiple bus lines, has a downtown transit center and will have a light rail station when the MAX line is continued to Milwaukie within the next 5 years. The center has 3,694 residents, 3,368 employees and 1,877 dwelling units. Milwaukie Town Center contains 579 gross acres.", 
             "private_amenities": [
                 1, 
                 2, 
@@ -4110,6 +4705,7 @@
                 11.8, 
                 18.2
             ], 
+            "narrative": "The Milwaukie Town Center is adjacent to McLoughlin Blvd (Highway 99E) and is comprised of historic downtown Milwaukie and the surrounding residential neighborhoods. Highway 224, which runs diagonally through the town center, has a shopping center and forms a barrier between the two main residential areas. The downtown area contains a mix of housing types and range of retail and commercial services, as well as a number of civic uses including city hall, the library, post office, Milwaukie Riverfront Park as well as multiple schools. The town center has nine TriMet bus lines that travel through it, a MAX Light Rail Orange Line station and direct access to the Trolley Trail.", 
             "private_amenities": [
                 0, 
                 2, 
@@ -4180,7 +4776,6 @@
             "./photos/Milwaukie/3.jpg", 
             "./photos/Milwaukie/4.jpg"
         ], 
-        "narrative": "The Milwaukie Town Center represents the historic main street of downtown Milwaukie, the Highway 224 corridor and the surrounding residential neighborhoods in the area. The area is served by multiple bus lines, has a downtown transit center and will have a light rail station when the MAX line is continued to Milwaukie within the next 5 years. The center has 3,694 residents, 3,368 employees and 1,877 dwelling units. Milwaukie Town Center contains 579 gross acres.", 
         "title": "Milwaukie", 
         "type": "Town Center"
     }, 
@@ -4217,6 +4812,7 @@
                 16.8, 
                 33.8
             ], 
+            "narrative": "The Murray/Scholls Town Center in Beaverton is located at the intersection of Murray Boulevard and Scholls Ferry Road. A mixture of single- and multi-family residential units represent the majority of land uses within the center boundaries. The center has no direct interstate or highway access and is serviced by two bus lines, one along Murray Boulevard and another along Scholls Ferry Road. The center has 2,507 residents, 47 employees and 1,322 dwelling units. Murray/ Scholls Town Center contains 204 gross acres.", 
             "private_amenities": [
                 0, 
                 0, 
@@ -4307,6 +4903,7 @@
                 12.3, 
                 38.4
             ], 
+            "narrative": "The Murray/Scholls Town Center is located in Beaverton, just southwest of the intersection of SW Scholls Ferry Road and SW Murray Boulevard, which along with SW Barrows Road serve as the main points of access into the center. Additional access is provided by two TriMet bus lines on SW Scholls Ferry Road and the Westside Trail, a regional trail maintained by Tualatin Hills Park and Recreation District. There is a range of single and multifamily housing developments, as well as office and commercial uses in the Progress Ridge Townsquare development. Progress Lake provides a focal point for the town center.", 
             "private_amenities": [
                 0, 
                 1, 
@@ -4377,9 +4974,201 @@
             "./photos/Murray-Scholls/3.jpg", 
             "./photos/Murray-Scholls/4.jpg"
         ], 
-        "narrative": "The Murray/Scholls Town Center in Beaverton is located at the intersection of Murray Boulevard and Scholls Ferry Road. A mixture of single- and multi-family residential units represent the majority of land uses within the center boundaries. The center has no direct interstate or highway access and is serviced by two bus lines, one along Murray Boulevard and another along Scholls Ferry Road. The center has 2,507 residents, 47 employees and 1,322 dwelling units. Murray/ Scholls Town Center contains 204 gross acres.", 
         "title": "Murray/Scholls", 
         "type": "Town Center"
+    }, 
+    "nob_hill": {
+        "2011": {
+            "context_tool_scores": [
+                4.67, 
+                2.74, 
+                4.59, 
+                3.81, 
+                4.98, 
+                3.34, 
+                4.27, 
+                76.24
+            ], 
+            "employment_breakdown": [
+                0, 
+                0, 
+                0
+            ], 
+            "incomes": [
+                13.0, 
+                19.0, 
+                19.0, 
+                20.0, 
+                14.0, 
+                15.0
+            ], 
+            "incomes_1mi_buff": [
+                27.0, 
+                23.0, 
+                13.0, 
+                13.0, 
+                8.0, 
+                16.0
+            ], 
+            "narrative": "", 
+            "private_amenities": [
+                5, 
+                11, 
+                3, 
+                1, 
+                2, 
+                2, 
+                2, 
+                28, 
+                11, 
+                0, 
+                4, 
+                3, 
+                8, 
+                1, 
+                92, 
+                1
+            ], 
+            "public_amenities": [
+                0, 
+                1, 
+                0, 
+                1, 
+                4
+            ], 
+            "stats": {
+                "Non_SOV": "", 
+                "avg_HH_size": 1.38, 
+                "du_per_acre": 27.3, 
+                "gross_acreage": 358.0, 
+                "market_value": 210.0, 
+                "med_HH_income": 37181.0, 
+                "med_age": 33.7, 
+                "net_acreage": 235.0, 
+                "pct_home_ownership": 10.4, 
+                "people_per_acre": 94.4, 
+                "total_biz": "N/A", 
+                "total_biz_acre": "N/A", 
+                "total_du": 6425.0, 
+                "total_num_employees": 13716.0, 
+                "total_pop": 8467.0
+            }, 
+            "stats_1mi_buff": {
+                "avg_HH_size": 1.43, 
+                "du_per_acre": "", 
+                "market_value": 135.0, 
+                "med_HH_income": 35254.0, 
+                "med_age": 38.3, 
+                "net_acreage": "", 
+                "pct_home_ownership": 18.6, 
+                "people_per_acre": "", 
+                "total_biz": "", 
+                "total_biz_acre": "", 
+                "total_du": "", 
+                "total_num_employees": "", 
+                "total_pop": ""
+            }
+        }, 
+        "2015": {
+            "context_tool_scores": [
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0
+            ], 
+            "employment_breakdown": [
+                0, 
+                0, 
+                0
+            ], 
+            "incomes": [
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0
+            ], 
+            "incomes_1mi_buff": [
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0
+            ], 
+            "narrative": "", 
+            "private_amenities": [
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0
+            ], 
+            "public_amenities": [
+                0, 
+                0, 
+                0, 
+                0, 
+                0
+            ], 
+            "stats": {
+                "Non_SOV": "", 
+                "avg_HH_size": "", 
+                "du_per_acre": "", 
+                "gross_acreage": "", 
+                "market_value": "", 
+                "med_HH_income": "", 
+                "med_age": "", 
+                "net_acreage": "", 
+                "pct_home_ownership": "", 
+                "people_per_acre": "", 
+                "total_biz": "", 
+                "total_biz_acre": "", 
+                "total_du": "", 
+                "total_num_employees": "", 
+                "total_pop": ""
+            }, 
+            "stats_1mi_buff": {
+                "avg_HH_size": "", 
+                "du_per_acre": "", 
+                "market_value": "", 
+                "med_HH_income": "", 
+                "med_age": "", 
+                "net_acreage": "", 
+                "pct_home_ownership": "", 
+                "people_per_acre": "", 
+                "total_biz": "", 
+                "total_biz_acre": "", 
+                "total_du": "", 
+                "total_num_employees": "", 
+                "total_pop": ""
+            }
+        }, 
+        "extent": [], 
+        "images": [
+            "./photos/Nob-Hill/1.jpg", 
+            "./photos/Nob-Hill/2.jpg", 
+            "./photos/Nob-Hill/3.jpg", 
+            "./photos/Nob-Hill/4.jpg"
+        ], 
+        "title": "Nob Hill", 
+        "type": "Typology"
     }, 
     "oregon_city": {
         "2011": {
@@ -4414,6 +5203,7 @@
                 15.1, 
                 22.6
             ], 
+            "narrative": "The Oregon City Regional Center is the southernmost regional center, serving Clackamas County and neighboring cities. The oldest incorporated city in Oregon, the center abuts the Willamette River and is known for its historic, small town feel. The transportation network consists of direct access to Interstate 205 and the additional ODOT facilities of McLoughlin Boulevard (Highway 99 East) and Highway 213. The center has 256 residents, 3,380 employees and 125 dwelling units. The center is served by several bus lines, and is included for a potential high capacity transit service in the the Regional Transportation Plan. Oregon City Regional Center contains 503 gross acres.", 
             "private_amenities": [
                 1, 
                 7, 
@@ -4504,6 +5294,7 @@
                 13.7, 
                 25.0
             ], 
+            "narrative": "Oregon City", 
             "private_amenities": [
                 1, 
                 11, 
@@ -4574,7 +5365,6 @@
             "./photos/Oregon-City/3.jpg", 
             "./photos/Oregon-City/4.jpg"
         ], 
-        "narrative": "The Oregon City Regional Center is the southernmost regional center, serving Clackamas County and neighboring cities. The oldest incorporated city in Oregon, the center abuts the Willamette River and is known for its historic, small town feel. The transportation network consists of direct access to Interstate 205 and the additional ODOT facilities of McLoughlin Boulevard (Highway 99 East) and Highway 213. The center has 256 residents, 3,380 employees and 125 dwelling units. The center is served by several bus lines, and is included for a potential high capacity transit service in the the Regional Transportation Plan. Oregon City Regional Center contains 503 gross acres.", 
         "title": "Oregon City", 
         "type": "Regional Center"
     }, 
@@ -4611,6 +5401,7 @@
                 17.5, 
                 26.6
             ], 
+            "narrative": "The Orenco Town Center in Hillsboro functions as a local retail destination and medium-density housing location. No major interstate access is available to the town center however, the major arterial of Cornell Road bisects it. The center is serviced by multiple bus lines and a MAX stop, located within its southern portion. The center has 3,200 residents, 1,175 employees and 1,910 dwelling units. Orenco Town Center contains 235 gross acres.", 
             "private_amenities": [
                 0, 
                 0, 
@@ -4701,6 +5492,7 @@
                 16.4, 
                 27.6
             ], 
+            "narrative": "The Orenco Town Center is located in Hillsboro along NE Cornell Road and has a wide range of housing types, small and large scale retail services and community parks. The Orenco Town Center has been lauded as a national example of transit oriented and new urbanist styled development. The town center is adjacent to a significant employment zone and is anchored by the Orenco MAX Light Rail Blue Line station at its southern edge. Two TriMet bus lines also provide transit service to the town center.", 
             "private_amenities": [
                 0, 
                 0, 
@@ -4771,7 +5563,6 @@
             "./photos/Orenco/3.jpg", 
             "./photos/Orenco/4.jpg"
         ], 
-        "narrative": "The Orenco Town Center in Hillsboro functions as a local retail destination and medium-density housing location. No major interstate access is available to the town center however, the major arterial of Cornell Road bisects it. The center is serviced by multiple bus lines and a MAX stop, located within its southern portion. The center has 3,200 residents, 1,175 employees and 1,910 dwelling units. Orenco Town Center contains 235 gross acres.", 
         "title": "Orenco", 
         "type": "Town Center"
     }, 
@@ -4808,6 +5599,7 @@
                 20.6, 
                 31.7
             ], 
+            "narrative": "The Pleasant Valley Town Center in Gresham is a rural area brought into the urban growth boundary in 1998. It has no direct highway access and is serviced by Foster Road, the only major street in the center. No bus service is available in Pleasant Valley. Urban development has yet to occur with any frequency in this center. It has 31 residents, 17 employees and 14 dwelling units. Pleasant Valley Town Center contains 77 gross acres.", 
             "private_amenities": [
                 0, 
                 0, 
@@ -4898,6 +5690,7 @@
                 14.1, 
                 43.5
             ], 
+            "narrative": "The Pleasant Valley Town Center is located in a rural area of unincorporated Multnomah County in the vicinity of SE Foster Road. The area was added to the urban growth boundary in 1998 and Portland and Gresham partnered to create a plan to transform the town center to a mixed-use, multimodal town center that functions as the heart of a future community. Currently no urban level development has occurred and there is no transit access to the town center.", 
             "private_amenities": [
                 0, 
                 0, 
@@ -4968,7 +5761,6 @@
             "./photos/Pleasant-Valley/3.jpg", 
             "./photos/Pleasant-Valley/4.jpg"
         ], 
-        "narrative": "The Pleasant Valley Town Center in Gresham is a rural area brought into the urban growth boundary in 1998. It has no direct highway access and is serviced by Foster Road, the only major street in the center. No bus service is available in Pleasant Valley. Urban development has yet to occur with any frequency in this center. It has 31 residents, 17 employees and 14 dwelling units. Pleasant Valley Town Center contains 77 gross acres.", 
         "title": "Pleasant Valley", 
         "type": "Town Center"
     }, 
@@ -5005,6 +5797,7 @@
                 0, 
                 0
             ], 
+            "narrative": "", 
             "private_amenities": [
                 0, 
                 0, 
@@ -5069,7 +5862,6 @@
             "./photos/Portland/3.jpg", 
             "./photos/Portland/4.jpg"
         ], 
-        "narrative": "", 
         "title": "Portland", 
         "type": "Central City"
     }, 
@@ -5106,6 +5898,7 @@
                 13.3, 
                 31.4
             ], 
+            "narrative": "The Raleigh Hills Town Center is located at the intersection of the Beaverton- Hillsdale Highway, an ODOT facility, and Scholls Ferry Road in unincorporated Washington County, adjacent to Portland. The center is served by three separate bus lines, two of which are frequent service. It has 1,599 residents, 1,800 employees and 948 dwelling units. Raleigh Hills Town Center contains 153 gross acres.", 
             "private_amenities": [
                 1, 
                 1, 
@@ -5196,6 +5989,7 @@
                 11.2, 
                 37.4
             ], 
+            "narrative": "The Raleigh Hill Town Center is located in unincorporated Washington County at the intersection of three major arterials, SW Beaverton-Hillsdale Highway (Highway 10), SW Scholls Ferry Road and SW Oleson Road, which results in an auto centric environment with commercial strip being the predominant development pattern. While this provides the community with a number of retail options and services, it diminishes the walkability of the town center. The community plan for this area emphasizes preserving the integrity of the surrounding residential neighborhoods and aims to reduce the continuation of commercial strip development. Four TriMet bus lines run through the town center.", 
             "private_amenities": [
                 0, 
                 1, 
@@ -5266,7 +6060,6 @@
             "./photos/Raleigh-Hills/3.jpg", 
             "./photos/Raleigh-Hills/4.jpg"
         ], 
-        "narrative": "The Raleigh Hills Town Center is located at the intersection of the Beaverton- Hillsdale Highway, an ODOT facility, and Scholls Ferry Road in unincorporated Washington County, adjacent to Portland. The center is served by three separate bus lines, two of which are frequent service. It has 1,599 residents, 1,800 employees and 948 dwelling units. Raleigh Hills Town Center contains 153 gross acres.", 
         "title": "Raleigh Hills", 
         "type": "Town Center"
     }, 
@@ -5337,6 +6130,7 @@
                 14.3, 
                 11.5
             ], 
+            "narrative": "The Rockwood Town Center is located along the Eastside MAX line in Gresham. The center is bisected by two major arterials, Burnside and Stark streets. Two separate MAX stops are within the town center boundaries, as well as two bus lines along Stark Street and 182nd Avenue. The center has 16,456 residents, 2,264 employees and 6,278 dwelling units. Rockwood Town Center contains 1,029 gross acres.", 
             "private_amenities": [
                 1, 
                 2, 
@@ -5427,6 +6221,7 @@
                 10.6, 
                 11.1
             ], 
+            "narrative": "The Rockwood Town Center is located in Gresham between NE 162nd and SE 202nd Avenues. There is a mix of single and multi-family housing spread throughout the center with auto-oriented commercial development focused along SE Stark Street. The center includes a library and numerous schools are located just beyond the town center boundary. The MAX Light Rail Blue Line runs along E Burnside Street through the middle of the town center and three TriMet bus lines also provide transit access. Future plans for the center envision it as a place with quality mixed-use development that promotes a 24-hour neighborhood that is integrally linked to transit.", 
             "private_amenities": [
                 1, 
                 8, 
@@ -5497,7 +6292,6 @@
             "./photos/Rockwood/3.jpg", 
             "./photos/Rockwood/4.jpg"
         ], 
-        "narrative": "The Rockwood Town Center is located along the Eastside MAX line in Gresham. The center is bisected by two major arterials, Burnside and Stark streets. Two separate MAX stops are within the town center boundaries, as well as two bus lines along Stark Street and 182nd Avenue. The center has 16,456 residents, 2,264 employees and 6,278 dwelling units. Rockwood Town Center contains 1,029 gross acres.", 
         "title": "Rockwood", 
         "type": "Town Center"
     }, 
@@ -5534,6 +6328,7 @@
                 14.9, 
                 38.1
             ], 
+            "narrative": "The Sherwood Town Center is located at the junction of Highway 99 West, an ODOT facility, and Tualatin-Sherwood Road. Sherwood has no direct interstate access. One bus line services the town center and continues to the Old Town portion of downtown Sherwood. Sherwood has 138 residents, 1,325 employees and 69 dwelling units. Sherwood Town Center contains 109 gross acres.", 
             "private_amenities": [
                 0, 
                 0, 
@@ -5624,6 +6419,7 @@
                 16.1, 
                 38.8
             ], 
+            "narrative": "The Sherwood Town Center is located at the intersection of Highway 99W and SW Tualatin-Sherwood Road. Highway 99W bisects the town center and auto-oriented commercial development is the predominant use in the center. Two TriMet bus lines provide service to the center. The land just outside of the center contains a significant amount of housing, providing a close in customer base. A town center plan completed in 2013 envisions this area as a walkable and active shopping district in the future, complete with more pedestrian-oriented buildings.", 
             "private_amenities": [
                 0, 
                 0, 
@@ -5694,7 +6490,6 @@
             "./photos/Sherwood/3.jpg", 
             "./photos/Sherwood/4.jpg"
         ], 
-        "narrative": "The Sherwood Town Center is located at the junction of Highway 99 West, an ODOT facility, and Tualatin-Sherwood Road. Sherwood has no direct interstate access. One bus line services the town center and continues to the Old Town portion of downtown Sherwood. Sherwood has 138 residents, 1,325 employees and 69 dwelling units. Sherwood Town Center contains 109 gross acres.", 
         "title": "Sherwood", 
         "type": "Town Center"
     }, 
@@ -5731,6 +6526,7 @@
                 15.5, 
                 8.9
             ], 
+            "narrative": "The St. Johns Town Center is located in North Portland, adjacent to the Willamette River. St. Johns has no direct interstate access, but can access U.S. Highway 30 by crossing the Willamette River at the St. Johns Bridge. The area is served by five bus lines, including one frequent service line, allowing for multiple transportation options both in and out of the center. St. Johns has 437 residents, 857 employees and 219 dwelling units. St. Johns Town Center contains 70 gross acres.", 
             "private_amenities": [
                 0, 
                 1, 
@@ -5821,6 +6617,7 @@
                 10.7, 
                 11.3
             ], 
+            "narrative": "St. Johns", 
             "private_amenities": [
                 1, 
                 5, 
@@ -5891,7 +6688,6 @@
             "./photos/St-Johns/3.jpg", 
             "./photos/St-Johns/4.jpg"
         ], 
-        "narrative": "The St. Johns Town Center is located in North Portland, adjacent to the Willamette River. St. Johns has no direct interstate access, but can access U.S. Highway 30 by crossing the Willamette River at the St. Johns Bridge. The area is served by five bus lines, including one frequent service line, allowing for multiple transportation options both in and out of the center. St. Johns has 437 residents, 857 employees and 219 dwelling units. St. Johns Town Center contains 70 gross acres.", 
         "title": "St. Johns", 
         "type": "Town Center"
     }, 
@@ -5928,6 +6724,7 @@
                 13.3, 
                 29.0
             ], 
+            "narrative": "The Sunset Transit Town Center in unincorporated Washington County, adjacent to Beaverton, is located at the intersection of several major arterials including Barnes Road, Highway 26, Highway 217 and the MAX. The Sunset Transit Center serves as a transportation hub for the north portion of Washington County and northwest Portland. As a transit center, the area is serviced by multiple bus lines and both Blue and Red Line MAX trains. The center has 1,940 residents, 6,220 employees and 879 dwelling units. Sunset Transit Town Center contains 262 gross acres.", 
             "private_amenities": [
                 1, 
                 0, 
@@ -6018,6 +6815,7 @@
                 14.2, 
                 35.1
             ], 
+            "narrative": "The Sunset Transit Town Center is located in unincorporated Washington County, adjacent to Highway 26. The center is accessible through a number of arterial roads, including Highway 26, Highway 217 and SW Barnes Road. Additionally it has transit access via five TriMet bus lines and MAX Light Rail Blue and Red lines, although the light rail station is separated from much of the housing and commercial development that is presently occurring in the center. This development is consistent with the community vision that the town center will include a mix of residential types and densities along with commercial and office uses.", 
             "private_amenities": [
                 0, 
                 1, 
@@ -6088,7 +6886,6 @@
             "./photos/Sunset-Transit/3.jpg", 
             "./photos/Sunset-Transit/4.jpg"
         ], 
-        "narrative": "The Sunset Transit Town Center in unincorporated Washington County, adjacent to Beaverton, is located at the intersection of several major arterials including Barnes Road, Highway 26, Highway 217 and the MAX. The Sunset Transit Center serves as a transportation hub for the north portion of Washington County and northwest Portland. As a transit center, the area is serviced by multiple bus lines and both Blue and Red Line MAX trains. The center has 1,940 residents, 6,220 employees and 879 dwelling units. Sunset Transit Town Center contains 262 gross acres.", 
         "title": "Sunset Transit", 
         "type": "Town Center"
     }, 
@@ -6125,6 +6922,7 @@
                 17.6, 
                 25.5
             ], 
+            "narrative": "The Tanasbourne Regional Center is located along Cornell Road, south of Highway 26 in Hillsboro. Tanasbourne was upgraded to a regional center in 2010 when the City of Hillsboro completed a new area plan for AmberGlen, subsequently added it to the center boundary, and petitioned the Metro Council for the new designation. The area includes a mix of employment and commercial businesses, notably the Streets of Tanasbourne regional shopping center. The center is serviced by two major arterials, Cornell Road and Northwest 185th Avenue. The center has 3,614 residents, 6,084 employees and 2,037 dwelling units. Tanasbourne Regional Center contains 678 gross acres.", 
             "private_amenities": [
                 1, 
                 0, 
@@ -6215,6 +7013,7 @@
                 15.6, 
                 27.8
             ], 
+            "narrative": "Tanasbourne/Amber Glen", 
             "private_amenities": [
                 1, 
                 1, 
@@ -6285,7 +7084,6 @@
             "./photos/Tanasbourne-Amber-Glen/3.jpg", 
             "./photos/Tanasbourne-Amber-Glen/4.jpg"
         ], 
-        "narrative": "The Tanasbourne Regional Center is located along Cornell Road, south of Highway 26 in Hillsboro. Tanasbourne was upgraded to a regional center in 2010 when the City of Hillsboro completed a new area plan for AmberGlen, subsequently added it to the center boundary, and petitioned the Metro Council for the new designation. The area includes a mix of employment and commercial businesses, notably the Streets of Tanasbourne regional shopping center. The center is serviced by two major arterials, Cornell Road and Northwest 185th Avenue. The center has 3,614 residents, 6,084 employees and 2,037 dwelling units. Tanasbourne Regional Center contains 678 gross acres.", 
         "title": "Tanasbourne/Amber Glen", 
         "type": "Regional Center"
     }, 
@@ -6322,6 +7120,7 @@
                 14.8, 
                 27.8
             ], 
+            "narrative": "The Tigard Town Center includes the newly added Tigard Triangle area to the existing town center. The center is focused around the ODOT facility of Highway 99 West and has been chosen as the priority corridor for a study of future high capacity transit expansion in the region. The center is serviced by multiple bus lines and is home to a TriMet transit center and a Westside Express Service (WES) commuter rail station. The center has 1,923 residents, 6,876 employees and 944 dwelling units. Tigard Town Center contains 702 gross acres.", 
             "private_amenities": [
                 1, 
                 0, 
@@ -6412,6 +7211,7 @@
                 11.7, 
                 32.3
             ], 
+            "narrative": "The Tigard Town Center is located along Highway 99 W, north and south of Highway 217. Two styles of development exist in the center. The area surrounding SW Main Street is compact and walkable with a mix of local commercial and residential uses. City Hall and other city department offices are located near this portion of the town center and Fanno Creek Park provides a significant ribbon of green through the downtown. The Tigard Triangle portion of the center mostly contains auto-oriented retail and other employment uses. Portland and Western Railroad tracks cut through the town center and provide rail spurs to the adjacent employment land. The center is served by the Westside Express Commuter Rail Service, seven TriMet bus lines, and the Fanno Creek Regional Trail. The town center is being studied for future high-capacity transit investments through the regional Southwest Corridor planning process.", 
             "private_amenities": [
                 0, 
                 2, 
@@ -6482,7 +7282,6 @@
             "./photos/Tigard/3.jpg", 
             "./photos/Tigard/4.jpg"
         ], 
-        "narrative": "The Tigard Town Center includes the newly added Tigard Triangle area to the existing town center. The center is focused around the ODOT facility of Highway 99 West and has been chosen as the priority corridor for a study of future high capacity transit expansion in the region. The center is serviced by multiple bus lines and is home to a TriMet transit center and a Westside Express Service (WES) commuter rail station. The center has 1,923 residents, 6,876 employees and 944 dwelling units. Tigard Town Center contains 702 gross acres.", 
         "title": "Tigard", 
         "type": "Town Center"
     }, 
@@ -6553,6 +7352,7 @@
                 20.1, 
                 20.6
             ], 
+            "narrative": "The Troutdale Town Center is located at the eastern end of the region. The center includes a historic main street in downtown Troutdale as well as a significant portion of land west of downtown. The center has direct access to Interstate 84 and contains the historic Columbia River Highway, an ODOT facility. The center has 1,924 residents, 775 employees and 853 dwelling units. Troutdale Town Center contains 418 gross acres.", 
             "private_amenities": [
                 1, 
                 0, 
@@ -6643,6 +7443,7 @@
                 13.8, 
                 20.2
             ], 
+            "narrative": "Troutdale", 
             "private_amenities": [
                 0, 
                 2, 
@@ -6713,7 +7514,6 @@
             "./photos/Troutdale/3.jpg", 
             "./photos/Troutdale/4.jpg"
         ], 
-        "narrative": "The Troutdale Town Center is located at the eastern end of the region. The center includes a historic main street in downtown Troutdale as well as a significant portion of land west of downtown. The center has direct access to Interstate 84 and contains the historic Columbia River Highway, an ODOT facility. The center has 1,924 residents, 775 employees and 853 dwelling units. Troutdale Town Center contains 418 gross acres.", 
         "title": "Troutdale", 
         "type": "Town Center"
     }, 
@@ -6750,6 +7550,7 @@
                 14.1, 
                 26.5
             ], 
+            "narrative": "The Tualatin Town Center is located at the intersection of Tualatin-Sherwood and Boones Ferry roads, both major arterials. The center is serviced by multiple bus lines and has a stop on the Westside Express Service (WES) commuter rail line. The center has 3,636 residents, 3,332 employees and 1,660 dwelling units. Tualatin Town Center contains 462 gross acres.", 
             "private_amenities": [
                 0, 
                 1, 
@@ -6840,6 +7641,7 @@
                 12.9, 
                 26.0
             ], 
+            "narrative": "The Tualatin Town Center is located at the intersection of SW Tualatin-Sherwood and SW Boones Ferry Roads. The town center pivots on the Lake on the Commons Park, which has public space, art and a mix of restaurants, retail businesses and housing. Civic uses within the center include the library, city offices and post office. The remainder of the center also has a mix of development types including a substantial amount of multi-family housing, office and large scale retail commercial uses. The town center has access to transit services via two TriMet bus lines and the Westside Express Service Commuter Rail.", 
             "private_amenities": [
                 1, 
                 4, 
@@ -6910,7 +7712,6 @@
             "./photos/Tualatin/3.jpg", 
             "./photos/Tualatin/4.jpg"
         ], 
-        "narrative": "The Tualatin Town Center is located at the intersection of Tualatin-Sherwood and Boones Ferry roads, both major arterials. The center is serviced by multiple bus lines and has a stop on the Westside Express Service (WES) commuter rail line. The center has 3,636 residents, 3,332 employees and 1,660 dwelling units. Tualatin Town Center contains 462 gross acres.", 
         "title": "Tualatin", 
         "type": "Town Center"
     }, 
@@ -6947,6 +7748,7 @@
                 14.7, 
                 20.4
             ], 
+            "narrative": "The Washington Square Regional Center is a major retail hub for central and southern Washington County, western Clackamas County, and surrounding cities. It is located in the jurisdictions of both Beaverton and Tigard and a portion of unincorporated Washington County. The Washington Square mall is a thriving shopping center and has attracted many other satellite retail developments. The center is served by Highway 217, Southwest Scholls Ferry Road and Southwest Hall Boulevard. Additionally, the center has a Westside Express Service (WES) commuter rail stop and three bus lines. The center has 2,465 residents, 12,742 employees and 1,161 dwelling units. Washington Square Regional Center contains 914 gross acres.", 
             "private_amenities": [
                 1, 
                 1, 
@@ -7037,6 +7839,7 @@
                 12.0, 
                 24.7
             ], 
+            "narrative": "Washington Square", 
             "private_amenities": [
                 0, 
                 0, 
@@ -7107,11 +7910,10 @@
             "./photos/Washington-Square/3.jpg", 
             "./photos/Washington-Square/4.jpg"
         ], 
-        "narrative": "The Washington Square Regional Center is a major retail hub for central and southern Washington County, western Clackamas County, and surrounding cities. It is located in the jurisdictions of both Beaverton and Tigard and a portion of unincorporated Washington County. The Washington Square mall is a thriving shopping center and has attracted many other satellite retail developments. The center is served by Highway 217, Southwest Scholls Ferry Road and Southwest Hall Boulevard. Additionally, the center has a Westside Express Service (WES) commuter rail stop and three bus lines. The center has 2,465 residents, 12,742 employees and 1,161 dwelling units. Washington Square Regional Center contains 914 gross acres.", 
         "title": "Washington Square", 
         "type": "Regional Center"
     }, 
-    "west_linn": {
+    "west_linn_bolton": {
         "2011": {
             "context_tool_scores": [
                 4.51, 
@@ -7144,6 +7946,7 @@
                 14.0, 
                 34.0
             ], 
+            "narrative": "The West Linn town centers are represented by two distinct geographic locations, Bolton and Historic Willamette. Both locations are served by Interstate 205, an ODOT facility. Both centers are also serviced by bus lines. The centers have a combined total of 2,492 residents, 1,620 employees and 896 dwelling units. West Linn town centers contain a combined total of 462 gross acres, 274 in Bolton and 188 in Historic Willamette. Metro context tool results and center boundary map (p. 105) are specific to Historic Willamette. All other data reflect both Historic Willamette and Bolton locations.", 
             "private_amenities": [
                 1, 
                 1, 
@@ -7234,6 +8037,7 @@
                 11.3, 
                 37.6
             ], 
+            "narrative": "The West Linn-Bolton Town Center is located near the Willamette River and the Interstate 205-Willamette Drive (Highway 43) interchange. Commercial uses are concentrated along Willamette Drive, which runs through the middle of the center, with the remainder being single family homes. Civic uses include the library, post office, and city parks. The Bolton Primary School is within the town center and West Linn High School is directly west of the town center. Two TriMet bus lines provide transit access. Redevelopment plans call for soft infill development in parts of the center that keeps with the existing character. The portion of the center located between Interstate 205 and the Willamette River is slated for major changes, including mixed-use development.", 
             "private_amenities": [
                 0, 
                 1, 
@@ -7299,13 +8103,210 @@
             45.372827
         ], 
         "images": [
-            "./photos/West-Linn/1.jpg", 
-            "./photos/West-Linn/2.jpg", 
-            "./photos/West-Linn/3.jpg", 
-            "./photos/West-Linn/4.jpg"
+            "./photos/West-Linn-Bolton/1.jpg", 
+            "./photos/West-Linn-Bolton/2.jpg", 
+            "./photos/West-Linn-Bolton/3.jpg", 
+            "./photos/West-Linn-Bolton/4.jpg"
         ], 
-        "narrative": "The West Linn town centers are represented by two distinct geographic locations, Bolton and Historic Willamette. Both locations are served by Interstate 205, an ODOT facility. Both centers are also serviced by bus lines. The centers have a combined total of 2,492 residents, 1,620 employees and 896 dwelling units. West Linn town centers contain a combined total of 462 gross acres, 274 in Bolton and 188 in Historic Willamette. Metro context tool results and center boundary map (p. 105) are specific to Historic Willamette. All other data reflect both Historic Willamette and Bolton locations.", 
-        "title": "West Linn", 
+        "title": "West Linn-Bolton", 
+        "type": "Town Center"
+    }, 
+    "west_linn_willamette": {
+        "2011": {
+            "context_tool_scores": [
+                4.51, 
+                1.13, 
+                2.58, 
+                1.8, 
+                2.02, 
+                1.53, 
+                2.77, 
+                33.34
+            ], 
+            "employment_breakdown": [
+                31.0, 
+                40.0, 
+                28.0
+            ], 
+            "incomes": [
+                3.3, 
+                12.4, 
+                12.6, 
+                20.0, 
+                14.7, 
+                36.9
+            ], 
+            "incomes_1mi_buff": [
+                6.2, 
+                12.1, 
+                12.6, 
+                21.1, 
+                14.0, 
+                34.0
+            ], 
+            "narrative": "The West Linn town centers are represented by two distinct geographic locations, Bolton and Historic Willamette. Both locations are served by Interstate 205, an ODOT facility. Both centers are also serviced by bus lines. The centers have a combined total of 2,492 residents, 1,620 employees and 896 dwelling units. West Linn town centers contain a combined total of 462 gross acres, 274 in Bolton and 188 in Historic Willamette. Metro context tool results and center boundary map (p. 105) are specific to Historic Willamette. All other data reflect both Historic Willamette and Bolton locations.", 
+            "private_amenities": [
+                1, 
+                1, 
+                0, 
+                0, 
+                0, 
+                4, 
+                0, 
+                1, 
+                5, 
+                0, 
+                1, 
+                4, 
+                2, 
+                0, 
+                20, 
+                1
+            ], 
+            "public_amenities": [
+                0, 
+                1, 
+                0, 
+                1, 
+                5
+            ], 
+            "stats": {
+                "Non_SOV": 50.0, 
+                "avg_HH_size": 2.44, 
+                "du_per_acre": 2.8, 
+                "gross_acreage": 462.0, 
+                "market_value": 28.0, 
+                "med_HH_income": 81054.0, 
+                "med_age": 40.3, 
+                "net_acreage": 316.0, 
+                "pct_home_ownership": 72.4, 
+                "people_per_acre": 13.0, 
+                "total_biz": 166.0, 
+                "total_biz_acre": 0.53, 
+                "total_du": 896.0, 
+                "total_num_employees": 1620.0, 
+                "total_pop": 2492.0
+            }, 
+            "stats_1mi_buff": {
+                "avg_HH_size": 2.58, 
+                "du_per_acre": 2.0, 
+                "market_value": 17.0, 
+                "med_HH_income": 72217.0, 
+                "med_age": 39.0, 
+                "net_acreage": 5872.0, 
+                "pct_home_ownership": 63.5, 
+                "people_per_acre": 6.6, 
+                "total_biz": 612.0, 
+                "total_biz_acre": 0.1, 
+                "total_du": 11690.0, 
+                "total_num_employees": 8582.0, 
+                "total_pop": 30016.0
+            }
+        }, 
+        "2015": {
+            "context_tool_scores": [
+                4.84, 
+                1.12, 
+                2.33, 
+                1.89, 
+                1.72, 
+                1.95, 
+                2.79, 
+                35.11
+            ], 
+            "employment_breakdown": [
+                37.0, 
+                33.0, 
+                30.0
+            ], 
+            "incomes": [
+                5.5, 
+                12.9, 
+                11.3, 
+                15.2, 
+                11.0, 
+                44.1
+            ], 
+            "incomes_1mi_buff": [
+                8.3, 
+                14.8, 
+                10.9, 
+                17.2, 
+                11.3, 
+                37.6
+            ], 
+            "narrative": " The West Linn-Historic Willamette Town Center is located at the convergence of the Tualatin and Willamette Rivers and is divided by Interstate 205. The town center includes a commercial main street along Willamette Falls Drive with a single-family residential neighborhood to the south. Portions of the center are recognized on the National Register of Historic Places and included in the Main Street America Program run by the National Trust for Historic Preservation. The portion of the town center north of Interstate 205 includes office buildings, undeveloped land and a city owned park. One TriMet bus line provides transit access to the town center.", 
+            "private_amenities": [
+                0, 
+                1, 
+                1, 
+                0, 
+                0, 
+                3, 
+                0, 
+                2, 
+                0, 
+                0, 
+                0, 
+                5, 
+                3, 
+                1, 
+                18, 
+                2
+            ], 
+            "public_amenities": [
+                0, 
+                2, 
+                0, 
+                1, 
+                5
+            ], 
+            "stats": {
+                "Non_SOV": 54.0, 
+                "avg_HH_size": 2.44, 
+                "du_per_acre": 2.6, 
+                "gross_acreage": 462.0, 
+                "market_value": 26.0, 
+                "med_HH_income": 85089.0, 
+                "med_age": 41.9, 
+                "net_acreage": 328.0, 
+                "pct_home_ownership": 74.6, 
+                "people_per_acre": 6.0, 
+                "total_biz": 567.0, 
+                "total_biz_acre": 1.7, 
+                "total_du": 843.0, 
+                "total_num_employees": 1960.0, 
+                "total_pop": 1974.0
+            }, 
+            "stats_1mi_buff": {
+                "avg_HH_size": 2.5, 
+                "du_per_acre": 2.1, 
+                "market_value": 16.0, 
+                "med_HH_income": 72778.0, 
+                "med_age": 40.9, 
+                "net_acreage": 5880.0, 
+                "pct_home_ownership": 63.6, 
+                "people_per_acre": 5.0, 
+                "total_biz": 755.0, 
+                "total_biz_acre": 0.1, 
+                "total_du": 12290.0, 
+                "total_num_employees": 1899.0, 
+                "total_pop": 29361.0
+            }
+        }, 
+        "extent": [
+            -122.659604, 
+            45.339779, 
+            -122.606162, 
+            45.372827
+        ], 
+        "images": [
+            "./photos/West-Linn-Willamette/1.jpg", 
+            "./photos/West-Linn-Willamette/2.jpg", 
+            "./photos/West-Linn-Willamette/3.jpg", 
+            "./photos/West-Linn-Willamette/4.jpg"
+        ], 
+        "title": "West Linn-Willamette", 
         "type": "Town Center"
     }, 
     "west_portland": {
@@ -7341,6 +8342,7 @@
                 16.5, 
                 29.6
             ], 
+            "narrative": "The West Portland Town Center is located at the interchange of Highway 99 West. The majority of service activity in the center revolves around Capital Highway and businesses located along Barbur Boulevard. The center is bisected by two ODOT facilities: Interstate 5 and Highway 99 West. The area is serviced by multiple bus lines, with one frequent service line along Barbur Boulevard. It has 2,880 residents, 3,820 employees and 1,489 dwelling units. West Portland Town Center contains 339 gross acres.", 
             "private_amenities": [
                 0, 
                 1, 
@@ -7431,6 +8433,7 @@
                 15.1, 
                 35.1
             ], 
+            "narrative": "The West Portland Town Center is located in southwest Portland at the intersection of Interstate 5, SW Capitol Highway and SW Barbur Boulevard (Highway 99W). Auto-oriented commercial development is concentrated along these major thoroughfares. The remainder of the town center is a mix of single- and multifamily housing. The center is currently served by three TriMet bus lines; however this area is currently being studied for high-capacity transit investments through the regional Southwest Corridor planning process.", 
             "private_amenities": [
                 0, 
                 1, 
@@ -7501,9 +8504,201 @@
             "./photos/West-Portland/3.jpg", 
             "./photos/West-Portland/4.jpg"
         ], 
-        "narrative": "The West Portland Town Center is located at the interchange of Highway 99 West. The majority of service activity in the center revolves around Capital Highway and businesses located along Barbur Boulevard. The center is bisected by two ODOT facilities: Interstate 5 and Highway 99 West. The area is serviced by multiple bus lines, with one frequent service line along Barbur Boulevard. It has 2,880 residents, 3,820 employees and 1,489 dwelling units. West Portland Town Center contains 339 gross acres.", 
         "title": "West Portland", 
         "type": "Town Center"
+    }, 
+    "westmoreland": {
+        "2011": {
+            "context_tool_scores": [
+                4.68, 
+                2.32, 
+                4.55, 
+                2.82, 
+                4.82, 
+                2.66, 
+                3.92, 
+                68.7
+            ], 
+            "employment_breakdown": [
+                0, 
+                0, 
+                0
+            ], 
+            "incomes": [
+                24.0, 
+                23.0, 
+                15.0, 
+                17.0, 
+                8.0, 
+                13.0
+            ], 
+            "incomes_1mi_buff": [
+                10.0, 
+                19.0, 
+                17.0, 
+                22.0, 
+                14.0, 
+                18.0
+            ], 
+            "narrative": "", 
+            "private_amenities": [
+                0, 
+                2, 
+                0, 
+                1, 
+                0, 
+                0, 
+                1, 
+                2, 
+                2, 
+                0, 
+                2, 
+                0, 
+                1, 
+                0, 
+                18, 
+                1
+            ], 
+            "public_amenities": [
+                0, 
+                0, 
+                0, 
+                0, 
+                0
+            ], 
+            "stats": {
+                "Non_SOV": "", 
+                "avg_HH_size": 1.76, 
+                "du_per_acre": 8.2, 
+                "gross_acreage": 55.0, 
+                "market_value": 120.0, 
+                "med_HH_income": 47567.0, 
+                "med_age": 42.6, 
+                "net_acreage": 38.0, 
+                "pct_home_ownership": 52.1, 
+                "people_per_acre": 29.9, 
+                "total_biz": "N/A", 
+                "total_biz_acre": "N/A", 
+                "total_du": 312.0, 
+                "total_num_employees": 629.0, 
+                "total_pop": 508.0
+            }, 
+            "stats_1mi_buff": {
+                "avg_HH_size": 2.09, 
+                "du_per_acre": "", 
+                "market_value": 39.0, 
+                "med_HH_income": 54681.0, 
+                "med_age": 38.6, 
+                "net_acreage": "", 
+                "pct_home_ownership": 49.5, 
+                "people_per_acre": "", 
+                "total_biz": "", 
+                "total_biz_acre": "", 
+                "total_du": "", 
+                "total_num_employees": "", 
+                "total_pop": ""
+            }
+        }, 
+        "2015": {
+            "context_tool_scores": [
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0
+            ], 
+            "employment_breakdown": [
+                0, 
+                0, 
+                0
+            ], 
+            "incomes": [
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0
+            ], 
+            "incomes_1mi_buff": [
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0
+            ], 
+            "narrative": "", 
+            "private_amenities": [
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0, 
+                0
+            ], 
+            "public_amenities": [
+                0, 
+                0, 
+                0, 
+                0, 
+                0
+            ], 
+            "stats": {
+                "Non_SOV": "", 
+                "avg_HH_size": "", 
+                "du_per_acre": "", 
+                "gross_acreage": "", 
+                "market_value": "", 
+                "med_HH_income": "", 
+                "med_age": "", 
+                "net_acreage": "", 
+                "pct_home_ownership": "", 
+                "people_per_acre": "", 
+                "total_biz": "", 
+                "total_biz_acre": "", 
+                "total_du": "", 
+                "total_num_employees": "", 
+                "total_pop": ""
+            }, 
+            "stats_1mi_buff": {
+                "avg_HH_size": "", 
+                "du_per_acre": "", 
+                "market_value": "", 
+                "med_HH_income": "", 
+                "med_age": "", 
+                "net_acreage": "", 
+                "pct_home_ownership": "", 
+                "people_per_acre": "", 
+                "total_biz": "", 
+                "total_biz_acre": "", 
+                "total_du": "", 
+                "total_num_employees": "", 
+                "total_pop": ""
+            }
+        }, 
+        "extent": [], 
+        "images": [
+            "./photos/Westmoreland/1.jpg", 
+            "./photos/Westmoreland/2.jpg", 
+            "./photos/Westmoreland/3.jpg", 
+            "./photos/Westmoreland/4.jpg"
+        ], 
+        "title": "Westmoreland", 
+        "type": "Typology"
     }, 
     "wilsonville": {
         "2011": {
@@ -7538,6 +8733,7 @@
                 16.6, 
                 26.3
             ], 
+            "narrative": "Wilsonville", 
             "private_amenities": [
                 1, 
                 2, 
@@ -7628,6 +8824,7 @@
                 13.9, 
                 27.0
             ], 
+            "narrative": "Wilsonville", 
             "private_amenities": [
                 1, 
                 1, 
@@ -7698,7 +8895,6 @@
             "./photos/Wilsonville/3.jpg", 
             "./photos/Wilsonville/4.jpg"
         ], 
-        "narrative": "Wilsonville", 
         "title": "Wilsonville", 
         "type": "Town Center"
     }
