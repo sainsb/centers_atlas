@@ -66,10 +66,9 @@ replace: {
       'bower_components/mapbox.js/mapbox.js',
       'bower_components/chartjs/Chart.js',
       'bower_components/pathjs/path.min.js',
-      'js/PNG.js',
-     'bower_components/heatmap/index.js',
-      'bower_components/leaflet-heatmap/index.js',
-      'js/app.script.js'
+      'bower_components/catiline/dist/catiline.js',
+      'bower_components/heatmap/index.js',
+      'bower_components/leaflet-heatmap/index.js'
         ],
       }
       }
@@ -95,6 +94,6 @@ replace: {
   grunt.loadNpmTasks('grunt-contrib-copy');
   // Default task(s).
   //grunt.registerTask('default', [ 'jst', 'replace', 'cssmin']);
- grunt.registerTask('default', [ 'jst','replace','uglify', 'cssmin', 'copy']); //,'uglify', 'cssmin', 'copy'
+ grunt.registerTask('default', [ 'jst','replace','uglify', 'cssmin', 'copy']);
 
 };

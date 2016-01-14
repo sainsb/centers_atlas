@@ -579,6 +579,26 @@ var App = {
 
 		$('.container-fluid').append(templates['map'], {});
 
+		/* Attempt to combat inability of map to zoom to center... */
+
+		$(document).on('scroll', function(){
+			if(App.map.newext !== null && App.map.zoomed == false && isScrolledIntoView(document.getElementById('map'))){
+				App.map.zoomed = true;
+				setTimeout(function() {
+					map.fitBounds(App.map.newext);
+					map.invalidateSize();
+				}, 0);
+
+			}
+		})
+
+		function isScrolledIntoView(el) {
+		    var elemTop = el.getBoundingClientRect().top;
+		    var elemBottom = el.getBoundingClientRect().bottom;
+		    var isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
+		    return isVisible;
+		}
+
 		App.map.init(center);
 
 		var d = $.Deferred();
@@ -755,7 +775,7 @@ var App = {
 	slider : {
 		init: function(){
 			if (!$('#inc_slider').length) {
-				var html = "<tr><td rowspan='2'><label for='inc_slider' style='color:#fff;'>Year&nbsp;&nbsp;&nbsp;</label></td><td colspan='" + (App.data.data_years.length + 1) + "'><input type='range' id='inc_slider' min='" + App.data.data_years[0] + "' max='" + App.data.data_years[App.data.data_years.length - 1] + "' step='4'></td></tr>";
+				var html = "<tr><td rowspan='2'><label for='inc_slider' style='color:#fff;'>Year&nbsp;&nbsp;&nbsp;</label></td><td colspan='" + (App.data.data_years.length + 1) + "'><input type='range' id='inc_slider' min='" + App.data.data_years[0] + "' max='" + App.data.data_years[App.data.data_years.length - 1] + "' step='4' style='width:170px;'></td></tr>";
 
 				for (var i = 0; i < App.data.data_years.length; i++) {
 					if (i == 0) {
@@ -774,13 +794,15 @@ var App = {
 		}
 	},
 	map: {
+		newext:null,
+		zoomed:false,
 		init: function(center) {
 
 			var southWest = L.latLng(45.28138672055432, -123.15352859699149),
 		    northEast = L.latLng(45.652871076202324, -122.36748802454048),
 		    bounds = L.latLngBounds(southWest, northEast);
 
-			map = L.mapbox.map('map',null, {minZoom:10, maxBounds: bounds});
+			map = L.mapbox.map('map',null, {minZoom:10, maxZoom:16, maxBounds: bounds});
 
 			L.tileLayer('//server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
 				maxZoom: 21,
@@ -805,27 +827,21 @@ var App = {
 				minZoom: 15,
 				attribution: 'RLIS'
 			}).addTo(map);
-			if (center != null) {
 
-				// if(typeof(map.on) !='undefined'){
-				// 	map=null;
-				// }
+			if (center != null) {
 
 				var ext = App.data[center].extent;
 
-				var newext = [
+				App.map.newext = [
 					[ext[1], ext[0]],
 					[ext[3], ext[2]]
 				];
 
-				map.on('load', function() {
-
-					setTimeout(function() {
-						map.fitBounds(newext);
-					}, 100);
-				});
-
-				map.setView([ext[1], ext[0]], 15);
+				setTimeout(function() {
+						map.fitBounds(App.map.newext);
+						console.log("zoomed to bounds")
+						map.invalidateSize();
+					}, 0);
 
 			} else {
 				map.setView([45.48228066163947, -122.70767211914064], 11);
@@ -970,21 +986,41 @@ var App = {
 			command.onAdd = function(map) {
 				var div = L.DomUtil.create('div', 'command');
 
-				div.innerHTML = '<div class="btn-group-vertical" data-toggle="buttons"> <label class="btn btn-default btn-xs"> <input type="radio" id="q156" name="quality[25]" value="1" title="bike" /> Bicycle Access </label><label class="btn btn-default btn-xs"> <input type="radio" id="q157" name="quality[25]" value="2" title="people" /> People Per Acre </label><label class="btn btn-default btn-xs"> <input type="radio" id="q158" name="quality[25]" value="3" title="transit" /> Transit Access </label><label class="btn btn-default btn-xs"> <input type="radio" id="q159" name="quality[25]" value="4" title="uli" /> Urban Living Infrastructure </label><label class="btn btn-default btn-xs"> <input type="radio" id="q160" name="quality[25]" checked="checked" value="5" title="sidewalk" /> Sidewalk density </label> <label class="btn btn-default btn-xs"> <input type="radio" id="q160" name="quality[25]" title="parks" checked="checked" value="5" /> Access to Parks </label> <label class="btn btn-default btn-xs"> <input type="radio" id="q160" name="quality[25]" title="block" checked="checked" value="5" /> Block Size </label><label ><input type="range" value="1" min="0.01" max=".7" step=".05" id="sliHeatmap" style="background:#fff;margin-left:7px;"/> </label> </div>';
+				div.innerHTML = '<div class="btn-group-vertical" data-toggle="buttons" id="heatmapHouse"><div id="heatmapControlShim" style="position:absolute;top:21px;bottom:26px;left:0px;right:0;background-color:#DDD;z-index:100;display:none;opacity:.7"><img src="img/gears.svg" style="margin-left:57px;margin-top:47px"></div> <label class="btn btn-default btn-xs btn-disabled" id="lblButton">  Heatmaps </label><label class="btn btn-default btn-xs"> <input type="radio" id="q156" name="quality[25]" value="1" title="bike" /> Bicycle Access </label><label class="btn btn-default btn-xs"> <input type="radio" id="q157" name="quality[25]" value="2" title="people" /> People Per Acre </label><label class="btn btn-default btn-xs"> <input type="radio" id="q158" name="quality[25]" value="3" title="transit" /> Transit Access </label><label class="btn btn-default btn-xs"> <input type="radio" id="q159" name="quality[25]" value="4" title="uli" /> Urban Living Infrastructure </label><label class="btn btn-default btn-xs"> <input type="radio" id="q160" name="quality[25]" checked="checked" value="5" title="sidewalk" /> Sidewalk density </label> <label class="btn btn-default btn-xs"> <input type="radio" id="q160" name="quality[25]" title="parks" checked="checked" value="5" /> Access to Parks </label> <label class="btn btn-default btn-xs"> <input type="radio" id="q160" name="quality[25]" title="block" checked="checked" value="5" /> Block Size </label><label ><input type="range" value="1" min="0.01" max=".7" step=".05" id="sliHeatmap" style="background:#fff;margin-left:7px;width:170px;" disabled alt="Heatmap opacity" title="Heatmap opacity"/> </label> </div>';
 				L.DomEvent.disableClickPropagation(div);
 				return div;
 			};
 
 			command.addTo(map);
 
-			$('[name="quality[25]"]').on('change', function() {
+			$('[name="quality[25]"]').on('change', function(e) {
+
 				var id = $(this).prop('title');
-				//
+
+				if(App.heatmap.id !== null && id == App.heatmap.id){
+					console.log('foobar')
+					$($(this).parent()).removeClass('active')
+					$(this).attr('checked', false)
+					map.removeLayer(App.heatmap.layer);
+					$('#sliHeatmap').attr('disabled', true);
+					e.stopPropagation();
+					return;
+				}
 				//download png? add as a heatmap.s
+				var $hh = $('#heatmapHouse');
+				$('#heatmapControlShim').fadeIn();
 				App.heatmap.init(id);
 			});
 
-			$('#sliHeatmap').on('input change', function() {
+			$('#heatmapHouse > label').on('mousedown', function(){
+				var id = $($(this).children()[0]).prop('title');
+				if(App.heatmap.id !== null && id == App.heatmap.id){
+					$('[name="quality[25]"]').attr('checked', false)
+				}
+
+			});
+
+			$('#sliHeatmap').on('change', function() {
 				App.heatmap.maxOpacity = parseFloat($(this).val());
 				App.heatmap._reconfigure();
 			});
@@ -994,8 +1030,6 @@ var App = {
 	heatmap: {
 		layer: null,
 		rasters: {},
-		rasterMultiplier: {},
-		curRasters: [],
 		tooltip: null,
 		blur: .64,
 		gradientIndex: 2,
@@ -1005,6 +1039,7 @@ var App = {
 		radius: .0015,
 		maxOpacity: 0.7,
 		minOpacity: 0,
+		id:null,
 		gradients: [{
 				'0': '#218291',
 				'.6': '#91BDA8',
@@ -1015,33 +1050,43 @@ var App = {
 			null
 		],
 		init: function(id) {
-
+			this.id = id;
 			var layer;
+
 			$.each(layers, function(i, v) {
 				if (v.id == id) {
 					layer = v;
 				}
 			});
 
-			var xhr = new XMLHttpRequest();
-			xhr.open('GET', layer.file, true);
-			xhr.responseType = 'arraybuffer';
-			pngdata = [];
-			xhr.onload = function(e) {
-				if (this.status == 200) {
-					var reader = new PNGReader(this.response);
-					reader.parse(function(err, png) {
-						if (err) throw err;
-						App.heatmap.curRasters.push(layer);
-						App.heatmap.rasters[id] = png;
-						App.heatmap.rasterMultiplier[id] = 1;
-						App.heatmap.render(id);
-					});
-				}
-			};
+			readPNG(layer).then(function(png){
+				layer.raster = png;
+				layer.raster.getPixel = function(x, y) {
+		            if (!this.pixels) throw new Error("pixel data is empty");
+		            if (x >= this.width || y >= this.height) {
+		                throw new Error("x,y position out of bound");
+		            }
+		            var i = this.colors * this.bitDepth / 8 * (y * this.width + x);
+		            var pixels = this.pixels;
+		            switch (this.colorType) {
+		                case 0:
+		                    return [pixels[i], pixels[i], pixels[i], 255];
+		                case 2:
+		                    return [pixels[i], pixels[i + 1], pixels[i + 2], 255];
+		                case 3:
+		                    return [this.palette[pixels[i] * 3 + 0], this.palette[pixels[i] * 3 + 1], this.palette[pixels[i] * 3 + 2], 255];
+		                case 4:
+		                    return [pixels[i], pixels[i], pixels[i], pixels[i + 1]];
+		                case 6:
+		                    return [pixels[i], pixels[i + 1], pixels[i + 2], pixels[i + 3]];
+		            }
+		        };
 
-			xhr.send();
+				App.heatmap.render(layer);
+
+			})
 		},
+
 		_init: function() {
 			this.config = {
 					"radius": this.radius,
@@ -1056,7 +1101,7 @@ var App = {
 					"valueField": 'count'
 				},
 
-				App.heatmap.layer = new HeatmapOverlay(this.config);
+			App.heatmap.layer = new HeatmapOverlay(this.config);
 
 			map.addLayer(this.layer);
 
@@ -1064,25 +1109,57 @@ var App = {
 				autoPan: false
 			});
 		},
-		sync: function(id, active) {
+		render: function(layer) {
 
-			if (active == false) {
-				$.each(this.curRasters, function(i, v) {
-					if (App.util.getLayerId(v.name) == id) {
-						App.heatmap.curRasters.splice(i, 1);
-						App.heatmap.render(id);
-						return false;
-					}
-				});
-			} else {
-				var lyr = $.grep(config.layers, function(item) {
-					return App.util.getLayerId(item.name) == id;
-				})[0];
+			this.pngdata = [];
 
-				this.curRasters.push(lyr);
-
-				this.render();
+			if (App.heatmap.layer == null) {
+				this._init();
 			}
+
+			this.layer.setData({
+				max: 0,
+				data: []
+			});
+
+			if (!map.hasLayer(this.layer)) {
+				map.addLayer(this.layer);
+			}
+
+			var curlng = layer.ul[0];
+			var curlat = layer.ul[1];
+
+			for (var x = 0; x < layer.width - this.resolution; x += this.resolution) {
+				for (var y = 0; y < layer.height - this.resolution; y += this.resolution) {			
+					var val = layer.raster.getPixel(x, y)[1];
+					
+					if(val > this.maxval){
+						this.maxval = val;
+					}
+
+					if(val > layer.nodata && val < 255){
+						if(x==0) console.info(layer.nodata)
+						this.pngdata.push({
+							lng: curlng,
+							lat: curlat,
+							count: val
+						});
+					}
+					
+					curlat -= (layer.step * this.resolution);
+				}
+				curlng += (layer.step * this.resolution);
+				curlat = layer.ul[1];
+			}
+
+			this.layer.setData({
+				max: this.maxval,
+				data: this.pngdata
+			});
+
+			$('#sliHeatmap').attr('disabled', false)
+
+			$('#heatmapControlShim').fadeOut();
 		},
 		_reconfigure: function() {
 
@@ -1093,7 +1170,7 @@ var App = {
 				"maxOpacity": this.maxOpacity,
 				"minOpacity": this.minOpacity,
 				"blur": this.blur,
-				"gradient": this.gradients[this.gradientIndex],
+				"gradient": this.gradients[0],
 				"scaleRadius": true,
 				"useLocalExtrema": true,
 				"latField": 'lat',
@@ -1102,112 +1179,14 @@ var App = {
 			};
 
 			this.layer = new HeatmapOverlay(this.config);
+
 			map.addLayer(this.layer);
-			this.layer.setData({
-				max: this.maxval,
-				data: this.pngdata
-			});
-		},
-		render: function(id) {
-
-			this.pngdata = [];
-
-			if (App.heatmap.layer == null) {
-				this._init();
-			}
-
-			if (this.curRasters.length == 0) {
-				this.layer.setData({
-					max: 0,
-					data: []
-				});
-				map.removeLayer(this.layer);
-				return;
-			} else if (!map.hasLayer(this.layer)) {
-				map.addLayer(this.layer);
-			}
-
-			var rManager = {};
-
-			//group rasters by dimensions
-			$.each(this.curRasters, function(i, v) {
-
-				//var id = App.util.getLayerId(v.name);
-
-				//if (typeof(v.width) != 'undefined') {
-				var dims = v.width + '_' + v.height;
-				// } else { //for geojson point-based heatmaps
-
-				//   if (typeof(rManager['geojson']) != 'undefined') {
-				//     rManager.geojson.push(id);
-				//   } else {
-				//     rManager.geojson = {
-				//       rasters: [id]
-				//     };
-				//   };
-				//   return true;
-				// }
-
-				//concatenated, stringified to code width and height to support 
-				//grouping
-				//for true rasters (eg. PNGs)
-				if (typeof(rManager[dims]) != 'undefined') {
-					rManager[dims].rasters.push(id);
-				} else {
-					rManager[dims] = {
-						height: v.height,
-						width: v.width,
-						rasters: [id],
-						nodata: v.nodata,
-						ul: v.ul,
-						step: v.step
-					};
-				}
-			});
-
-			for (var dims in rManager) {
-				//combing point based heatmap
-				this._crush(rManager[dims]);
-			}
 
 			this.layer.setData({
 				max: this.maxval,
 				data: this.pngdata
 			});
 		},
-		_crush: function(colRasters) {
-			var curlng = colRasters.ul[0];
-			var curlat = colRasters.ul[1];
-
-			for (var x = 0; x < colRasters.width - this.resolution; x += this.resolution) {
-				for (var y = 0; y < colRasters.height - this.resolution; y += this.resolution) {
-					var val = 0;
-
-					for (var r = 0; r < colRasters.rasters.length; r++) {
-
-						var tempval = this.rasters[colRasters.rasters[r]].getPixel(x, y)[1];
-						if (tempval > colRasters.nodata) {
-							val += tempval * this.rasterMultiplier[colRasters.rasters[r]];
-						}
-					}
-
-					if (val > colRasters.nodata && val < 255) {
-						if (val > this.maxval) {
-							this.maxval = val;
-						}
-						this.pngdata.push({
-							lng: curlng,
-							lat: curlat,
-							count: val
-						});
-					}
-
-					curlat -= (colRasters.step * this.resolution);
-				}
-				curlng += (colRasters.step * this.resolution);
-				curlat = colRasters.ul[1];
-			}
-		}
 	}
 }
 
@@ -1226,3 +1205,40 @@ activity spectrum and typologies
 sunset transit
 
 */
+
+function readPNG(layer){
+	var def = $.Deferred();
+
+	var worker = cw({
+		get:function(input, cb){
+			try{
+				importScripts('js/PNG.js');
+
+				var xhr = new XMLHttpRequest();
+				this.fire('console', ['log', [input[0].file]]);
+				xhr.open('GET', 'http:'+input[0].file, true);
+				xhr.responseType = 'arraybuffer';
+				pngdata = [];
+				xhr.onload = function(e) {
+					if (this.status == 200) {
+
+						var reader = new PNGReader(this.response);
+						reader.parse(function(err, png) {
+							if (err) throw err;
+							cb(png);
+						});
+					}
+				};
+
+				xhr.send();
+			} catch(ex){
+				this.fire('console', ['error', [ex.message]])
+			}
+		}
+})
+
+	worker.get([layer]).then(function(pngdata){
+		def.resolve(pngdata)
+	})
+	return def.promise();
+}

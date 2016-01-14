@@ -279,3 +279,29 @@ body {
   background-color: #4D5E66;
   z-index:1002;
 }
+
+
+#lblButton{
+  background-color:#444;
+  color:#fff;
+}
+
+#lblButton:hover{
+  background-color:#444;
+  border:1px solid #CCC;
+  cursor:default;
+  color:#fff;
+}
+
+#lblButton:active{
+   border:1px solid #CCC;
+       box-shadow: none;
+}
+
+#lblButton:visited{
+   border:1px solid #CCC;
+}
+
+#lblButton:active{
+   border:1px solid #CCC;
+}
