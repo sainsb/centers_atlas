@@ -68,3 +68,14 @@ A web-based version of the state of the centers atlas.
 - Added map popup with center name, type and link to view in Atlas
 - Right-justified private amenity numbers in amenity grid
 - Fixed Nav bar menu to dropdown to the left instead of off screen to the right.
+
+# To Build
+
+* Install Node.js dependencies (reads package.json)
+* `npm install `
+
+* Install Bower (js) dependencies (reads bower.json file)
+* `bower -i`
+
+* Run grunt to compile/build (reads gruntfile.js)
+* `grunt`
