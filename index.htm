@@ -8,7 +8,7 @@
     <link rel="icon" href="http://www.oregonmetro.gov/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="css/app.style.min.css" media="screen" />
     <link href='//fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 
 <body>
@@ -22,7 +22,9 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a href="index.htm" class="navbar-brand logo" style="padding-top:30px; padding-left:150px; font-size: 28px"><b>State of the Centers Atlas</b></a>
+                    <div id="logo" style="">
+                       <a href="index.htm" class="navbar-brand logo" ><b style="margin-left:15px;" id='brandLogo'>State of the Centers Atlas</b></a>
+                    </div>
                 </div>
                 <!--/.navbar-header-->
                 <div id="main-nav" class="collapse navbar-collapse">
@@ -105,6 +107,7 @@
         <div class="container-fluid" style='padding-top:100px;'></div>
     </section>
     <div id="footer">
+    
       <div class="container" style='text-align:center;margin-top:17px'>
         <table id='tblSliderYears'></table>
       </div>

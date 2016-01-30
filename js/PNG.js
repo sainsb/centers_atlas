@@ -146,8 +146,6 @@
             }
 
             inflate(data, function(err, data) {
-
-                console.log('HIEsdfDD')
                 if (err) return callback(err);
                 try {
                     if (png.getInterlaceMethod() === 0) {

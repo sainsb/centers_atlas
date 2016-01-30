@@ -59,6 +59,10 @@ var layers = [{
 	'thumb': 'img/heatmap.jpg'
 }];
 
+var USE_STATIC_HEATMAPS = true;
+var static_heatmap = null;
+var CUR_STATIC = '';
+
 Chart.defaults.global.animation = false;
 var DATA, centers_geom, bus_routes, center;
 
@@ -318,7 +322,7 @@ var App = {
 		);
 
 		$('#inc_slider').off('input.t').on('input.t', function() {
-			console.log('yay')
+			
 				var year = $('#inc_slider').val();
 
 				$('#central_city_row').fadeOut(0, function(){	$('#central_city_row').remove();
@@ -369,7 +373,7 @@ var App = {
 		);
 
 		$('#inc_slider').off('input.t').on('input.t', function() {
-			console.log('yay')
+			
 				var year = $('#inc_slider').val();
 
 				$('#regional_center_row').fadeOut(0, function(){	$('#regional_center_row').remove();
@@ -620,7 +624,7 @@ var App = {
 			this.createBarChart(center);
 			this.createRadarChart(center);
 
-			$('#inc_slider').off('input').on('input', function() {
+			$('#inc_slider').off('input change').on('input change', function() {
 
 				var year = $('#inc_slider').val();
 
@@ -775,15 +779,15 @@ var App = {
 	slider : {
 		init: function(){
 			if (!$('#inc_slider').length) {
-				var html = "<tr><td rowspan='2'><label for='inc_slider' style='color:#fff;'>Year&nbsp;&nbsp;&nbsp;</label></td><td colspan='" + (App.data.data_years.length + 1) + "'><input type='range' id='inc_slider' min='" + App.data.data_years[0] + "' max='" + App.data.data_years[App.data.data_years.length - 1] + "' step='4' style='width:170px;'></td></tr>";
+				var html = "<tr><td rowspan='2'><label for='inc_slider' >Year&nbsp;&nbsp;&nbsp;</label></td><td colspan='" + (App.data.data_years.length + 1) + "'><input type='range' id='inc_slider' min='" + App.data.data_years[0] + "' max='" + App.data.data_years[App.data.data_years.length - 1] + "' step='4' style='width:170px;'></td></tr>";
 
 				for (var i = 0; i < App.data.data_years.length; i++) {
 					if (i == 0) {
-						html += "<td style='text-align:left;color:#fff'>" + App.data.data_years[i] + "</td>";
+						html += "<td style='text-align:left;'>" + App.data.data_years[i] + "</td>";
 					} else if (i > 0 && i < App.data.data_years.length - 1) {
-						html += "<td style='text-align:center;color:#fff'>" + App.data.data_years[i] + "</td>";
+						html += "<td style='text-align:center;'>" + App.data.data_years[i] + "</td>";
 					} else if (i == App.data.data_years.length - 1) {
-						html += "<td style='text-align:right;color:#fff'>" + App.data.data_years[i] + "</td>";
+						html += "<td style='text-align:right;'>" + App.data.data_years[i] + "</td>";
 					}
 				}
 
@@ -875,9 +879,8 @@ var App = {
 						weight: 1,
 						fillOpacity: .1,
 						opacity: .1
-					}
+					}, clickable: false
 				})
-
 
 				if (center != null) {
 					map.addLayer(analysis_buffers);
@@ -986,7 +989,7 @@ var App = {
 			command.onAdd = function(map) {
 				var div = L.DomUtil.create('div', 'command');
 
-				div.innerHTML = '<div class="btn-group-vertical" data-toggle="buttons" id="heatmapHouse"><div id="heatmapControlShim" style="position:absolute;top:21px;bottom:26px;left:0px;right:0;background-color:#DDD;z-index:100;display:none;opacity:.7"><img src="img/gears.svg" style="margin-left:57px;margin-top:47px"></div> <label class="btn btn-default btn-xs btn-disabled" id="lblButton">  Heatmaps </label><label class="btn btn-default btn-xs"> <input type="radio" id="q156" name="quality[25]" value="1" title="bike" /> Bicycle Access </label><label class="btn btn-default btn-xs"> <input type="radio" id="q157" name="quality[25]" value="2" title="people" /> People Per Acre </label><label class="btn btn-default btn-xs"> <input type="radio" id="q158" name="quality[25]" value="3" title="transit" /> Transit Access </label><label class="btn btn-default btn-xs"> <input type="radio" id="q159" name="quality[25]" value="4" title="uli" /> Urban Living Infrastructure </label><label class="btn btn-default btn-xs"> <input type="radio" id="q160" name="quality[25]" checked="checked" value="5" title="sidewalk" /> Sidewalk density </label> <label class="btn btn-default btn-xs"> <input type="radio" id="q160" name="quality[25]" title="parks" checked="checked" value="5" /> Access to Parks </label> <label class="btn btn-default btn-xs"> <input type="radio" id="q160" name="quality[25]" title="block" checked="checked" value="5" /> Block Size </label><label ><input type="range" value="1" min="0.01" max=".7" step=".05" id="sliHeatmap" style="background:#fff;margin-left:7px;width:170px;" disabled alt="Heatmap opacity" title="Heatmap opacity"/> </label> </div>';
+				div.innerHTML = '<div class="btn-group-vertical" data-toggle="buttons" id="heatmapHouse"><div id="heatmapControlShim" style="position:absolute;top:21px;bottom:26px;left:0px;right:0;background-color:#DDD;z-index:100;display:none;opacity:.7"><img src="img/gears.svg" style="margin-left:57px;margin-top:47px"></div> <label class="btn btn-default btn-xs btn-disabled" id="lblButton">  Heatmaps </label><label class="btn btn-default btn-xs"> <input type="radio" id="q156" name="quality[25]" value="1" title="bike" /> Bicycle Access </label><label class="btn btn-default btn-xs"> <input type="radio" id="q157" name="quality[25]" value="2" title="people" /> People Per Acre </label><label class="btn btn-default btn-xs"> <input type="radio" id="q158" name="quality[25]" value="3" title="transit" /> Transit Access </label><label class="btn btn-default btn-xs"> <input type="radio" id="q159" name="quality[25]" value="4" title="uli" /> Urban Living Infrastructure </label><label class="btn btn-default btn-xs"> <input type="radio" id="q160" name="quality[25]" checked="checked" value="5" title="sidewalk" /> Sidewalk density </label> <label class="btn btn-default btn-xs"> <input type="radio" id="q160" name="quality[25]" title="parks" checked="checked" value="5" /> Access to Parks </label> <label class="btn btn-default btn-xs"> <input type="radio" id="q160" name="quality[25]" title="block" checked="checked" value="5" /> Block Size </label><label ><input type="range" value="1" min="0.01" max="1" step=".05" id="sliHeatmap" style="background:#fff;margin-left:7px;width:170px;" disabled alt="Heatmap opacity" title="Heatmap opacity"/> </label> </div>';
 				L.DomEvent.disableClickPropagation(div);
 				return div;
 			};
@@ -997,32 +1000,65 @@ var App = {
 
 				var id = $(this).prop('title');
 
-				if(App.heatmap.id !== null && id == App.heatmap.id){
-					console.log('foobar')
+				if ((App.heatmap.id !== null && id == App.heatmap.id) || CUR_STATIC == id) {
+					
 					$($(this).parent()).removeClass('active')
 					$(this).attr('checked', false)
-					map.removeLayer(App.heatmap.layer);
+					if (USE_STATIC_HEATMAPS) {
+						map.removeLayer(static_heatmap)
+						CUR_STATIC = '';
+					} else {
+						map.removeLayer(App.heatmap.layer);
+					}
 					$('#sliHeatmap').attr('disabled', true);
 					e.stopPropagation();
 					return;
 				}
-				//download png? add as a heatmap.s
-				var $hh = $('#heatmapHouse');
-				$('#heatmapControlShim').fadeIn();
-				App.heatmap.init(id);
+
+				if (USE_STATIC_HEATMAPS) {
+					var imageUrl = 'rasters/' + id + '.png',
+						imageBounds = [
+							[(45.6601034248 - 0.386646966), -123.158686448],
+							[45.6601034248, (-123.158686448 + 0.7996629588)]
+						];
+
+					if(static_heatmap !== null && map.hasLayer(static_heatmap)){
+						map.removeLayer(static_heatmap);
+					}
+
+					var opacity = $('#sliHeatmap').val();
+					static_heatmap = L.imageOverlay(imageUrl, imageBounds, {opacity:opacity});
+					//get opacity first, just in case
+					static_heatmap.addTo(map);
+					CUR_STATIC = id;
+					$('#sliHeatmap').attr('disabled', false);
+				} else {
+					$('#heatmapControlShim').fadeIn();
+					App.heatmap.init(id);
+				}
 			});
 
-			$('#heatmapHouse > label').on('mousedown', function(){
+			$('#heatmapHouse > label').on('mousedown', function() {
 				var id = $($(this).children()[0]).prop('title');
-				if(App.heatmap.id !== null && id == App.heatmap.id){
-					$('[name="quality[25]"]').attr('checked', false)
-				}
+				if ((App.heatmap.id !== null && id == App.heatmap.id) || CUR_STATIC == id) {
 
+					$('[name="quality[25]"]').attr('checked', false)
+
+				}
 			});
 
 			$('#sliHeatmap').on('change', function() {
-				App.heatmap.maxOpacity = parseFloat($(this).val());
-				App.heatmap._reconfigure();
+				if (USE_STATIC_HEATMAPS) {
+					static_heatmap.setOpacity(parseFloat($(this).val()));
+				} else {
+					$('#heatmapControlShim').show();
+					var opacity = parseFloat($(this).val());
+					setTimeout(function() {
+						App.heatmap.maxOpacity = opacity;
+						App.heatmap._reconfigure();
+						$('#heatmapControlShim').fadeOut();
+					}, 50);
+				}
 			});
 
 		}

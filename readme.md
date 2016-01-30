@@ -11,6 +11,27 @@ Initial Development:
 	qa url: https://gis.oregonmetro.gov/dev/soc/#Aloha
 	issue tracking: 
 
+
+------------Jan 30, 2016 v0.0.6-------------------
+
+## Tasks
+
+* Fixed time slider in IE
+* Restyled time slider to make it less obtrusive.
+* Bus routes show maptip on hover.  *Note - IE map performance is really shitty with bus routes turned on.  Would be really good to simplify this geometry.
+* Prevent map from zooming too close.
+* Improved heatmap loading time and provided UI progress indicator.
+* Implemented static heat maps to improve loading of maps.
+* Fixed bug where map doesn't always zoom to Center when entering centers page 
+* Fixed banner at a variety of screen widths. 
+* Made analysis buffers not clickable (hides the thumb icon when hovering over them (misleading b/c nothing shows up when clicking))
+
+## Comments
+
+* I might suggest adding title/alt attributes to image elements so that when a user hovers over a picture in the site it gives a little tooltip with a descriptor.
+* To switch the app back to the fancier Heatmap.js canvas flip the bool at the top of the script.js USE_STATIC_HEATMAPS to true *** NOte that if you do this, you'll also need to ensure that there is a ULI.png available and add it to the top of the script in the same fashion as the other 6 indicator rasters are declared.
+* I haven't set the site up for build mode, to do so, consult with Kellie how to move the script.js and the style.js into the compiled js/css and remove the extra script includes from the index.htm file.
+
 ------------Sep 21, 2015 v0.0.5-------------------
 
 ## Bugs Fixed
