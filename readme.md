@@ -1,19 +1,18 @@
-State of the Centers Atlas
+#State of the Centers Atlas
 
-Current Build: 0.0.5
-Release Date: 2015-09-21
+##Current Build: 0.0.5
+##Release Date: 2015-09-21
 
-App Notes:
+###App Notes:
 A web-based version of the state of the centers atlas.
 
-Initial Development: 
+###Initial Development: 
 	Developed by BNS
 	qa url: https://gis.oregonmetro.gov/dev/soc/#Aloha
 	issue tracking: 
 
 
-------------Jan 30, 2016 v0.0.6-------------------
-
+#Jan 30, 2016 v0.0.6
 ## Tasks
 
 * Fixed time slider in IE
@@ -32,7 +31,7 @@ Initial Development:
 * To switch the app back to the fancier Heatmap.js canvas flip the bool at the top of the script.js USE_STATIC_HEATMAPS to true *** NOte that if you do this, you'll also need to ensure that there is a ULI.png available and add it to the top of the script in the same fashion as the other 6 indicator rasters are declared.
 * I haven't set the site up for build mode, to do so, consult with Kellie how to move the script.js and the style.js into the compiled js/css and remove the extra script includes from the index.htm file.
 
-------------Sep 21, 2015 v0.0.5-------------------
+#Sep 21, 2015 v0.0.5
 
 ## Bugs Fixed
 - Centers zoom to their extent upon page load
@@ -51,7 +50,7 @@ Initial Development:
 - Typology averages... (?)
 - Happy Valley incomes 2011
 
-------------Jul 20, 2015 v0.0.0.7-------------------------
+#Jul 20, 2015 v0.0.0.7
 
 - Added home, about pages
 - Added map to home page
@@ -61,7 +60,7 @@ Initial Development:
 - Moved map above graphs
 
 
-------------Jun 24, 2015 v0.0.0.5-------------------------
+#Jun 24, 2015 v0.0.0.5
 
 - Added radar graph for context tool scores
 - Added time slider for graphs
