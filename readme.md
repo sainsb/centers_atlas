@@ -16,6 +16,9 @@ A web-based version of the state of the centers atlas.
 * Broke rasters out into year subdirectories
 * Attached heatmap (raster) layers to year sliderbar events.
 
+## Comments
+* Breaking away from PNG/heatmap.js functionality with this release; can't flip that switch so easily any longer.
+
 #Jan 30, 2016 v0.0.6
 ## Tasks
 
