@@ -1,7 +1,7 @@
 #State of the Centers Atlas
 
-##Current Build: 0.0.5
-##Release Date: 2015-09-21
+##Current Build: 0.0.7
+##Release Date: 2015-02-11
 
 ###App Notes:
 A web-based version of the state of the centers atlas.
@@ -10,7 +10,6 @@ A web-based version of the state of the centers atlas.
 	Developed by BNS
 	qa url: https://gis.oregonmetro.gov/dev/soc/#Aloha
 	issue tracking: 
-
 
 #Feb 11, 2016 v0.0.7
 
