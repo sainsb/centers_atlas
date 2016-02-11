@@ -649,6 +649,24 @@ var App = {
 				App.charts.createBarChart(center);
 				App.charts.createPieChart(center);
 				App.charts.createRadarChart(center);
+
+				if(static_heatmap !== null && map.hasLayer(static_heatmap)){
+					var imageUrl = 'rasters/'+year+'/' + CUR_STATIC + '.png',
+						imageBounds = [
+							[(45.6601034248 - 0.386646966), -123.158686448],
+							[45.6601034248, (-123.158686448 + 0.7996629588)]
+						];
+
+					
+					map.removeLayer(static_heatmap);
+					
+
+					var opacity = $('#sliHeatmap').val();
+					static_heatmap = L.imageOverlay(imageUrl, imageBounds, {opacity:opacity});
+					//get opacity first, just in case
+					static_heatmap.addTo(map);
+				}
+
 			});
 		},
 		createBarChart: function(center) {
@@ -999,6 +1017,7 @@ var App = {
 			$('[name="quality[25]"]').on('change', function(e) {
 
 				var id = $(this).prop('title');
+				var year = $('#inc_slider').val();
 
 				if ((App.heatmap.id !== null && id == App.heatmap.id) || CUR_STATIC == id) {
 					
@@ -1016,7 +1035,7 @@ var App = {
 				}
 
 				if (USE_STATIC_HEATMAPS) {
-					var imageUrl = 'rasters/' + id + '.png',
+					var imageUrl = 'rasters/'+year+'/' + id + '.png',
 						imageBounds = [
 							[(45.6601034248 - 0.386646966), -123.158686448],
 							[45.6601034248, (-123.158686448 + 0.7996629588)]
