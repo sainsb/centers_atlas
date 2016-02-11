@@ -12,6 +12,11 @@ A web-based version of the state of the centers atlas.
 	issue tracking: 
 
 
+#Feb 11, 2016 v0.0.7
+
+* Broke rasters out into year subdirectories
+* Attached heatmap (raster) layers to year sliderbar events.
+
 #Jan 30, 2016 v0.0.6
 ## Tasks
 
