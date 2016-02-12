@@ -575,8 +575,6 @@ var App = {
 			data: App.data[center][year]
 		}));
 
-		console.info(App.data[center])
-
 		var numbers_obj = {
 			title: App.data[center].title + ' ' + App.data[center].type,
 			type: App.data[center].type,
@@ -868,7 +866,6 @@ var App = {
 
 				setTimeout(function() {
 						map.fitBounds(App.map.newext);
-						console.log("zoomed to bounds")
 						map.invalidateSize();
 					}, 0);
 
@@ -1200,7 +1197,7 @@ var App = {
 					}
 
 					if(val > layer.nodata && val < 255){
-						if(x==0) console.info(layer.nodata)
+						
 						this.pngdata.push({
 							lng: curlng,
 							lat: curlat,
