@@ -425,11 +425,16 @@ var App = {
 		);
 
 		$('#inc_slider').off('input.t').on('input.t', function() {
-			console.log('yay')
+			
 				var year = $('#inc_slider').val();
 
-				$('#town_center_row').fadeOut(0, function(){	$('#town_center_row').remove();
-					$('.container-fluid').append(templates['town_centers']({data:town_centers, year:year.toString()}))});
+			$('#town_center_row').fadeOut(0, function() {
+				$('#town_center_row').remove();
+				$('.container-fluid').append(templates['town_centers']({
+					data: town_centers,
+					year: year.toString()
+				}))
+			});
 			
 		});
 
@@ -569,6 +574,8 @@ var App = {
 			amenities: App.data.amenities,
 			data: App.data[center][year]
 		}));
+
+		console.info(App.data[center])
 
 		var numbers_obj = {
 			title: App.data[center].title + ' ' + App.data[center].type,

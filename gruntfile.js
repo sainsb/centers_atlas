@@ -46,7 +46,8 @@ replace: {
            'bower_components/bootstrap/dist/css/bootstrap.css',
            'bower_components/fontawesome/css/font-awesome.min.css',
            'bower_components/mapbox.js/mapbox.css',
-           'css/app.style.css'
+           'css/app.style.css',
+           'css/style.css'
            ]
         }
       }
@@ -65,10 +66,8 @@ replace: {
       'bower_components/bootstrap/dist/js/bootstrap.min.js',
       'bower_components/mapbox.js/mapbox.js',
       'bower_components/chartjs/Chart.js',
-      'bower_components/pathjs/path.min.js',
-      'bower_components/catiline/dist/catiline.js',
-      'bower_components/heatmap/index.js',
-      'bower_components/leaflet-heatmap/index.js'
+      'bower_components/pathjs/path.min.js'
+      //,'js/script.js'
         ],
       }
       }

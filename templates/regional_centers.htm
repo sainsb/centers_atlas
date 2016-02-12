@@ -14,7 +14,7 @@
                     <td style='text-align:right;'>Dwelling units per acre</td>
                     <td style='text-align:right;'>Market value per square foot</td>
                 </tr>
-                <% for(var i=0;i<obj.data.length;i++) { console.log(obj.data[i].title); %>
+                <% for(var i=0;i<obj.data.length;i++) { %>
                     <tr>
                         <td><strong><a href="#center/<%=obj.data[i].title.toLowerCase().replace(' center', '').replace(' â€“ ', '_').replace('/', '_').replace('.', '').replace(' ', '_').replace(/\-/g, '_').replace(/\s/g,'')%>"><%=obj.data[i].title%></a></strong></td>
                         <td style='text-align:right;'>

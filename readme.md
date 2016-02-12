@@ -1,7 +1,7 @@
 #State of the Centers Atlas
 
-##Current Build: 0.0.7
-##Release Date: 2015-02-11
+##Current Build: 0.0.8
+##Release Date: 2015-02-12
 
 ###App Notes:
 A web-based version of the state of the centers atlas.
@@ -10,6 +10,17 @@ A web-based version of the state of the centers atlas.
 	Developed by BNS
 	qa url: https://gis.oregonmetro.gov/dev/soc/#Aloha
 	issue tracking: 
+
+#Feb 12, 2016 v0.0.8
+
+* Removed console.log from regional and town center templates
+* Changed town center's template row id to 'town_center_row' (was mistakenly regional_center_row)
+* Included style.css in with app.style.css in gruntfile and adjusted index.htm accordingly.
+
+## Comments
+
+* Noticed that Hillsdale is a typology and as such does not work in the center view...script.js line 584 wants to get at averages and uses the center's type to figure out which average data blob to use in data.json...
+* When you feel ready, uncomment out the script.js in the gruntfile.js file, grunt, and remove the script.js from index.htm.  This will include script.js in the concatenated/minified js payload object.===ready for production.
 
 #Feb 11, 2016 v0.0.7
 

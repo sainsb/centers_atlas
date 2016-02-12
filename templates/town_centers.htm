@@ -1,4 +1,4 @@
-<div class='row' id='regional_center_row'>
+<div class='row' id='town_center_row'>
     <div class='col-md-8 col-md-offset-2'>
         <h2>Town Centers Overview</a></h2>
         <p>The 2040 Growth Concept Plan identifies 30 Town Centers spread throughout the region. While town centers are expected to serve local populations with everyday needs, they can be developed at varying scales and intensities based on the wishes of the community and the population or market area served. Town centers are usually connected to regional centers via major road networks and transit, although the level of transit service will vary greatly between the town centers. The desire for a strong sense of community and easy access to amenities such as grocery stores, coffee shops, restaurants, specialty retail and other services contribute to the success of local downtowns. 
@@ -14,7 +14,7 @@
                     <td style='text-align:right;'>Dwelling units per acre</td>
                     <td style='text-align:right;'>Market value per square foot</td>
                 </tr>
-                <% for(var i=0;i<obj.data.length;i++) { console.log(obj.data[i].title); %>
+                <% for(var i=0;i<obj.data.length;i++) { %>
                     <tr>
                         <td><strong><a href="#center/<%=obj.data[i].title.toLowerCase().replace(' center', '').replace(' â€“ ', '_').replace('/', '_').replace('.', '').replace(' ', '_').replace(/\-/g, '_').replace(/\s/g,'')%>"><%=obj.data[i].title%></a></strong></td>
                         <td style='text-align:right;'>
