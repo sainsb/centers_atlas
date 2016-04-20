@@ -93,7 +93,7 @@ A web-based version of the state of the centers atlas.
 * `npm install `
 
 * Install Bower (js) dependencies (reads bower.json file)
-* `bower -i`
+* `bower i`
 
 * Run grunt to compile/build (reads gruntfile.js)
 * `grunt`
