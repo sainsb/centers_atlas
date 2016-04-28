@@ -829,7 +829,7 @@ var App = {
 		    northEast = L.latLng(45.652871076202324, -122.36748802454048),
 		    bounds = L.latLngBounds(southWest, northEast);
 
-			map = L.mapbox.map('map',null, {minZoom:10, maxZoom:16, maxBounds: bounds});
+			map = L.map('map', {minZoom:10, maxZoom:19, maxBounds: bounds});
 
 			L.tileLayer('//server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
 				maxZoom: 21,
