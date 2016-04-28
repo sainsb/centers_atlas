@@ -11,6 +11,10 @@ A web-based version of the state of the centers atlas.
 	qa url: https://gis.oregonmetro.gov/dev/soc/#Aloha
 	issue tracking: 
 
+#Apr 28, 2016 v0.0.9
+
+* The app was using mapbox.js instead of leaflet and there is apparently a problem with the mapbox.css that it doesn't work with imageOverlays.  I changed the bower.json file to point to leaflet and then the gruntfile to point at the leaflet directory to get both the leaflet.js and the leaflet.css. Version does not seem to matter. In bower the version is set at 0.7.7.
+
 #Feb 12, 2016 v0.0.8
 
 * Removed console.log from regional and town center templates
