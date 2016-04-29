@@ -45,7 +45,7 @@ replace: {
           'css/app.style.min.css': [
            'bower_components/bootstrap/dist/css/bootstrap.css',
            'bower_components/fontawesome/css/font-awesome.min.css',
-           'bower_components/leaflet/leaflet.css',
+           'bower_components/leaflet/dist/leaflet.css',
            'css/app.style.css',
            'css/style.css'
            ]
@@ -64,7 +64,7 @@ replace: {
       'bower_components/modernizr/modernizr.js',
       'bower_components/jquery/dist/jquery.min.js',
       'bower_components/bootstrap/dist/js/bootstrap.min.js',
-      'bower_components/leaflet/leaflet.js',
+      'bower_components/leaflet/dist/leaflet.js',
       'bower_components/chartjs/Chart.js',
       'bower_components/pathjs/path.min.js'
       //,'js/script.js'
